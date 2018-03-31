@@ -1,3 +1,3 @@
-# Assignment 3-2: Raytracing Part 2
+# Final Project
 
-https://cs184.eecs.berkeley.edu/article/22
+https://nadernamini.com/184-final-project/
