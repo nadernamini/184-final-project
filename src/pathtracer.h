@@ -21,9 +21,11 @@
 // #include "lenscamera.h"
 
 #include "static_scene/scene.h"
+
 using CGL::StaticScene::Scene;
 
 #include "static_scene/environment_light.h"
+
 using CGL::StaticScene::EnvironmentLight;
 
 using CGL::StaticScene::BVHNode;
@@ -33,275 +35,292 @@ namespace CGL {
 
 // class LensCamera;
 
-struct WorkItem {
+    struct WorkItem {
 
-  // Default constructor.
-  WorkItem() : WorkItem(0, 0, 0, 0) { }
+        // Default constructor.
+        WorkItem() : WorkItem(0, 0, 0, 0) {}
 
-  WorkItem(int x, int y, int w, int h)
-      : tile_x(x), tile_y(y), tile_w(w), tile_h(h) {}
+        WorkItem(int x, int y, int w, int h)
+                : tile_x(x), tile_y(y), tile_w(w), tile_h(h) {}
 
-  int tile_x;
-  int tile_y;
-  int tile_w;
-  int tile_h;
+        int tile_x;
+        int tile_y;
+        int tile_w;
+        int tile_h;
 
-};
+    };
 
 /**
  * A pathtracer with BVH accelerator and BVH visualization capabilities.
  * It is always in exactly one of the following states:
  * -> INIT: is missing some data needed to be usable, like a camera or scene.
  * -> READY: fully configured, but not rendering.
- * -> VISUALIZE: visualizatiNG BVH aggregate.
+ * -> VISUALIZE: visualizing BVH aggregate.
  * -> RENDERING: rendering a scene.
  * -> DONE: completed rendering a scene.
  */
-class PathTracer {
- public:
+    class PathTracer {
+    public:
 
-  /**
-   * Default constructor.
-   * Creates a new pathtracer instance.
-   */
-  PathTracer(size_t ns_aa = 1,
-             size_t max_ray_depth = 4,
-             size_t ns_area_light = 1,
-             size_t ns_diff = 1,
-             size_t ns_glsy = 1,
-             size_t ns_refr = 1,
-             size_t num_threads = 1,
-             size_t samples_per_batch = 32,
-             float max_tolerance = 0.05f,
-             HDRImageBuffer* envmap = NULL,
-             bool direct_hemisphere_sample = false,
-             string filename = "",
-             double lensRadius = 0.25,
-             double focalDistance = 4.7);
+        /**
+         * Default constructor.
+         * Creates a new pathtracer instance.
+         */
+        PathTracer(size_t ns_aa = 1,
+                   size_t max_ray_depth = 4,
+                   size_t ns_area_light = 1,
+                   size_t ns_diff = 1,
+                   size_t ns_glsy = 1,
+                   size_t ns_refr = 1,
+                   size_t num_threads = 1,
+                   size_t samples_per_batch = 32,
+                   float max_tolerance = 0.05f,
+                   HDRImageBuffer *envmap = NULL,
+                   bool direct_hemisphere_sample = false,
+                   bool env_hemisphere_sample = false,
+                   bool thin_lens = false,
+                   string filename = "",
+                   double lensRadius = 0.25,
+                   double focalDistance = 4.7);
 
-  /**
-   * Destructor.
-   * Frees all the internal resources used by the pathtracer.
-   */
-  ~PathTracer();
+        /**
+         * Destructor.
+         * Frees all the internal resources used by the pathtracer.
+         */
+        ~PathTracer();
 
-  /**
-   * If in the INIT state, configures the pathtracer to use the given scene. If
-   * configuration is done, transitions to the READY state.
-   * This DOES take ownership of the scene, and therefore deletes it if a new
-   * scene is later passed in.
-   * \param scene pointer to the new scene to be rendered
-   */
-  void set_scene(Scene* scene);
+        /**
+         * If in the INIT state, configures the pathtracer to use the given scene. If
+         * configuration is done, transitions to the READY state.
+         * This DOES take ownership of the scene, and therefore deletes it if a new
+         * scene is later passed in.
+         * \param scene pointer to the new scene to be rendered
+         */
+        void set_scene(Scene *scene);
 
-  /**
-   * If in the INIT state, configures the pathtracer to use the given camera. If
-   * configuration is done, transitions to the READY state.
-   * This DOES NOT take ownership of the camera, and doesn't delete it ever.
-   * \param camera the camera to use in rendering
-   */
-  void set_camera(Camera* camera);
+        /**
+         * If in the INIT state, configures the pathtracer to use the given camera. If
+         * configuration is done, transitions to the READY state.
+         * This DOES NOT take ownership of the camera, and doesn't delete it ever.
+         * \param camera the camera to use in rendering
+         */
+        void set_camera(Camera *camera);
 
-  /**
-   * Sets the pathtracer's frame size. If in a running state (VISUALIZE,
-   * RENDERING, or DONE), transitions to READY b/c a changing window size
-   * would invalidate the output. If in INIT and configuration is done,
-   * transitions to READY.
-   * \param width width of the frame
-   * \param height height of the frame
-   */
-  void set_frame_size(size_t width, size_t height);
+        /**
+         * Sets the pathtracer's frame size. If in a running state (VISUALIZE,
+         * RENDERING, or DONE), transitions to READY b/c a changing window size
+         * would invalidate the output. If in INIT and configuration is done,
+         * transitions to READY.
+         * \param width width of the frame
+         * \param height height of the frame
+         */
+        void set_frame_size(size_t width, size_t height);
 
-  /**
-   * Update result on screen.
-   * If the pathtracer is in RENDERING or DONE, it will display the result in
-   * its frame buffer. If the pathtracer is in VISUALIZE mode, it will draw
-   * the BVH visualization with OpenGL.
-   */
-  void update_screen();
+        /**
+         * Update result on screen.
+         * If the pathtracer is in RENDERING or DONE, it will display the result in
+         * its frame buffer. If the pathtracer is in VISUALIZE mode, it will draw
+         * the BVH visualization with OpenGL.
+         */
+        void update_screen();
 
-  /**
-   * Transitions from any running state to READY.
-   */
-  void stop();
+        /**
+         * Transitions from any running state to READY.
+         */
+        void stop();
 
-  /**
-   * If the pathtracer is in READY, delete all internal data, transition to INIT.
-   */
-  void clear();
+        /**
+         * If the pathtracer is in READY, delete all internal data, transition to INIT.
+         */
+        void clear();
 
-  /**
-   * If the pathtracer is in READY, transition to VISUALIZE.
-   */
-  void start_visualizing();
+        /**
+         * If the pathtracer is in READY, transition to VISUALIZE.
+         */
+        void start_visualizing();
 
-  /**
-   * If the pathtracer is in READY, transition to RENDERING.
-   */
-  void start_raytracing();
+        /**
+         * If the pathtracer is in READY, transition to RENDERING.
+         */
+        void start_raytracing();
 
-  void render_to_file(std::string filename, size_t x, size_t y, size_t dx, size_t dy);
-  
-  void raytrace_cell(ImageBuffer& buffer);
+        void render_to_file(std::string filename, size_t x, size_t y, size_t dx, size_t dy);
 
-  /**
-   * If the pathtracer is in VISUALIZE, handle key presses to traverse the bvh.
-   */
-  void key_press(int key);
+        void raytrace_cell(ImageBuffer &buffer);
 
-  /**
-   * Save rendered result to png file.
-   */
-  void save_image(std::string filename="", ImageBuffer* buffer=NULL);
+        /**
+         * If the pathtracer is in VISUALIZE, handle key presses to traverse the bvh.
+         */
+        void key_press(int key);
 
-  /**
-   * Save sampling rates to png file.
-   */
-  void save_sampling_rate_image(std::string filename);
+        /**
+         * Save rendered result to png file.
+         */
+        void save_image(std::string filename = "", ImageBuffer *buffer = NULL);
 
-  Vector2D cell_tl, cell_br;
-  bool render_cell;
+        /**
+         * Save sampling rates to png file.
+         */
+        void save_sampling_rate_image(std::string filename);
 
- private:
+        Vector2D cell_tl, cell_br;
+        bool render_cell;
 
-  /**
-   * Used in initialization.
-   */
-  bool has_valid_configuration();
+    private:
 
-  /**
-   * Build acceleration structures.
-   */
-  void build_accel();
+        /**
+         * Used in initialization.
+         */
+        bool has_valid_configuration();
 
-  /**
-   * Visualize acceleration structures.
-   */
-  void visualize_accel() const;
+        /**
+         * Build acceleration structures.
+         */
+        void build_accel();
 
-  void visualize_cell() const;
+        /**
+         * Visualize acceleration structures.
+         */
+        void visualize_accel() const;
 
-  /**
-   * Trace an ray in the scene.
-   */
-  Spectrum estimate_direct_lighting_hemisphere(const Ray &r, const StaticScene::Intersection& isect);
-  Spectrum estimate_direct_lighting_importance(const Ray &r, const StaticScene::Intersection& isect);
+        void visualize_cell() const;
 
-  Spectrum est_radiance_global_illumination(const Ray &r); 
-  Spectrum zero_bounce_radiance(const Ray &r, const StaticScene::Intersection& isect);
-  Spectrum one_bounce_radiance(const Ray &r, const StaticScene::Intersection& isect);
-  Spectrum at_least_one_bounce_radiance(const Ray &r, const StaticScene::Intersection& isect);
+        /**
+         * Trace an ray in the scene.
+         */
+        Spectrum estimate_direct_lighting_hemisphere(const Ray &r, const StaticScene::Intersection &isect);
 
-  Spectrum normal_shading(const Vector3D& n) {
-    return Spectrum(n[0],n[1],n[2])*.5 + Spectrum(.5,.5,.5);
-  }
+        Spectrum estimate_direct_lighting_importance(const Ray &r, const StaticScene::Intersection &isect);
 
-  /**
-   * Trace a camera ray given by the pixel coordinate.
-   */
-  Spectrum raytrace_pixel(size_t x, size_t y);
+        Spectrum est_radiance_global_illumination(const Ray &r);
 
-  /**
-   * Raytrace a tile of the scene and update the frame buffer. Is run
-   * in a worker thread.
-   */
-  void raytrace_tile(int tile_x, int tile_y, int tile_w, int tile_h);
+        Spectrum zero_bounce_radiance(const Ray &r, const StaticScene::Intersection &isect);
 
-  /**
-   * Implementation of a ray tracer worker thread
-   */
-  void worker_thread();
+        Spectrum one_bounce_radiance(const Ray &r, const StaticScene::Intersection &isect);
 
-  /**
-   * Log a ray miss.
-   */
-  void log_ray_miss(const Ray& r);
+        Spectrum at_least_one_bounce_radiance(const Ray &r, const StaticScene::Intersection &isect);
 
-  /**
-   * Log a ray hit.
-   */
-  void log_ray_hit(const Ray& r, double hit_t);
+        Spectrum normal_shading(const Vector3D &n) {
+            return Spectrum(n[0], n[1], n[2]) * .5 + Spectrum(.5, .5, .5);
+        }
 
-  enum State {
-    INIT,               ///< to be initialized
-    READY,              ///< initialized ready to do stuff
-    VISUALIZE,          ///< visualizing BVH accelerator aggregate
-    RENDERING,          ///< started but not completed raytracing
-    DONE                ///< started and completed raytracing
-  };
+        /**
+         * Trace a camera ray given by the pixel coordinate.
+         */
+        Spectrum raytrace_pixel(size_t x, size_t y);
 
-  // Configurables //
+        /**
+         * Check whether the pixel has converged
+         * @param s1
+         * @param s2
+         * @param n
+         * @return True if with 95% Confidence average illuminance of this pixel lies between mean +/- I.
+         */
+        bool converged(double s1, double s2, int n);
 
-  State state;          ///< current state
-  Scene* scene;         ///< current scene
-  Camera* camera;       ///< current camera
-  // LensCamera* camera;       ///< current camera
+        /**
+         * Raytrace a tile of the scene and update the frame buffer. Is run
+         * in a worker thread.
+         */
+        void raytrace_tile(int tile_x, int tile_y, int tile_w, int tile_h);
 
-  // Integrator sampling settings //
+        /**
+         * Implementation of a ray tracer worker thread
+         */
+        void worker_thread();
 
-  size_t max_ray_depth; ///< maximum allowed ray depth (applies to all rays)
-  size_t ns_aa;         ///< number of camera rays in one pixel (along one axis)
-  size_t ns_area_light; ///< number samples per area light source
-  size_t ns_diff;       ///< number of samples - diffuse surfaces
-  size_t ns_glsy;       ///< number of samples - glossy surfaces
-  size_t ns_refr;       ///< number of samples - refractive surfaces
-  size_t samplesPerBatch;
-  float maxTolerance;
-  bool direct_hemisphere_sample; ///< true if sampling uniformly from hemisphere for direct lighting. Otherwise, light sample
+        /**
+         * Log a ray miss.
+         */
+        void log_ray_miss(const Ray &r);
 
-  // Integration state //
+        /**
+         * Log a ray hit.
+         */
+        void log_ray_hit(const Ray &r, double hit_t);
 
-  vector<int> tile_samples; ///< current sample rate for tile
-  size_t num_tiles_w;       ///< number of tiles along width of the image
-  size_t num_tiles_h;       ///< number of tiles along height of the image
+        enum State {
+            INIT,               ///< to be initialized
+            READY,              ///< initialized ready to do stuff
+            VISUALIZE,          ///< visualizing BVH accelerator aggregate
+            RENDERING,          ///< started but not completed raytracing
+            DONE                ///< started and completed raytracing
+        };
 
-  // Components //
+        // Configurables //
 
-  BVHAccel* bvh;                 ///< BVH accelerator aggregate
-  EnvironmentLight *envLight;    ///< environment map
-  Sampler2D* gridSampler;        ///< samples unit grid
-  Sampler3D* hemisphereSampler;  ///< samples unit hemisphere
-  HDRImageBuffer sampleBuffer;   ///< sample buffer
-  ImageBuffer frameBuffer;       ///< frame buffer
-  Timer timer;                   ///< performance test timer
+        State state;          ///< current state
+        Scene *scene;         ///< current scene
+        Camera *camera;       ///< current camera
+        // LensCamera* camera;       ///< current camera
 
-  std::vector<int> sampleCountBuffer;   ///< sample count buffer
+        // Integrator sampling settings //
 
-  // Internals //
+        size_t max_ray_depth; ///< maximum allowed ray depth (applies to all rays)
+        size_t ns_aa;         ///< number of camera rays in one pixel (along one axis)
+        size_t ns_area_light; ///< number samples per area light source
+        size_t ns_diff;       ///< number of samples - diffuse surfaces
+        size_t ns_glsy;       ///< number of samples - glossy surfaces
+        size_t ns_refr;       ///< number of samples - refractive surfaces
+        size_t samplesPerBatch;
+        float maxTolerance;
+        bool direct_hemisphere_sample; ///< true if sampling uniformly from hemisphere for direct lighting. Otherwise, light sample
+        bool env_hemisphere_sample; ///< true if sampling uniformly from hemisphere for environment lighting. Otherwise, importance light sample
+        bool thin_lens; ///< true if we are using thin-lens rendering
 
-  size_t numWorkerThreads;
-  size_t imageTileSize;
+        // Integration state //
 
-  bool continueRaytracing;                  ///< rendering should continue
-  std::vector<std::thread*> workerThreads;  ///< pool of worker threads
-  std::atomic<int> workerDoneCount;         ///< worker threads management
-  WorkQueue<WorkItem> workQueue;            ///< queue of work for the workers
-  std::condition_variable cv_done;
-  std::mutex m_done;
-  size_t tilesDone;
-  size_t tilesTotal;
+        vector<int> tile_samples; ///< current sample rate for tile
+        size_t num_tiles_w;       ///< number of tiles along width of the image
+        size_t num_tiles_h;       ///< number of tiles along height of the image
 
-  // Tonemapping Controls //
+        // Components //
 
-  float tm_gamma;                           ///< gamma
-  float tm_level;                           ///< exposure level
-  float tm_key;                             ///< key value
-  float tm_wht;                             ///< white point
+        BVHAccel *bvh;                 ///< BVH accelerator aggregate
+        EnvironmentLight *envLight;    ///< environment map
+        Sampler2D *gridSampler;        ///< samples unit grid
+        Sampler3D *hemisphereSampler;  ///< samples unit hemisphere
+        HDRImageBuffer sampleBuffer;   ///< sample buffer
+        ImageBuffer frameBuffer;       ///< frame buffer
+        Timer timer;                   ///< performance test timer
 
-  // Visualizer Controls //
+        std::vector<int> sampleCountBuffer;   ///< sample count buffer
 
-  std::stack<BVHNode*> selectionHistory;  ///< node selection history
-  std::vector<LoggedRay> rayLog;          ///< ray tracing log
-  bool show_rays;                         ///< show rays from raylog
+        // Internals //
 
-  ImageBuffer *cell_buffer;
-  bool render_silent;
+        size_t numWorkerThreads;
+        size_t imageTileSize;
 
-  std::string filename;
+        bool continueRaytracing;                  ///< rendering should continue
+        std::vector<std::thread *> workerThreads;  ///< pool of worker threads
+        std::atomic<int> workerDoneCount;         ///< worker threads management
+        WorkQueue<WorkItem> workQueue;            ///< queue of work for the workers
+        std::condition_variable cv_done;
+        std::mutex m_done;
+        size_t tilesDone;
+        size_t tilesTotal;
 
-  double lensRadius, focalDistance;
+        // Tonemapping Controls //
 
-};
+        float tm_gamma;                           ///< gamma
+        float tm_level;                           ///< exposure level
+        float tm_key;                             ///< key value
+        float tm_wht;                             ///< white point
+
+        // Visualizer Controls //
+
+        std::stack<BVHNode *> selectionHistory;  ///< node selection history
+        std::vector<LoggedRay> rayLog;          ///< ray tracing log
+        bool show_rays;                         ///< show rays from raylog
+
+        ImageBuffer *cell_buffer;
+        bool render_silent;
+
+        std::string filename;
+
+        double lensRadius, focalDistance;
+
+    };
 
 }  // namespace CGL
 

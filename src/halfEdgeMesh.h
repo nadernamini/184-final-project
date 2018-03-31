@@ -164,20 +164,23 @@ namespace CGL {
  * A HalfedgeMesh is comprised of four atomic element types:
  * vertices, edges, faces, and halfedges.
  */
-class Vertex;
-class Edge;
-class Face;
-class Halfedge;
+    class Vertex;
+
+    class Edge;
+
+    class Face;
+
+    class Halfedge;
 
 /*
  * Rather than using raw pointers to mesh elements, we store references
  * as STL::iterators---for convenience, we give shorter names to these
  * iterators (e.g., EdgeIter instead of list<Edge>::iterator).
  */
-typedef list<Vertex>::iterator VertexIter;
-typedef list<Edge>::iterator EdgeIter;
-typedef list<Face>::iterator FaceIter;
-typedef list<Halfedge>::iterator HalfedgeIter;
+    typedef list<Vertex>::iterator VertexIter;
+    typedef list<Edge>::iterator EdgeIter;
+    typedef list<Face>::iterator FaceIter;
+    typedef list<Halfedge>::iterator HalfedgeIter;
 
 /*
  * We also need "const" iterator types, for situations where a method takes
@@ -185,10 +188,10 @@ typedef list<Halfedge>::iterator HalfedgeIter;
  * used so frequently, we will use "CIter" as a shorthand abbreviation for
  * "constant iterator."
  */
-typedef list<Vertex>::const_iterator VertexCIter;
-typedef list<Edge>::const_iterator EdgeCIter;
-typedef list<Face>::const_iterator FaceCIter;
-typedef list<Halfedge>::const_iterator HalfedgeCIter;
+    typedef list<Vertex>::const_iterator VertexCIter;
+    typedef list<Edge>::const_iterator EdgeCIter;
+    typedef list<Face>::const_iterator FaceCIter;
+    typedef list<Halfedge>::const_iterator HalfedgeCIter;
 
 /*
  * Some algorithms need to know how to compare two iterators (which comes
@@ -196,32 +199,38 @@ typedef list<Halfedge>::const_iterator HalfedgeCIter;
  * Here we just say that one iterator comes before another if the address of the
  * object it points to is smaller.  (You should not have to worry about this!)
  */
-inline bool operator<(const HalfedgeIter& i, const HalfedgeIter& j) {
-  return &*i < &*j;
-}
-inline bool operator<(const VertexIter& i, const VertexIter& j) {
-  return &*i < &*j;
-}
-inline bool operator<(const EdgeIter& i, const EdgeIter& j) {
-  return &*i < &*j;
-}
-inline bool operator<(const FaceIter& i, const FaceIter& j) {
-  return &*i < &*j;
-}
+    inline bool operator<(const HalfedgeIter &i, const HalfedgeIter &j) {
+        return &*i < &*j;
+    }
+
+    inline bool operator<(const VertexIter &i, const VertexIter &j) {
+        return &*i < &*j;
+    }
+
+    inline bool operator<(const EdgeIter &i, const EdgeIter &j) {
+        return &*i < &*j;
+    }
+
+    inline bool operator<(const FaceIter &i, const FaceIter &j) {
+        return &*i < &*j;
+    }
 
 // We also need to know how to compare const iterators.
-inline bool operator<(const HalfedgeCIter& i, const HalfedgeCIter& j) {
-  return &*i < &*j;
-}
-inline bool operator<(const VertexCIter& i, const VertexCIter& j) {
-  return &*i < &*j;
-}
-inline bool operator<(const EdgeCIter& i, const EdgeCIter& j) {
-  return &*i < &*j;
-}
-inline bool operator<(const FaceCIter& i, const FaceCIter& j) {
-  return &*i < &*j;
-}
+    inline bool operator<(const HalfedgeCIter &i, const HalfedgeCIter &j) {
+        return &*i < &*j;
+    }
+
+    inline bool operator<(const VertexCIter &i, const VertexCIter &j) {
+        return &*i < &*j;
+    }
+
+    inline bool operator<(const EdgeCIter &i, const EdgeCIter &j) {
+        return &*i < &*j;
+    }
+
+    inline bool operator<(const FaceCIter &i, const FaceCIter &j) {
+        return &*i < &*j;
+    }
 
 /**
  * The elementAddress() function is defined only for convenience (and
@@ -230,38 +239,45 @@ inline bool operator<(const FaceCIter& i, const FaceCIter& j) {
  * helpful for things like debugging, where we want to check that one
  * element is properly pointing to another.)
  */
-inline Halfedge* elementAddress(HalfedgeIter h) { return &(*h); }
-inline Vertex* elementAddress(VertexIter v) { return &(*v); }
-inline Edge* elementAddress(EdgeIter e) { return &(*e); }
-inline Face* elementAddress(FaceIter f) { return &(*f); }
+    inline Halfedge *elementAddress(HalfedgeIter h) { return &(*h); }
+
+    inline Vertex *elementAddress(VertexIter v) { return &(*v); }
+
+    inline Edge *elementAddress(EdgeIter e) { return &(*e); }
+
+    inline Face *elementAddress(FaceIter f) { return &(*f); }
 
 /**
  * Same thing, just for constant references.
  */
-inline Halfedge const* elementAddress(HalfedgeCIter h) { return &(*h); }
-inline Vertex const* elementAddress(VertexCIter v) { return &(*v); }
-inline Edge const* elementAddress(EdgeCIter e) { return &(*e); }
-inline Face const* elementAddress(FaceCIter f) { return &(*f); }
+    inline Halfedge const *elementAddress(HalfedgeCIter h) { return &(*h); }
 
-class EdgeRecord {
- public:
-  EdgeRecord(void) {}
-  EdgeRecord(EdgeIter& _edge);
+    inline Vertex const *elementAddress(VertexCIter v) { return &(*v); }
 
-  EdgeIter edge;
-  Vector3D optimalPoint;
-  double score;
-};
+    inline Edge const *elementAddress(EdgeCIter e) { return &(*e); }
 
-inline bool operator<(const EdgeRecord& r1, const EdgeRecord& r2) {
-  if (r1.score != r2.score) {
-    return (r1.score < r2.score);
-  }
+    inline Face const *elementAddress(FaceCIter f) { return &(*f); }
 
-  EdgeIter e1 = r1.edge;
-  EdgeIter e2 = r2.edge;
-  return &*e1 < &*e2;
-}
+    class EdgeRecord {
+    public:
+        EdgeRecord(void) {}
+
+        EdgeRecord(EdgeIter &_edge);
+
+        EdgeIter edge;
+        Vector3D optimalPoint;
+        double score;
+    };
+
+    inline bool operator<(const EdgeRecord &r1, const EdgeRecord &r2) {
+        if (r1.score != r2.score) {
+            return (r1.score < r2.score);
+        }
+
+        EdgeIter e1 = r1.edge;
+        EdgeIter e2 = r2.edge;
+        return &*e1 < &*e2;
+    }
 
 /**
  * HalfedgeElement is the base type for all mesh elements (halfedges,
@@ -271,527 +287,557 @@ inline bool operator<(const EdgeRecord& r1, const EdgeRecord& r2) {
  * visualization, and should probably not be used for most actual mesh
  * processing tasks.
  */
-class HalfedgeElement {
- public:
-  /**
-   * Check if the element is a halfEdge.
-   * \return pointer to the half edge structure if the element is a half edge,
-   * NULL otherwise.
-   */
-  Halfedge* getHalfedge(void);
+    class HalfedgeElement {
+    public:
+        /**
+         * Check if the element is a halfEdge.
+         * \return pointer to the half edge structure if the element is a half edge,
+         * NULL otherwise.
+         */
+        Halfedge *getHalfedge(void);
 
-  /**
-   * Check if the element is a vertex.
-   * \return pointer to the vertex structure if the element is a half edge, NULL
-   * otherwise.
-   */
-  Vertex* getVertex(void);
+        /**
+         * Check if the element is a vertex.
+         * \return pointer to the vertex structure if the element is a half edge, NULL
+         * otherwise.
+         */
+        Vertex *getVertex(void);
 
-  /**
-   * Check if the element is an edge.
-   * \return pointer to the edge structure if the element is an edge, NULL
-   * otherwise.
-   */
-  Edge* getEdge(void);
+        /**
+         * Check if the element is an edge.
+         * \return pointer to the edge structure if the element is an edge, NULL
+         * otherwise.
+         */
+        Edge *getEdge(void);
 
-  /**
-   * Check if the element is a face.
-   * \return pointer to the face structure if the element is a face, NULL
-   * otherwise.
-   */
-  Face* getFace(void);
+        /**
+         * Check if the element is a face.
+         * \return pointer to the face structure if the element is a face, NULL
+         * otherwise.
+         */
+        Face *getFace(void);
 
-  /**
-   * Destructor.
-   */
-  virtual ~HalfedgeElement(void) {}
-};
+        /**
+         * Destructor.
+         */
+        virtual ~HalfedgeElement(void) {}
+    };
 
 /**
  * A Halfedge is the basic "glue" between mesh elements, pointing to
  * its associated vertex, edge, and face, as will as its twin and next
  * halfedges.
  */
-class Halfedge : public HalfedgeElement {
- public:
-  HalfedgeIter& twin(void) { return _twin; }  ///< access the twin half edge
-  HalfedgeIter& next(void) { return _next; }  ///< access the next half edge
-  VertexIter& vertex(void) {
-    return _vertex;
-  }  ///< access the vertex in the half edge
-  EdgeIter& edge(void) {
-    return _edge;
-  }  ///< access the edge the half edge is on
-  FaceIter& face(void) {
-    return _face;
-  }  ///< access the face the half edge is on
+    class Halfedge : public HalfedgeElement {
+    public:
+        HalfedgeIter &twin(void) { return _twin; }  ///< access the twin half edge
+        HalfedgeIter &next(void) { return _next; }  ///< access the next half edge
+        VertexIter &vertex(void) {
+            return _vertex;
+        }  ///< access the vertex in the half edge
+        EdgeIter &edge(void) {
+            return _edge;
+        }  ///< access the edge the half edge is on
+        FaceIter &face(void) {
+            return _face;
+        }  ///< access the face the half edge is on
 
-  HalfedgeCIter twin(void) const {
-    return _twin;
-  }  ///< access the twin half edge (const iterator)
-  HalfedgeCIter next(void) const {
-    return _next;
-  }  ///< access the next half edge (comst iterator)
-  VertexCIter vertex(void) const {
-    return _vertex;
-  }  ///< access the vertex in the half edge (const iterator)
-  EdgeCIter edge(void) const {
-    return _edge;
-  }  ///< access the edge the half edge is on (const iterator)
-  FaceCIter face(void) const {
-    return _face;
-  }  ///< access the face the half edge is on (const iterator)
+        HalfedgeCIter twin(void) const {
+            return _twin;
+        }  ///< access the twin half edge (const iterator)
+        HalfedgeCIter next(void) const {
+            return _next;
+        }  ///< access the next half edge (comst iterator)
+        VertexCIter vertex(void) const {
+            return _vertex;
+        }  ///< access the vertex in the half edge (const iterator)
+        EdgeCIter edge(void) const {
+            return _edge;
+        }  ///< access the edge the half edge is on (const iterator)
+        FaceCIter face(void) const {
+            return _face;
+        }  ///< access the face the half edge is on (const iterator)
 
-  /**
-   * Check if the edge is a boundary edge.
-   * \return true if yes, false otherwise
-   */
-  bool isBoundary(void);
+        /**
+         * Check if the edge is a boundary edge.
+         * \return true if yes, false otherwise
+         */
+        bool isBoundary(void);
 
-  /**
-   * For convenience, this method sets all of the
-   * neighbors of this halfedge to the given values.
-   */
-  void setNeighbors(HalfedgeIter next, HalfedgeIter twin, VertexIter vertex,
-                    EdgeIter edge, FaceIter face) {
-    _next = next;
-    _twin = twin;
-    _vertex = vertex;
-    _edge = edge;
-    _face = face;
-  }
+        /**
+         * For convenience, this method sets all of the
+         * neighbors of this halfedge to the given values.
+         */
+        void setNeighbors(HalfedgeIter next, HalfedgeIter twin, VertexIter vertex,
+                          EdgeIter edge, FaceIter face) {
+            _next = next;
+            _twin = twin;
+            _vertex = vertex;
+            _edge = edge;
+            _face = face;
+        }
 
- protected:
-  HalfedgeIter _twin;  ///< halfedge on the "other side" of the edge
-  HalfedgeIter _next;  ///< next halfedge around the current face
-  VertexIter _vertex;  ///< vertex at the "base" or "root" of this halfedge
-  EdgeIter _edge;      ///< associated edge
-  FaceIter _face;      ///< face containing this halfedge
-};
+    protected:
+        HalfedgeIter _twin;  ///< halfedge on the "other side" of the edge
+        HalfedgeIter _next;  ///< next halfedge around the current face
+        VertexIter _vertex;  ///< vertex at the "base" or "root" of this halfedge
+        EdgeIter _edge;      ///< associated edge
+        FaceIter _face;      ///< face containing this halfedge
+    };
 
 /**
  * A Face is a single polygon in the mesh.
  */
-class Face : public HalfedgeElement {
- public:
-  /**
-   * initializes the face, possibly setting its boundary flag
-   * (by default, a Face does not encode a boundary loop)
-   */
-  Face(bool isBoundary = false) : _isBoundary(isBoundary) {}
+    class Face : public HalfedgeElement {
+    public:
+        /**
+         * initializes the face, possibly setting its boundary flag
+         * (by default, a Face does not encode a boundary loop)
+         */
+        Face(bool isBoundary = false) : _isBoundary(isBoundary) {}
 
-  /**
-   * Returns a reference to some halfedge of this face
-   */
-  HalfedgeIter& halfedge(void) { return _halfedge; }
+        /**
+         * Returns a reference to some halfedge of this face
+         */
+        HalfedgeIter &halfedge(void) { return _halfedge; }
 
-  /**
-   * Returns some halfedge of this face
-   */
-  HalfedgeCIter halfedge(void) const { return _halfedge; }
+        /**
+         * Returns some halfedge of this face
+         */
+        HalfedgeCIter halfedge(void) const { return _halfedge; }
 
-  /**
-   * returns the number of edges (or equivalently, vertices) of this face
-   */
-  Size degree(void) const {
-    Size d = 0;  // degree
+        /**
+         * returns the number of edges (or equivalently, vertices) of this face
+         */
+        Size degree(void) const {
+            Size d = 0;  // degree
 
-    // walk around the face
-    HalfedgeIter h = _halfedge;
-    do {
-      d++;  // increment the degree
-      h = h->next();
-    } while (h != _halfedge);  // done walking around the face
+            // walk around the face
+            HalfedgeIter h = _halfedge;
+            do {
+                d++;  // increment the degree
+                h = h->next();
+            } while (h != _halfedge);  // done walking around the face
 
-    return d;
-  }
+            return d;
+        }
 
-  /**
-   * check if this face represents a boundary loop
-   * \returns true if and only if this face represents a boundary loop, false
-   * otherwise
-   */
-  bool isBoundary(void) { return _isBoundary; }
+        /**
+         * check if this face represents a boundary loop
+         * \returns true if and only if this face represents a boundary loop, false
+         * otherwise
+         */
+        bool isBoundary(void) { return _isBoundary; }
 
-  /**
-   * Get a unit face normal (computed via the area vector).
-   * \returns a unit face normal (computed via the area vector).
-   */
-  Vector3D normal(void) const;
+        /**
+         * Get a unit face normal (computed via the area vector).
+         * \returns a unit face normal (computed via the area vector).
+         */
+        Vector3D normal(void) const;
 
-  Matrix4x4 quadric;
+        Matrix4x4 quadric;
 
- protected:
-  HalfedgeIter _halfedge;  ///< one of the halfedges of this face
-  bool _isBoundary;        ///< boundary flag
-};
+    protected:
+        HalfedgeIter _halfedge;  ///< one of the halfedges of this face
+        bool _isBoundary;        ///< boundary flag
+    };
 
 /**
  * A Vertex encodes one of the mesh vertices
  */
-class Vertex : public HalfedgeElement {
- public:
-  /**
-   * returns some halfedge rooted at this vertex (reference)
-   */
-  HalfedgeIter& halfedge(void) { return _halfedge; }
+    class Vertex : public HalfedgeElement {
+    public:
+        /**
+         * returns some halfedge rooted at this vertex (reference)
+         */
+        HalfedgeIter &halfedge(void) { return _halfedge; }
 
-  /**
-   * returns some halfedge rooted at this vertex
-   */
-  HalfedgeCIter halfedge(void) const { return _halfedge; }
+        /**
+         * returns some halfedge rooted at this vertex
+         */
+        HalfedgeCIter halfedge(void) const { return _halfedge; }
 
-  Vector3D position;  ///< vertex position
+        Vector3D position;  ///< vertex position
 
-  /**
-   * For Loop subdivision, this will be the updated position of the vertex
-   */
-  Vector3D newPosition;
+        /**
+         * For Loop subdivision, this will be the updated position of the vertex
+         */
+        Vector3D newPosition;
 
-  /**
-   * For Loop subdivision, this flag should be true if and only if this
-   * vertex is a new vertex created by subdivision (i.e., if it corresponds
-   * to a vertex of the original mesh)
-   */
-  bool isNew;
+        /**
+         * For Loop subdivision, this flag should be true if and only if this
+         * vertex is a new vertex created by subdivision (i.e., if it corresponds
+         * to a vertex of the original mesh)
+         */
+        bool isNew;
 
-  /**
-   * computes the average of the neighboring vertex positions and stores it in
-   * Vertex::centroid
-   */
-  void computeCentroid(void) {
-    centroid = Vector3D( 0., 0., 0. ); // centroid
-    double d = 0.; // degree (i.e., number of neighbors)
+        /**
+         * computes the average of the neighboring vertex positions and stores it in
+         * Vertex::centroid
+         */
+        void computeCentroid(void) {
+            centroid = Vector3D(0., 0., 0.); // centroid
+            double d = 0.; // degree (i.e., number of neighbors)
 
-    // Iterate over neighbors.
-    HalfedgeCIter h = halfedge();
-    do {
-       // Add the contribution of the neighbor,
-       // and increment the number of neighbors.
-       centroid += h->next()->vertex()->position;
-       d += 1.;
+            // Iterate over neighbors.
+            HalfedgeCIter h = halfedge();
+            do {
+                // Add the contribution of the neighbor,
+                // and increment the number of neighbors.
+                centroid += h->next()->vertex()->position;
+                d += 1.;
 
-       h = h->twin()->next();
-    } while( h != halfedge() );
+                h = h->twin()->next();
+            } while (h != halfedge());
 
-    centroid /= d; // compute the average
-  }
+            centroid /= d; // compute the average
+        }
 
-  /**
-   * average of neighbor positions, storing the value computed by
-   * Vertex::computeCentroid()
-   */
-  Vector3D centroid;
+        /**
+         * average of neighbor positions, storing the value computed by
+         * Vertex::computeCentroid()
+         */
+        Vector3D centroid;
 
-  /**
-   * Compute vertex normal
-   * Compute the approximate unit normal at this vertex and store it in
-   * Vertex::normal. The normal is computed by taking the area-weighted
-   * average of the normals of neighboring triangles, then normalizing.
-   */
-  void computeNormal(void) {
-    normal = Vector3D( 0., 0., 0. );
-    Vector3D pi = position;
+        /**
+         * Compute vertex normal
+         * Compute the approximate unit normal at this vertex and store it in
+         * Vertex::normal. The normal is computed by taking the area-weighted
+         * average of the normals of neighboring triangles, then normalizing.
+         */
+        void computeNormal(void) {
+            normal = Vector3D(0., 0., 0.);
+            Vector3D pi = position;
 
-    // Iterate over neighbors.
-    HalfedgeCIter h = halfedge();
-    if (isBoundary()) {
-      do {
-         Vector3D pj = h->next()->vertex()->position;
-         Vector3D pk = h->next()->next()->vertex()->position;
-         normal += cross( pj-pi, pk-pi );
-         h = h->next()->twin();
-      } while( h != halfedge() );      
-    } else {
-      do {
-         Vector3D pj = h->next()->vertex()->position;
-         Vector3D pk = h->next()->next()->vertex()->position;
-         normal += cross( pj-pi, pk-pi );
-         h = h->twin()->next();
-      } while( h != halfedge() );
+            // Iterate over neighbors.
+            HalfedgeCIter h = halfedge();
+            if (isBoundary()) {
+                do {
+                    Vector3D pj = h->next()->vertex()->position;
+                    Vector3D pk = h->next()->next()->vertex()->position;
+                    normal += cross(pj - pi, pk - pi);
+                    h = h->next()->twin();
+                } while (h != halfedge());
+            } else {
+                do {
+                    Vector3D pj = h->next()->vertex()->position;
+                    Vector3D pk = h->next()->next()->vertex()->position;
+                    normal += cross(pj - pi, pk - pi);
+                    h = h->twin()->next();
+                } while (h != halfedge());
+            }
+
+            normal.normalize();
+        }
+
+        /**
+         * Vertex normal
+         */
+        Vector3D normal;
+
+        // TODO : add texcoord support
+        // Complex texcoord;  ///< vertex texture coordinate
+
+        /**
+         * Check if if this vertex is on the boundary of the surface
+         * \return true if and only if this vertex is on the boundary
+         * of the surface, false otherwise
+         */
+        bool isBoundary(void) const {
+            // iterate over the halfedges incident on this vertex
+            HalfedgeIter h = _halfedge;
+            do {
+                // check if the current halfedge is on the boundary
+                if (h->isBoundary()) {
+                    return true;
+                }
+
+                // move to the next halfedge around the vertex
+                h = h->twin()->next();
+            } while (h != _halfedge);  // done iterating over halfedges
+
+            return false;
+        }
+
+        /**
+         * returns the number of edges (or equivalently, polygons) touching this
+         * vertex
+         */
+        Size degree(void) const {
+            Size d = 0;  // degree
+
+            // iterate over halfedges incident on this vertex
+            HalfedgeIter h = _halfedge;
+            do {
+                // don't count boundary loops
+                if (!h->face()->isBoundary()) {
+                    d++;  // increment degree
+                }
+
+                // move to the next halfedge around the vertex
+                h = h->twin()->next();
+            } while (h != _halfedge);  // done iterating over halfedges
+
+            return d;
+        }
+
+        Matrix4x4 quadric;
+
+    protected:
+
+        /**
+         * one of the halfedges "rooted" or "based" at this vertex
+         */
+        HalfedgeIter _halfedge;
+
+    };
+
+    class Edge : public HalfedgeElement {
+    public:
+        /**
+         * returns one of the two halfedges of this vertex (reference)
+         */
+        HalfedgeIter &halfedge(void) { return _halfedge; }
+
+        /**
+         * returns one of the two halfedges of this vertex
+         */
+        HalfedgeCIter halfedge(void) const { return _halfedge; }
+
+        bool isBoundary(void);
+
+        double length(void) const {
+            Vector3D p0 = halfedge()->vertex()->position;
+            Vector3D p1 = halfedge()->twin()->vertex()->position;
+
+            return (p1 - p0).norm();
+        }
+
+        /**
+         * For Loop subdivision, this will be the position for the edge midpoint
+         */
+        Vector3D newPosition;
+
+        /**
+         * For Loop subdivision, this flag should be true if and only if this edge
+         * is a new edge created by subdivision (i.e., if it cuts across a triangle
+         * in the original mesh)
+         */
+        bool isNew;
+
+        EdgeRecord record;
+
+    protected:
+
+        /**
+         * One of the two halfedges associated with this edge
+         */
+        HalfedgeIter _halfedge;
+
+    };
+
+    class HalfedgeMesh {
+    public:
+        /**
+         * Constructor.
+         */
+        HalfedgeMesh(void) {}
+
+        /**
+         * The assignment operator does a "deep" copy of the halfedge mesh data
+         * structure; in other words, it makes new instances of each mesh element,
+         * and ensures that pointers in the copy point to the newly allocated elements
+         * rather than elements in the original mesh. This behavior is especially
+         * important for making assignments, since the mesh on the right-hand side of
+         * an assignment may be temporary (hence any pointers to elements in this mesh
+         * will become invalid as soon as it is released.)
+         */
+        const HalfedgeMesh &operator=(const HalfedgeMesh &mesh);
+
+        /**
+         * The copy constructor likewise does a "deep" copy of the mesh (via the
+         * assignment operator).
+         */
+        HalfedgeMesh(const HalfedgeMesh &mesh);
+
+        /**
+         * This method initializes the halfedge data structure from a raw list of
+         * polygons, where each input polygon is specified as a list of (0-based)
+         * vertex indices. The input must describe a manifold, oriented surface,
+         * where the orientation of a polygon is determined by the order of vertices
+         * in the list.
+         */
+        void build(const vector<vector<Index> > &polygons,
+                   const vector<Vector3D> &vertexPositions);
+
+        // These methods return the total number of elements of each type.
+        Size nHalfedges(void) const {
+            return halfedges.size();
+        }  ///< get the number of halfedges
+        Size nVertices(void) const {
+            return vertices.size();
+        }  ///< get the number of vertices
+        Size nEdges(void) const { return edges.size(); }  ///< get the number of edges
+        Size nFaces(void) const { return faces.size(); }  ///< get the number of faces
+        Size nBoundaries(void) const {
+            return boundaries.size();
+        }  ///< get the number of boundaries
+
+        /*
+         * These methods return iterators to the beginning and end of the lists of
+         * each type of mesh element.  For instance, to iterate over all vertices
+         * one can write
+         *
+         *    for( VertexIter v = mesh.verticesBegin(); v != mesh.verticesEnd(); v++ )
+         *    {
+         *       // do something interesting with v
+         *    }
+         *
+         * Note that we have both const and non-const versions of these functions;
+         *when
+         * a mesh is passed as a constant reference, we would instead write
+         *
+         *    for( VertexCIter v = ... )
+         *
+         * rather than VertexIter.
+         */
+        HalfedgeIter halfedgesBegin(void) { return halfedges.begin(); }
+
+        HalfedgeCIter halfedgesBegin(void) const { return halfedges.begin(); }
+
+        HalfedgeIter halfedgesEnd(void) { return halfedges.end(); }
+
+        HalfedgeCIter halfedgesEnd(void) const { return halfedges.end(); }
+
+        VertexIter verticesBegin(void) { return vertices.begin(); }
+
+        VertexCIter verticesBegin(void) const { return vertices.begin(); }
+
+        VertexIter verticesEnd(void) { return vertices.end(); }
+
+        VertexCIter verticesEnd(void) const { return vertices.end(); }
+
+        EdgeIter edgesBegin(void) { return edges.begin(); }
+
+        EdgeCIter edgesBegin(void) const { return edges.begin(); }
+
+        EdgeIter edgesEnd(void) { return edges.end(); }
+
+        EdgeCIter edgesEnd(void) const { return edges.end(); }
+
+        FaceIter facesBegin(void) { return faces.begin(); }
+
+        FaceCIter facesBegin(void) const { return faces.begin(); }
+
+        FaceIter facesEnd(void) { return faces.end(); }
+
+        FaceCIter facesEnd(void) const { return faces.end(); }
+
+        FaceIter boundariesBegin(void) { return boundaries.begin(); }
+
+        FaceCIter boundariesBegin(void) const { return boundaries.begin(); }
+
+        FaceIter boundariesEnd(void) { return boundaries.end(); }
+
+        FaceCIter boundariesEnd(void) const { return boundaries.end(); }
+
+        /*
+         * These methods allocate new mesh elements, returning a pointer (i.e.,
+         * iterator) to the new element.
+         * (These methods cannot have const versions, because they modify the mesh!)
+         */
+        HalfedgeIter newHalfedge(void) {
+            return halfedges.insert(halfedges.end(), Halfedge());
+        }
+
+        VertexIter newVertex(void) {
+            return vertices.insert(vertices.end(), Vertex());
+        }
+
+        EdgeIter newEdge(void) { return edges.insert(edges.end(), Edge()); }
+
+        FaceIter newFace(void) { return faces.insert(faces.end(), Face(false)); }
+
+        FaceIter newBoundary(void) {
+            return boundaries.insert(boundaries.end(), Face(true));
+        }
+
+        /*
+         * These methods delete a specified mesh element.  One should think very, very
+         * carefully about
+         * exactly when and how to delete mesh elements, since other elements will
+         * often still point
+         * to the element that is being deleted, and accessing a deleted element will
+         * cause your
+         * program to crash (or worse!).  A good exercise to think about is: suppose
+         * you're iterating
+         * over a linked list, and want to delete some of the elements as you go.  How
+         * do you do this
+         * without causing any problems?  For instance, if you delete the current
+         * element, will you be
+         * able to iterate to the next element?  Etc.
+         */
+        void deleteHalfedge(HalfedgeIter h) { halfedges.erase(h); }
+
+        void deleteVertex(VertexIter v) { vertices.erase(v); }
+
+        void deleteEdge(EdgeIter e) { edges.erase(e); }
+
+        void deleteFace(FaceIter f) { faces.erase(f); }
+
+        void deleteBoundary(FaceIter b) { boundaries.erase(b); }
+
+        /* For a triangle mesh, you will implement the following
+         * basic edge operations.  (Can you generalize to other
+         * polygonal meshes?)
+         */
+
+        /**
+         * Flip an edge, returning a pointer to the flipped edge
+         */
+        EdgeIter flipEdge(EdgeIter e);
+
+        /**
+         * Split an edge, returning a pointer to the inserted midpoint vertex; the
+         * halfedge of this vertex should refer to one of the edges in the original
+         * mesh
+         */
+        VertexIter splitEdge(EdgeIter e);
+
+        /**
+         * collapse an edge, returning a pointer to the collapsed vertex
+         */
+        VertexIter collapseEdge(EdgeIter e);
+
+    protected:
+
+        /*
+         * Here's where the mesh elements are actually stored---this is the one
+         * and only place we have actual data (rather than pointers/iterators).
+         */
+        list<Halfedge> halfedges;
+        list<Vertex> vertices;
+        list<Edge> edges;
+        list<Face> faces;
+        list<Face> boundaries;
+
+    };  // class HalfedgeMesh
+
+    inline Halfedge *HalfedgeElement::getHalfedge(void) {
+        return dynamic_cast<Halfedge *>(this);
     }
 
-    normal.normalize();
-  }
+    inline Vertex *HalfedgeElement::getVertex(void) {
+        return dynamic_cast<Vertex *>(this);
+    }
 
-  /**
-   * Vertex normal
-   */
-  Vector3D normal;
+    inline Edge *HalfedgeElement::getEdge(void) {
+        return dynamic_cast<Edge *>(this);
+    }
 
-  // TODO : add texcoord support
-  // Complex texcoord;  ///< vertex texture coordinate
-
-  /**
-   * Check if if this vertex is on the boundary of the surface
-   * \return true if and only if this vertex is on the boundary
-   * of the surface, false otherwise
-   */
-  bool isBoundary(void) const {
-    // iterate over the halfedges incident on this vertex
-    HalfedgeIter h = _halfedge;
-    do {
-      // check if the current halfedge is on the boundary
-      if (h->isBoundary()) {
-        return true;
-      }
-
-      // move to the next halfedge around the vertex
-      h = h->twin()->next();
-    } while (h != _halfedge);  // done iterating over halfedges
-
-    return false;
-  }
-
-  /**
-   * returns the number of edges (or equivalently, polygons) touching this
-   * vertex
-   */
-  Size degree(void) const {
-    Size d = 0;  // degree
-
-    // iterate over halfedges incident on this vertex
-    HalfedgeIter h = _halfedge;
-    do {
-      // don't count boundary loops
-      if (!h->face()->isBoundary()) {
-        d++;  // increment degree
-      }
-
-      // move to the next halfedge around the vertex
-      h = h->twin()->next();
-    } while (h != _halfedge);  // done iterating over halfedges
-
-    return d;
-  }
-
-  Matrix4x4 quadric;
-
- protected:
-
-  /**
-   * one of the halfedges "rooted" or "based" at this vertex
-   */
-  HalfedgeIter _halfedge;
-
-};
-
-class Edge : public HalfedgeElement {
- public:
-  /**
-   * returns one of the two halfedges of this vertex (reference)
-   */
-  HalfedgeIter& halfedge(void) { return _halfedge; }
-
-  /**
-   * returns one of the two halfedges of this vertex
-   */
-  HalfedgeCIter halfedge(void) const { return _halfedge; }
-
-  bool isBoundary(void);
-
-  double length(void) const {
-    Vector3D p0 = halfedge()->vertex()->position;
-    Vector3D p1 = halfedge()->twin()->vertex()->position;
-
-    return (p1 - p0).norm();
-  }
-
-  /**
-   * For Loop subdivision, this will be the position for the edge midpoint
-   */
-  Vector3D newPosition;
-
-  /**
-   * For Loop subdivision, this flag should be true if and only if this edge
-   * is a new edge created by subdivision (i.e., if it cuts across a triangle
-   * in the original mesh)
-   */
-  bool isNew;
-
-  EdgeRecord record;
-
- protected:
-
-  /**
-   * One of the two halfedges associated with this edge
-   */
-  HalfedgeIter _halfedge;
-
-};
-
-class HalfedgeMesh {
- public:
-  /**
-   * Constructor.
-   */
-  HalfedgeMesh(void) {}
-
-  /**
-   * The assignment operator does a "deep" copy of the halfedge mesh data
-   * structure; in other words, it makes new instances of each mesh element,
-   * and ensures that pointers in the copy point to the newly allocated elements
-   * rather than elements in the original mesh. This behavior is especially
-   * important for making assignments, since the mesh on the right-hand side of
-   * an assignment may be temporary (hence any pointers to elements in this mesh
-   * will become invalid as soon as it is released.)
-   */
-  const HalfedgeMesh& operator=(const HalfedgeMesh& mesh);
-
-  /**
-   * The copy constructor likewise does a "deep" copy of the mesh (via the
-   * assignment operator).
-   */
-  HalfedgeMesh(const HalfedgeMesh& mesh);
-
-  /**
-   * This method initializes the halfedge data structure from a raw list of
-   * polygons, where each input polygon is specified as a list of (0-based)
-   * vertex indices. The input must describe a manifold, oriented surface,
-   * where the orientation of a polygon is determined by the order of vertices
-   * in the list.
-   */
-  void build(const vector<vector<Index> >& polygons,
-             const vector<Vector3D>& vertexPositions);
-
-  // These methods return the total number of elements of each type.
-  Size nHalfedges(void) const {
-    return halfedges.size();
-  }  ///< get the number of halfedges
-  Size nVertices(void) const {
-    return vertices.size();
-  }  ///< get the number of vertices
-  Size nEdges(void) const { return edges.size(); }  ///< get the number of edges
-  Size nFaces(void) const { return faces.size(); }  ///< get the number of faces
-  Size nBoundaries(void) const {
-    return boundaries.size();
-  }  ///< get the number of boundaries
-
-  /*
-   * These methods return iterators to the beginning and end of the lists of
-   * each type of mesh element.  For instance, to iterate over all vertices
-   * one can write
-   *
-   *    for( VertexIter v = mesh.verticesBegin(); v != mesh.verticesEnd(); v++ )
-   *    {
-   *       // do something interesting with v
-   *    }
-   *
-   * Note that we have both const and non-const versions of these functions;
-   *when
-   * a mesh is passed as a constant reference, we would instead write
-   *
-   *    for( VertexCIter v = ... )
-   *
-   * rather than VertexIter.
-   */
-  HalfedgeIter halfedgesBegin(void) { return halfedges.begin(); }
-  HalfedgeCIter halfedgesBegin(void) const { return halfedges.begin(); }
-  HalfedgeIter halfedgesEnd(void) { return halfedges.end(); }
-  HalfedgeCIter halfedgesEnd(void) const { return halfedges.end(); }
-  VertexIter verticesBegin(void) { return vertices.begin(); }
-  VertexCIter verticesBegin(void) const { return vertices.begin(); }
-  VertexIter verticesEnd(void) { return vertices.end(); }
-  VertexCIter verticesEnd(void) const { return vertices.end(); }
-  EdgeIter edgesBegin(void) { return edges.begin(); }
-  EdgeCIter edgesBegin(void) const { return edges.begin(); }
-  EdgeIter edgesEnd(void) { return edges.end(); }
-  EdgeCIter edgesEnd(void) const { return edges.end(); }
-  FaceIter facesBegin(void) { return faces.begin(); }
-  FaceCIter facesBegin(void) const { return faces.begin(); }
-  FaceIter facesEnd(void) { return faces.end(); }
-  FaceCIter facesEnd(void) const { return faces.end(); }
-  FaceIter boundariesBegin(void) { return boundaries.begin(); }
-  FaceCIter boundariesBegin(void) const { return boundaries.begin(); }
-  FaceIter boundariesEnd(void) { return boundaries.end(); }
-  FaceCIter boundariesEnd(void) const { return boundaries.end(); }
-
-  /*
-   * These methods allocate new mesh elements, returning a pointer (i.e.,
-   * iterator) to the new element.
-   * (These methods cannot have const versions, because they modify the mesh!)
-   */
-  HalfedgeIter newHalfedge(void) {
-    return halfedges.insert(halfedges.end(), Halfedge());
-  }
-  VertexIter newVertex(void) {
-    return vertices.insert(vertices.end(), Vertex());
-  }
-  EdgeIter newEdge(void) { return edges.insert(edges.end(), Edge()); }
-  FaceIter newFace(void) { return faces.insert(faces.end(), Face(false)); }
-  FaceIter newBoundary(void) {
-    return boundaries.insert(boundaries.end(), Face(true));
-  }
-
-  /*
-   * These methods delete a specified mesh element.  One should think very, very
-   * carefully about
-   * exactly when and how to delete mesh elements, since other elements will
-   * often still point
-   * to the element that is being deleted, and accessing a deleted element will
-   * cause your
-   * program to crash (or worse!).  A good exercise to think about is: suppose
-   * you're iterating
-   * over a linked list, and want to delete some of the elements as you go.  How
-   * do you do this
-   * without causing any problems?  For instance, if you delete the current
-   * element, will you be
-   * able to iterate to the next element?  Etc.
-   */
-  void deleteHalfedge(HalfedgeIter h) { halfedges.erase(h); }
-  void deleteVertex(VertexIter v) { vertices.erase(v); }
-  void deleteEdge(EdgeIter e) { edges.erase(e); }
-  void deleteFace(FaceIter f) { faces.erase(f); }
-  void deleteBoundary(FaceIter b) { boundaries.erase(b); }
-
-  /* For a triangle mesh, you will implement the following
-   * basic edge operations.  (Can you generalize to other
-   * polygonal meshes?)
-   */
-
-  /**
-   * Flip an edge, returning a pointer to the flipped edge
-   */
-  EdgeIter flipEdge(EdgeIter e);
-
-  /**
-   * Split an edge, returning a pointer to the inserted midpoint vertex; the
-   * halfedge of this vertex should refer to one of the edges in the original
-   * mesh
-   */
-  VertexIter splitEdge(EdgeIter e);
-
-  /**
-   * collapse an edge, returning a pointer to the collapsed vertex
-   */
-  VertexIter collapseEdge(EdgeIter e);
-
- protected:
-
-  /*
-   * Here's where the mesh elements are actually stored---this is the one
-   * and only place we have actual data (rather than pointers/iterators).
-   */
-  list<Halfedge> halfedges;
-  list<Vertex> vertices;
-  list<Edge> edges;
-  list<Face> faces;
-  list<Face> boundaries;
-
-};  // class HalfedgeMesh
-
-inline Halfedge* HalfedgeElement::getHalfedge(void) {
-  return dynamic_cast<Halfedge*>(this);
-}
-inline Vertex* HalfedgeElement::getVertex(void) {
-  return dynamic_cast<Vertex*>(this);
-}
-inline Edge* HalfedgeElement::getEdge(void) {
-  return dynamic_cast<Edge*>(this);
-}
-inline Face* HalfedgeElement::getFace(void) {
-  return dynamic_cast<Face*>(this);
-}
+    inline Face *HalfedgeElement::getFace(void) {
+        return dynamic_cast<Face *>(this);
+    }
 
 }  // End of CMU 462 namespace.
 

@@ -1,63 +1,278 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<style>  
-    div.padded {  
-      padding-top: 0px;  
-      padding-right: 100px;  
-      padding-bottom: 0.25in;  
-      padding-left: 100px;  
-    }  
-  </style> 
-<title>Your Name  |  CS 184</title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+    <script src="js/main.js"></script>
+    <title>CS 184 Mesh Editor</title>
 </head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <body>
-<br />
-<h1 align="middle">Assignment 3: PathTracer</h1>
-    <h2 align="middle">Your Name</h2>
 
-    <div class="padded">
-        <p>Use this section to write an overview of the assignment. All of the text in your write-up should be <em>in your own words</em>. If you need to add additional HTML features to this document, you can search the <a href="http://www.w3schools.com/">http://www.w3schools.com/</a> website for instructions. To edit the HTML, you can just copy and paste existing chunks and fill in the text and image file names appropriately.</p>
-        <o>The website writeup is intended to be a self-contained walkthrough of the assignment: we want this to be a piece of work which showcases your understanding of relevant concepts through both mesh images as well as written explanations about what you did to complete each part of the assignment. Try to be as clear and organized as possible when writing about your own output files or extensions to the assignment. We want to understand what you've achieved and how you've done it!</p> 
-        <p>If you are well-versed in web development, feel free to ditch this template and make a better looking page. Just make sure that you include all the components as we've laid them out here. </p>
+<h1 align="middle">CS 184: Computer Graphics and Imaging, Spring 2018</h1>
+<h1 align="middle">Final Project: Cloth Rendering with OpenGL</h1>
+<h2 align="middle">Nader Namini Asl, CS184-acf; Tinh Nguyen, CS184-aaa; Marc WuDunn, CS184-aaa</h2>
 
-    <h2 align="middle">Part 1: Ray Generation and Intersection</h2>
-        <p>Describe what you did in Part 1. etc...</p>
-        <div align="center">
-            <table style="width=100%">
-                <tr>
-                    <td align="middle">
-                    <img src="images/example_image.png" width="480px" />
-                    <figcaption align="middle">Results Caption: my bunny is the bounciest bunny</figcaption>
-                </tr>
-            </table>
-        </div>
-        <p>Here is an example of how to include a simple formula:</p>
-        <p align="middle"><pre align="middle">a^2 + b^2 = c^2</pre></p>
-        <p>or, alternatively, you can include an SVG image of a LaTex formula.</p>
-        <p>This time it's your job to copy-paste in the rest of the sections :)</p>
+<br><br>
 
 
+<h2 align="middle">Overview</h2>
+<p>
+    2-3 sentences that summarize your project
+</p>
 
-    <h2 align="middle">A Few Notes On Webpages</h2>
-        <p>Here are a few problems students have encountered in the past. You will probably encounter these problems at some point, so don't wait until right before the deadline to check that everything is working. Test your website on the instructional machines early!</p>
-        <ul>
-        <li>Your main report page should be called index.html.</li>
-        <li>Be sure to include and turn in all of the other files (such as images) that are linked in your report!</li>
-        <li>Use only <em>relative</em> paths to files, such as <pre>"./images/image.jpg"</pre>
-        Do <em>NOT</em> use absolute paths, such as <pre>"/Users/student/Desktop/image.jpg"</pre></li>
-        <li>Pay close attention to your filename extensions. Remember that on UNIX systems (such as the instructional machines), capitalization matters. <pre>.png != .jpeg != .jpg != .JPG</pre>
-        <li>Be sure to adjust the permissions on your files so that they are world readable. For more information on this please see this tutorial: <a href="http://www.grymoire.com/Unix/Permissions.html">http://www.grymoire.com/Unix/Permissions.html</a></li>
-        <li>And again, test your website on the instructional machines early!</li>
 
-    <h2 align="middle">Part 5: Shaders</h2>
-        <a href="gl/index.html">Include a link to your gl directory after completing part 5!</a>
+<button class="accordion">Problem Description</button>
+
+<div class="panel">
+    <ul style="list-style-type:disc">
+        <li>
+            Here you should provide the context for your idea.
+        </li>
+        <li>
+            Describe the problem that you are trying to solve, why it is important, where it is challenging.
+        </li>
+        <li>
+            Give us a general idea on how you are going to solve it.
+        </li>
+        <!--<div align="middle">-->
+        <!--<table style="width=100%">-->
+        <!--<tr>-->
+        <!--<td>-->
+        <!--<figcaption align="middle"><b>Figure 1.1.</b> <code>max_ray_depth=0</code></figcaption>-->
+        <!--<div id="cf16" class="shadow">-->
+        <!--<img class='opaque' src="images/Part1/CBspheres-m-0.png" width="400px"/>-->
+        <!--<img src="images/Part1/rates/CBspheres-m-0_rate.png" width="400px"/>-->
+        <!--</div>-->
+        <!--<p id="cf16_controls">-->
+        <!--<span class="selected">Image</span>-->
+        <!--<span>Rate</span>-->
+        <!--</p>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<figcaption align="middle"><b>Figure 1.2.</b> <code>max_ray_depth=1</code></figcaption>-->
+        <!--<div id="cf17" class="shadow">-->
+        <!--<img class='opaque' src="images/Part1/CBspheres-m-1.png" width="400px"/>-->
+        <!--<img src="images/Part1/rates/CBspheres-m-1_rate.png" width="400px"/>-->
+        <!--</div>-->
+        <!--<p id="cf17_controls">-->
+        <!--<span class="selected">Image</span>-->
+        <!--<span>Rate</span>-->
+        <!--</p>-->
+        <!--</td>-->
+        <!--</tr>-->
+        <!--<br>-->
+        <!--<tr>-->
+        <!--<td>-->
+        <!--<figcaption align="middle"><b>Figure 1.3.</b> <code>max_ray_depth=2</code></figcaption>-->
+        <!--<div id="cf18" class="shadow">-->
+        <!--<img class='opaque' src="images/Part1/CBspheres-m-2.png" width="400px"/>-->
+        <!--<img src="images/Part1/rates/CBspheres-m-2_rate.png" width="400px"/>-->
+        <!--</div>-->
+        <!--<p id="cf18_controls">-->
+        <!--<span class="selected">Image</span>-->
+        <!--<span>Rate</span>-->
+        <!--</p>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<figcaption align="middle"><b>Figure 1.4.</b> <code>max_ray_depth=3/code></figcaption>-->
+        <!--<div id="cf19" class="shadow">-->
+        <!--<img class='opaque' src="images/Part1/CBspheres-m-3.png" width="400px"/>-->
+        <!--<img src="images/Part1/rates/CBspheres-m-3_rate.png" width="400px"/>-->
+        <!--</div>-->
+        <!--<p id="cf19_controls">-->
+        <!--<span class="selected">Image</span>-->
+        <!--<span>Rate</span>-->
+        <!--</p>-->
+        <!--</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>-->
+        <!--<figcaption align="middle"><b>Figure 1.5.</b> <code>max_ray_depth=4</code></figcaption>-->
+        <!--<div id="cf20" class="shadow">-->
+        <!--<img class='opaque' src="images/Part1/CBspheres-m-4.png" width="400px"/>-->
+        <!--<img src="images/Part1/rates/CBspheres-m-4_rate.png" width="400px"/>-->
+        <!--</div>-->
+        <!--<p id="cf20_controls">-->
+        <!--<span class="selected">Image</span>-->
+        <!--<span>Rate</span>-->
+        <!--</p>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<figcaption align="middle"><b>Figure 1.6.</b> <code>max_ray_depth=5</code></figcaption>-->
+        <!--<div id="cf21" class="shadow">-->
+        <!--<img class='opaque' src="images/Part1/CBspheres-m-5.png" width="400px"/>-->
+        <!--<img src="images/Part1/rates/CBspheres-m-5_rate.png" width="400px"/>-->
+        <!--</div>-->
+        <!--<p id="cf21_controls">-->
+        <!--<span class="selected">Image</span>-->
+        <!--<span>Rate</span>-->
+        <!--</p>-->
+        <!--</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>-->
+        <!--<figcaption align="middle"><b>Figure 1.7.</b> <code>max_ray_depth=100</code></figcaption>-->
+        <!--<div id="cf22" class="shadow">-->
+        <!--<img class='opaque' src="images/Part1/CBspheres-m-100.png" width="400px"/>-->
+        <!--<img src="images/Part1/rates/CBspheres-m-100_rate.png" width="400px"/>-->
+        <!--</div>-->
+        <!--<p id="cf22_controls">-->
+        <!--<span class="selected">Image</span>-->
+        <!--<span>Rate</span>-->
+        <!--</p>-->
+        <!--</td>-->
+        <!--</tr>-->
+        <!--</table>-->
+        <!--<br>-->
+        <!--<figcaption align="middle">-->
+        <!--<b>Figure 1.</b> Screenshots of <code>CBspheres.dae</code> rendered with various-->
+        <!--<code>max_ray_depth</code> rates with <code>sample_per_pixel=64</code> and <code>lightRays=4</code>.-->
+        <!--</figcaption>-->
+        <!--</div>-->
+    </ul>
+</div>
+
+
+<button class="accordion">Goals and Deliverables</button>
+
+<div class="panel">
+    <ul style="list-style-type:disc">
+        <li>
+            This is the most important part of your proposal. You should carefully think through what you are trying to
+            accomplish, what results you are going for, and why you think you can accomplish those goals. For example:
+            <ul style="list-style-type:disc">
+                <li>
+                    Since this is a graphics class you will likely define the kind of images you will create (e.g.
+                    including a photo of a new lighting effect you will simulate).
+                </li>
+                <li>
+                    If you are working on an interactive system, describe what demo you will create.
+                </li>
+                <li>
+                    Define how you will measure the quality / performance of your system (e.g. graphs showing speedup,
+                    or quantifying accuracy). It may not be possible to define precise target metrics at this time, but
+                    we encourage you to try.
+                </li>
+                <li>
+                    What questions do you plan to answer with your analysis?
+                </li>
+            </ul>
+        </li>
+        <!--<div align="middle">-->
+        <!--<table style="width=100%">-->
+        <!--<tr>-->
+        <!--<td>-->
+        <!--<figcaption align="middle">-->
+        <!--<b>Figure 2.1.</b> <code>α=0.005</code>-->
+        <!--</figcaption>-->
+        <!--<div id="cf15" class="shadow">-->
+        <!--<img class='opaque' src="images/Part2/alph/dragon_p2_a-005.png" width="400px"/>-->
+        <!--<img src="images/Part2/alph/rates/dragon_p2_a-005_rate.png" width="400px"/>-->
+        <!--</div>-->
+        <!--<p id="cf15_controls">-->
+        <!--<span class="selected">Image</span>-->
+        <!--<span>Rate</span>-->
+        <!--</p>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<figcaption align="middle">-->
+        <!--<b>Figure 2.2.</b> <code>α=0.05</code>-->
+        <!--</figcaption>-->
+        <!--<div id="cf14" class="shadow">-->
+        <!--<img class='opaque' src="images/Part2/alph/dragon_p2_a-05.png" width="400px"/>-->
+        <!--<img src="images/Part2/alph/rates/dragon_p2_a-05_rate.png" width="400px"/>-->
+        <!--</div>-->
+        <!--<p id="cf14_controls">-->
+        <!--<span class="selected">Image</span>-->
+        <!--<span>Rate</span>-->
+        <!--</p>-->
+        <!--</td>-->
+        <!--</tr>-->
+        <!--<br>-->
+        <!--<tr>-->
+        <!--<td>-->
+        <!--<figcaption align="middle">-->
+        <!--<b>Figure 2.3.</b> <code>α=0.25</code>-->
+        <!--</figcaption>-->
+        <!--<div id="cf13" class="shadow">-->
+        <!--<img class='opaque' src="images/Part2/alph/dragon_p2_a-25.png" width="400px"/>-->
+        <!--<img src="images/Part2/alph/rates/dragon_p2_a-25_rate.png" width="400px"/>-->
+        <!--</div>-->
+        <!--<p id="cf13_controls">-->
+        <!--<span class="selected">Image</span>-->
+        <!--<span>Rate</span>-->
+        <!--</p>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<figcaption align="middle">-->
+        <!--<b>Figure 2.4.</b> <code>α=0.5</code>-->
+        <!--</figcaption>-->
+        <!--<div id="cf12" class="shadow">-->
+        <!--<img class='opaque' src="images/Part2/alph/dragon_p2_a-5.png" width="400px"/>-->
+        <!--<img src="images/Part2/alph/rates/dragon_p2_a-5_rate.png" width="400px"/>-->
+        <!--</div>-->
+        <!--<p id="cf12_controls">-->
+        <!--<span class="selected">Image</span>-->
+        <!--<span>Rate</span>-->
+        <!--</p>-->
+        <!--</td>-->
+        <!--</tr>-->
+        <!--</table>-->
+        <!--<br>-->
+        <!--<figcaption align="middle">-->
+        <!--<b>Figure 2.</b> Screenshots of <code>CBdragon_microfacet_au.dae</code> rendered with various-->
+        <!--<code>α</code> values with <code>sample_per_pixel=128</code> and <code>lightRays=1</code>.-->
+        <!--</figcaption>-->
+        <!--</div>-->
+        <!--<br>-->
+        <li>
+            You should break this section into two parts:
+            <ol>
+                <li>
+                    <em>what you plan to deliver:</em> describe what you believe you must accomplish to have a
+                    successful project and achieve the grade you expect (i.e. your baseline plan -- planning for some
+                    unexpected problems would make sense)
+                </li>
+                <li>
+                    <em>what you hope to deliver:</em> describe what you hope to achieve if things go well and you get
+                    ahead of schedule (your aspirational plan).
+                </li>
+            </ol>
+
+        </li>
+    </ul>
+</div>
+
+<button class="accordion">Schedule</button>
+
+<div class="panel">
+    <ul style="list-style-type:disc">
+        <li>
+            In this section you should organize and plan the tasks and subtasks that your team will execute. Since
+            presentations are ~4 weeks from the due-date of the proposal, you should include a set of tasks for every
+            week.
+        </li>
+    </ul>
+</div>
+
+<button class="accordion">Resources</button>
+
+<div class="panel">
+    <ul style="list-style-type:disc">
+        <li>
+            List what resources, e.g. books, papers and/or online resources that are references for your project. List
+            the computing platform, hardware and software resources that you will use for your project. You have a wide
+            latitude here to use what you have access to, but be aware that you will have to support and trouble-shoot
+            on your platform yourselves. If you are starting from an existing piece of code or system, describe and
+            provide a pointer to it here.
+        </li>
+    </ul>
 </div>
 </body>
 </html>
-
-
-
-

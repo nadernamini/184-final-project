@@ -61,39 +61,32 @@
 #ifndef CGL_CAMERA_H
 #define CGL_CAMERA_H
 
-namespace CGL
-{
+namespace CGL {
 
-   template<class T>
-   class MutablePriorityQueue
-   {
-      public:
-         void insert( const T& item )
-         {
-            queue.insert( item );
-         }
+    template<class T>
+    class MutablePriorityQueue {
+    public:
+        void insert(const T &item) {
+            queue.insert(item);
+        }
 
-         void remove( const T& item )
-         {
-            if( queue.find( item ) != queue.end() )
-            {
-               queue.erase( item );
+        void remove(const T &item) {
+            if (queue.find(item) != queue.end()) {
+                queue.erase(item);
             }
-         }
+        }
 
-         const T& top( void ) const
-         {
-            return *( queue.begin() );
-         }
+        const T &top(void) const {
+            return *(queue.begin());
+        }
 
-         void pop( void )
-         {
-            queue.erase( queue.begin() );
-         }
+        void pop(void) {
+            queue.erase(queue.begin());
+        }
 
-      protected:
-         set<T> queue;
-   };
+    protected:
+        set<T> queue;
+    };
 
 } // namespace CGL
 

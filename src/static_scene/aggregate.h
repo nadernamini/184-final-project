@@ -3,7 +3,8 @@
 
 #include "scene.h"
 
-namespace CGL { namespace StaticScene {
+namespace CGL {
+    namespace StaticScene {
 
 /**
  * Aggregate provides an interface for grouping multiple primitives together.
@@ -14,34 +15,34 @@ namespace CGL { namespace StaticScene {
  * found. It is also easier to experiment new acceleration techniques by simply
  * adding a new Aggregate.
  */
-class Aggregate : public Primitive {
- public:
+        class Aggregate : public Primitive {
+        public:
 
-  // Implements Primitive //
+            // Implements Primitive //
 
-  // NOTE (sky):
-  // There is no restriction on how an Aggregate should be implemented but
-  // normally an Aggregate should keep track of the primitives that it is
-  // holding together. Note that during a ray - aggregate intersection, if
-  // intersection information is to be updated (intersect2), the aggregate
-  // implementation should store the address of the primitive that the ray
-  // intersected and not that of the aggregate itself.
+            // NOTE (sky):
+            // There is no restriction on how an Aggregate should be implemented but
+            // normally an Aggregate should keep track of the primitives that it is
+            // holding together. Note that during a ray - aggregate intersection, if
+            // intersection information is to be updated (intersect2), the aggregate
+            // implementation should store the address of the primitive that the ray
+            // intersected and not that of the aggregate itself.
 
-  std::vector<Primitive*> primitives; ///< primitives enclosed in the aggregate
+            std::vector<Primitive *> primitives; ///< primitives enclosed in the aggregate
 
-  /**
-   * Get BSDF.
-   * An aggregate should not have a surface material as it is not an actual
-   * primitive that we would want to render but an accelerator that we use to 
-   * speed up ray - primitive intersections. Therefore get_brdf should always
-   * return the null pointer for aggregates. 
-   */
-  BSDF* get_bsdf() const { return NULL; }
+            /**
+             * Get BSDF.
+             * An aggregate should not have a surface material as it is not an actual
+             * primitive that we would want to render but an accelerator that we use to
+             * speed up ray - primitive intersections. Therefore get_brdf should always
+             * return the null pointer for aggregates.
+             */
+            BSDF *get_bsdf() const { return NULL; }
 
-};
+        };
 
 
-} // namespace StaticScene
+    } // namespace StaticScene
 } // namespace CGL
 
 #endif //CGL_STATICSCENE_AGGREGATE_H

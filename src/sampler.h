@@ -11,87 +11,97 @@ namespace CGL {
 /**
  * Interface for generating point samples within the unit square
  */
-class Sampler2D {
- public:
+    class Sampler2D {
+    public:
 
-  /**
-   * Virtual destructor.
-   */
-  virtual ~Sampler2D() { }
+        /**
+         * Virtual destructor.
+         */
+        virtual ~Sampler2D() {}
 
-  /**
-   * Take a point sample of the unit square
-   */
-  virtual Vector2D get_sample() const = 0;
+        /**
+         * Take a point sample of the unit square
+         */
+        virtual Vector2D get_sample() const = 0;
 
-}; // class Sampler2D
+    }; // class Sampler2D
 
 /**
  * Interface for generating 3D vector samples
  */
-class Sampler3D {
- public:
+    class Sampler3D {
+    public:
 
-  /**
-   * Virtual destructor.
-   */
-  virtual ~Sampler3D() { }
+        /**
+         * Virtual destructor.
+         */
+        virtual ~Sampler3D() {}
 
-  /**
-   * Take a vector sample of the unit hemisphere
-   */
-  virtual Vector3D get_sample() const = 0;
+        /**
+         * Take a vector sample of the unit hemisphere
+         */
+        virtual Vector3D get_sample() const = 0;
 
-}; // class Sampler3D
+    }; // class Sampler3D
 
 
 /**
  * A Sampler2D implementation with uniform distribution on unit square
  */
-class UniformGridSampler2D : public Sampler2D {
- public:
+    class UniformGridSampler2D : public Sampler2D {
+    public:
 
-  Vector2D get_sample() const;
+        Vector2D get_sample() const;
 
-}; // class UniformSampler2D
+    }; // class UniformSampler2D
 
 /**
  * A Sampler3D implementation with uniform distribution on unit hemisphere
  */
-class UniformHemisphereSampler3D : public Sampler3D {
- public:
+    class UniformHemisphereSampler3D : public Sampler3D {
+    public:
 
-  Vector3D get_sample() const;
+        Vector3D get_sample() const;
 
-}; // class UniformHemisphereSampler3D
+    }; // class UniformHemisphereSampler3D
 
 /**
  * A Sampler3D implementation with uniform distribution on unit sphere
  */
-class UniformSphereSampler3D : public Sampler3D {
- public:
+    class UniformSphereSampler3D : public Sampler3D {
+    public:
 
-  Vector3D get_sample() const;
+        Vector3D get_sample() const;
 
-}; // class UniformHemisphereSampler3D
+    }; // class UniformSphereSampler3D
 
 /**
  * A Sampler3D implementation with cosine-weighted distribution on unit
  * hemisphere.
  */
-class CosineWeightedHemisphereSampler3D : public Sampler3D {
- public:
+    class CosineWeightedHemisphereSampler3D : public Sampler3D {
+    public:
 
-  Vector3D get_sample() const;
-  // Also returns the pdf at the sample point for use in importance sampling.
-  Vector3D get_sample(float* pdf) const;
+        Vector3D get_sample() const;
 
-}; // class UniformHemisphereSampler3D
+        // Also returns the pdf at the sample point for use in importance sampling.
+        Vector3D get_sample(double *pdf) const;
+
+    }; // class UniformHemisphereSampler3D
 
 /**
  * TODO (extra credit) :
  * Jittered sampler implementations
  */
+    class JitteredSampler3D : public Sampler3D {
+    public:
+
+        Vector3D get_sample() const;
+
+        // Also returns the pdf at the sample point for use in importance sampling.
+        Vector3D get_sample(double *pdf) const;
+
+    }; // class JitteredSampler3D
 
 } // namespace CGL
 
