@@ -1,3 +1,3 @@
 # Final Project
 
-http://nadernamini.com/184-final-project/
+Proposal: https://nadernamini.com/184-final-project/
