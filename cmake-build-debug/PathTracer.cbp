@@ -398,6 +398,153 @@
 		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/cmake-build-debug/CGL/deps/glfw/src/glfw_config.h">
 			<Option target="glfw"/>
 		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/application.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/application.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/bbox.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/bbox.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/bsdf.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/bsdf.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/bvh.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/bvh.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/camera.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/camera.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/collada/camera_info.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/collada/camera_info.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/collada/collada.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/collada/collada.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/collada/light_info.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/collada/light_info.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/collada/material_info.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/collada/material_info.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/collada/polymesh_info.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/collada/polymesh_info.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/collada/sphere_info.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/collada/sphere_info.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/dynamic_scene/mesh.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/dynamic_scene/mesh.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/dynamic_scene/scene.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/dynamic_scene/scene.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/dynamic_scene/sphere.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/dynamic_scene/sphere.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/halfEdgeMesh.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/halfEdgeMesh.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/main.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/meshEdit.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/meshEdit.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/misc/sphere_drawing.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/misc/sphere_drawing.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/pathtracer.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/pathtracer.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/sampler.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/sampler.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/static_scene/environment_light.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/static_scene/environment_light.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/static_scene/light.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/static_scene/light.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/static_scene/object.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/static_scene/object.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/static_scene/sphere.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/static_scene/sphere.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/static_scene/triangle.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/src/static_scene/triangle.h">
+			<Option target="pathtracer"/>
+		</Unit>
 		<Unit filename="/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
