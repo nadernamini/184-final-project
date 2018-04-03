@@ -13,6 +13,11 @@ $(document).ready(function () {
             }
         });
     }
+
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+
     $("#cf1_controls").on('click', 'span', function () {
         $("#cf1 img").removeClass("opaque");
 
