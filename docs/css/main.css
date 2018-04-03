@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
+p {
+    padding: 5px;
+}
+
 .h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
     font-weight: 400;
     line-height: 1;
@@ -89,7 +93,7 @@ td > * {
 }
 
 .panel {
-    padding: 0 18px;
+    padding: 10px 18px;
     display: none;
     background-color: white;
     overflow: hidden;

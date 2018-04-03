@@ -24,10 +24,10 @@
         <a href="#" data-placement="bottom" data-toggle="popover" data-content="CS184-acf; SID 26653732">
             Nader Namini Asl
         </a>,
-        <a href="#" data-placement="top" data-toggle="popover" data-content="CS184-aaa; SID 00000000">
-           Tinh Nguyen
+        <a href="#" data-placement="top" data-toggle="popover" data-content="CS184-abq; SID 25145867">
+            Tinh Nguyen
         </a>,
-        <a href="#" data-placement="bottom" data-toggle="popover" data-content="CS184-aaa; SID 00000000">
+        <a href="#" data-placement="bottom" data-toggle="popover" data-content="CS184-agh; SID 26545047">
             Marc WuDunn
         </a>
     </small>
@@ -38,119 +38,26 @@
 
 <h2 align="middle">Overview</h2>
 <p>
-    2-3 sentences that summarize your project
+    In this project, we plan to extend project 4 (cloth simulation) by producing high quality cloth simulations using
+    OpenGL shaders that take advantage of the parallelization power of GPUs. This will allow faster runtime of the
+    simulation and provide the required accuracy to perform more complex operations on the cloth, such as
+    self-collision. Moreover, using WebGL, we can provide a responsive environment to interact with the cloth simulation
+    for users via the convenience of their web browsers.
 </p>
 
 
 <button class="accordion">Problem Description</button>
 
 <div class="panel">
-    <ul style="list-style-type:disc">
-        <li>
-            Here you should provide the context for your idea.
-        </li>
-        <li>
-            Describe the problem that you are trying to solve, why it is important, where it is challenging.
-        </li>
-        <li>
-            Give us a general idea on how you are going to solve it.
-        </li>
-        <!--<div align="middle">-->
-        <!--<table style="width=100%">-->
-        <!--<tr>-->
-        <!--<td>-->
-        <!--<figcaption align="middle"><b>Figure 1.1.</b> <code>max_ray_depth=0</code></figcaption>-->
-        <!--<div id="cf16" class="shadow">-->
-        <!--<img class='opaque' src="images/Part1/CBspheres-m-0.png" width="400px"/>-->
-        <!--<img src="images/Part1/rates/CBspheres-m-0_rate.png" width="400px"/>-->
-        <!--</div>-->
-        <!--<p id="cf16_controls">-->
-        <!--<span class="selected">Image</span>-->
-        <!--<span>Rate</span>-->
-        <!--</p>-->
-        <!--</td>-->
-        <!--<td>-->
-        <!--<figcaption align="middle"><b>Figure 1.2.</b> <code>max_ray_depth=1</code></figcaption>-->
-        <!--<div id="cf17" class="shadow">-->
-        <!--<img class='opaque' src="images/Part1/CBspheres-m-1.png" width="400px"/>-->
-        <!--<img src="images/Part1/rates/CBspheres-m-1_rate.png" width="400px"/>-->
-        <!--</div>-->
-        <!--<p id="cf17_controls">-->
-        <!--<span class="selected">Image</span>-->
-        <!--<span>Rate</span>-->
-        <!--</p>-->
-        <!--</td>-->
-        <!--</tr>-->
-        <!--<br>-->
-        <!--<tr>-->
-        <!--<td>-->
-        <!--<figcaption align="middle"><b>Figure 1.3.</b> <code>max_ray_depth=2</code></figcaption>-->
-        <!--<div id="cf18" class="shadow">-->
-        <!--<img class='opaque' src="images/Part1/CBspheres-m-2.png" width="400px"/>-->
-        <!--<img src="images/Part1/rates/CBspheres-m-2_rate.png" width="400px"/>-->
-        <!--</div>-->
-        <!--<p id="cf18_controls">-->
-        <!--<span class="selected">Image</span>-->
-        <!--<span>Rate</span>-->
-        <!--</p>-->
-        <!--</td>-->
-        <!--<td>-->
-        <!--<figcaption align="middle"><b>Figure 1.4.</b> <code>max_ray_depth=3/code></figcaption>-->
-        <!--<div id="cf19" class="shadow">-->
-        <!--<img class='opaque' src="images/Part1/CBspheres-m-3.png" width="400px"/>-->
-        <!--<img src="images/Part1/rates/CBspheres-m-3_rate.png" width="400px"/>-->
-        <!--</div>-->
-        <!--<p id="cf19_controls">-->
-        <!--<span class="selected">Image</span>-->
-        <!--<span>Rate</span>-->
-        <!--</p>-->
-        <!--</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>-->
-        <!--<figcaption align="middle"><b>Figure 1.5.</b> <code>max_ray_depth=4</code></figcaption>-->
-        <!--<div id="cf20" class="shadow">-->
-        <!--<img class='opaque' src="images/Part1/CBspheres-m-4.png" width="400px"/>-->
-        <!--<img src="images/Part1/rates/CBspheres-m-4_rate.png" width="400px"/>-->
-        <!--</div>-->
-        <!--<p id="cf20_controls">-->
-        <!--<span class="selected">Image</span>-->
-        <!--<span>Rate</span>-->
-        <!--</p>-->
-        <!--</td>-->
-        <!--<td>-->
-        <!--<figcaption align="middle"><b>Figure 1.6.</b> <code>max_ray_depth=5</code></figcaption>-->
-        <!--<div id="cf21" class="shadow">-->
-        <!--<img class='opaque' src="images/Part1/CBspheres-m-5.png" width="400px"/>-->
-        <!--<img src="images/Part1/rates/CBspheres-m-5_rate.png" width="400px"/>-->
-        <!--</div>-->
-        <!--<p id="cf21_controls">-->
-        <!--<span class="selected">Image</span>-->
-        <!--<span>Rate</span>-->
-        <!--</p>-->
-        <!--</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>-->
-        <!--<figcaption align="middle"><b>Figure 1.7.</b> <code>max_ray_depth=100</code></figcaption>-->
-        <!--<div id="cf22" class="shadow">-->
-        <!--<img class='opaque' src="images/Part1/CBspheres-m-100.png" width="400px"/>-->
-        <!--<img src="images/Part1/rates/CBspheres-m-100_rate.png" width="400px"/>-->
-        <!--</div>-->
-        <!--<p id="cf22_controls">-->
-        <!--<span class="selected">Image</span>-->
-        <!--<span>Rate</span>-->
-        <!--</p>-->
-        <!--</td>-->
-        <!--</tr>-->
-        <!--</table>-->
-        <!--<br>-->
-        <!--<figcaption align="middle">-->
-        <!--<b>Figure 1.</b> Screenshots of <code>CBspheres.dae</code> rendered with various-->
-        <!--<code>max_ray_depth</code> rates with <code>sample_per_pixel=64</code> and <code>lightRays=4</code>.-->
-        <!--</figcaption>-->
-        <!--</div>-->
-    </ul>
+    In project 4, we observed how extensive cloth simulation can be without using any parallelization. In this project,
+    we are hoping to harness GPU power by performing cloth simulation by using OpenGL shaders. Using GPUs allows us
+    to parallelize the simulation more efficiently and obtain high quality and precise renderings at a much higher frame
+    rate. The challenge lies in implementing cloth simulation algorithms such as Explicit Euler and Verlet Integration
+    in OpenGL. Our teams' exposure to OpenGL has been limited to simple shading techniques such as Blinn-Phong and
+    texture mapping. Therefore, our initial goal is to familiarize ourselves with OpenGL and its extension to C++ to be
+    able to render different environment and basic shapes. Once we have mastered basic principles of OpenGL, we will
+    start implementing different cloth simulation algorithm and from there add shapes and settings to our environment to
+    render complex cloth simulations.
 </div>
 
 
@@ -250,9 +157,8 @@
             You should break this section into two parts:
             <ol>
                 <li>
-                    <em>what you plan to deliver:</em> describe what you believe you must accomplish to have a
-                    successful project and achieve the grade you expect (i.e. your baseline plan -- planning for some
-                    unexpected problems would make sense)
+                    <em>what you plan to deliver:</em> we are planning to implement cloth rendering simulations in
+                    <code>OpenGL</code>
                 </li>
                 <li>
                     <em>what you hope to deliver:</em> describe what you hope to achieve if things go well and you get
@@ -269,9 +175,11 @@
 <div class="panel">
     <ul style="list-style-type:disc">
         <li>
-            In this section you should organize and plan the tasks and subtasks that your team will execute. Since
-            presentations are ~4 weeks from the due-date of the proposal, you should include a set of tasks for every
-            week.
+            Below you can view a rough timeline of the project. <em>Note</em> that the tasks are currently fairly
+            general, but details will be added as progress is made on each part. Feel free to head over to <a
+                href="https://github.com/nadernamini/184-final-project/projects">the project board</a> over in <a
+                href="https://github.com/nadernamini/184-final-project">our GitHub repository</a> for the most
+            up-to-date tasks.
         </li>
     </ul>
     <div class="container">
@@ -280,92 +188,76 @@
         </div>
         <ul class="timeline">
             <li>
-                <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                <div class="timeline-badge"><i class="glyphicon glyphicon-search"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+                        <h4 class="timeline-title"><code>OpenGL</code>, Basic Environment Renderings</h4>
+                        <p>
+                            <small class="text-muted"><i class="glyphicon glyphicon-time"></i> 1.0 week
+                            </small>
+                        </p>
                     </div>
                     <div class="timeline-body">
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <p>
+                            Expand on the previous knowledge of <code>OpenGL</code>; Learn how to use
+                            <code>OpenGL</code> in <code>C++</code> and create an interactive application; Prepare basic
+                            environment settings for future simulations.
+                        </p>
                     </div>
                 </div>
             </li>
             <li class="timeline-inverted">
-                <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+                <div class="timeline-badge warning"><i class="glyphicon glyphicon-console"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                        <h4 class="timeline-title">Basic Cloth Simulations</h4>
+                        <p>
+                            <small class="text-muted"><i class="glyphicon glyphicon-time"></i> 1.0 week
+                            </small>
+                        </p>
                     </div>
                     <div class="timeline-body">
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
+                        <p>
+                            Implement basic Cloth Simulation using <code>OpenGL</code> and <code>C++</code> using
+                            Mass-spring model; Verlet Integration; Explicit Euler Integration.
+                        </p>
                     </div>
                 </div>
             </li>
             <li>
-                <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+                <div class="timeline-badge info"><i class="glyphicon glyphicon-record"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                        <h4 class="timeline-title">Complex Cloth Simulations (Interactivity with <code>WebGL</code>)
+                        </h4>
+                        <p>
+                            <small class="text-muted"><i class="glyphicon glyphicon-time"></i> 1.5 week
+                            </small>
+                        </p>
                     </div>
                     <div class="timeline-body">
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <p>
+                            Add extra components to the environment renderings such as dummy; force; elasticity;
+                            texture; lighting; (Possibly) implement <code>WebGL</code>-based simulation
+                        </p>
                     </div>
                 </div>
             </li>
             <li class="timeline-inverted">
+                <div class="timeline-badge success"><i class="glyphicon glyphicon-blackboard"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                        <h4 class="timeline-title">Presentation and Demos</h4>
+                        <p>
+                            <small class="text-muted"><i class="glyphicon glyphicon-time"></i> 0.5 week
+                            </small>
+                        </p>
                     </div>
                     <div class="timeline-body">
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        <hr>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-                                <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <p>
+                            Prepare the final presentation; finish high-quality and precise renders of cloth simulations
+                            with dummy, force, elasticity, texture, and lighting.
+                        </p>
                     </div>
                 </div>
             </li>
@@ -378,16 +270,32 @@
 <div class="panel">
     <ul style="list-style-type:disc">
         <li>
-            List what resources, e.g. books, papers and/or online resources that are references for your project. List
-            the computing platform, hardware and software resources that you will use for your project. You have a wide
-            latitude here to use what you have access to, but be aware that you will have to support and trouble-shoot
-            on your platform yourselves. If you are starting from an existing piece of code or system, describe and
-            provide a pointer to it here.
+            We are planning to use the <code>hive</code> or <code>s349</code> unix-based machines with the following
+            specifications:
+            <pre><code>
+            Dell Optiplex 9020, Intel quad-core i7-4770 cpu (HT 3.4GHz turbo, 8MB, w/ HD graphics 4600)
+            32GB RAM (4x8GB), 500GB SATA drive
+            GeForce GT 740 1 GB DDR3 PCI Express 3.0 x16 Cuda GPU
+            </code></pre>
+            For software, we will be using <code>OpenGL 4.6</code> along with <code>WebGL 2.0</code> and
+            <code>C++</code>.
+        </li>
+        <li>
+            After researching online, we found a few papers and past projects that we can use as guides and references
+            for this project. <em>Note</em> that we will be using project 4 as our starting code even though we will be
+            implementing an extension to <code>OpenGL</code>. We will be adding to this list as the project progresses
+            and making proper citations in our code, write-ups, and presentations:
+            <a href="http://ieeexplore.ieee.org/document/6221705/">Hanwen Li and Yi Wan, An object-oriented system for
+                dynamics-based 3D cloth simulation</a>,
+            <a href="http://ieeexplore.ieee.org/document/7121014/">Minh Vo, Srinivasa G. Narasimhan, and Yaser Sheikh,
+                Texture Illumination Separation for Single-Shot Structured Light Reconstruction</a>,
+            <a href="http://www.stephenspinks.com/project.html">Stephen Spinks, Mass Spring Particle Systems</a>,
+            <a href="https://github.com/dayeol/clothsimulation">Dayeol Lee and Taegyu Kim, OpenGL-simulated Cloth</a>.
         </li>
     </ul>
 </div>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         $('[data-toggle="popover"]').popover();
     });
 </script>
