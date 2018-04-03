@@ -66,106 +66,58 @@
 <div class="panel">
     <ul style="list-style-type:disc">
         <li>
-            This is the most important part of your proposal. You should carefully think through what you are trying to
-            accomplish, what results you are going for, and why you think you can accomplish those goals. For example:
-            <ul style="list-style-type:disc">
-                <li>
-                    Since this is a graphics class you will likely define the kind of images you will create (e.g.
-                    including a photo of a new lighting effect you will simulate).
-                </li>
-                <li>
-                    If you are working on an interactive system, describe what demo you will create.
-                </li>
-                <li>
-                    Define how you will measure the quality / performance of your system (e.g. graphs showing speedup,
-                    or quantifying accuracy). It may not be possible to define precise target metrics at this time, but
-                    we encourage you to try.
-                </li>
-                <li>
-                    What questions do you plan to answer with your analysis?
-                </li>
-            </ul>
+            <em>What we plan to deliver:</em> We are planning to implement cloth rendering simulations in
+            <code>OpenGL</code>. Our goal is to be able to make a <code>C++</code> application as in previous
+            project with the functionality to interact with the environment, add components, and change
+            settings. We will, first, start with simple environment renderings in <code>OpenGL</code> to
+            experiment with using <code>OpenGL</code> along with <code>C++</code> in a more customized manner
+            than done previously in project 3-2. In the next step, we will start with implementing simple to
+            difficult cloth simulation algorithms such as Mass-spring model, Verlet Integration, and Explicit
+            Euler Integration. Next step is to perform simulations first with the cloth itself, then add our
+            dummy (traditionally a matte single-colored sphere) to the scene and simulate collisions; finally,
+            we can add force and change environment settings such as wind to create more complex simulations.
+            Our demo will be similar to the animations below although with different cloth simulation algorithm
+            implementation and added interactive functions:
         </li>
-        <!--<div align="middle">-->
-        <!--<table style="width=100%">-->
-        <!--<tr>-->
-        <!--<td>-->
-        <!--<figcaption align="middle">-->
-        <!--<b>Figure 2.1.</b> <code>α=0.005</code>-->
-        <!--</figcaption>-->
-        <!--<div id="cf15" class="shadow">-->
-        <!--<img class='opaque' src="images/Part2/alph/dragon_p2_a-005.png" width="400px"/>-->
-        <!--<img src="images/Part2/alph/rates/dragon_p2_a-005_rate.png" width="400px"/>-->
-        <!--</div>-->
-        <!--<p id="cf15_controls">-->
-        <!--<span class="selected">Image</span>-->
-        <!--<span>Rate</span>-->
-        <!--</p>-->
-        <!--</td>-->
-        <!--<td>-->
-        <!--<figcaption align="middle">-->
-        <!--<b>Figure 2.2.</b> <code>α=0.05</code>-->
-        <!--</figcaption>-->
-        <!--<div id="cf14" class="shadow">-->
-        <!--<img class='opaque' src="images/Part2/alph/dragon_p2_a-05.png" width="400px"/>-->
-        <!--<img src="images/Part2/alph/rates/dragon_p2_a-05_rate.png" width="400px"/>-->
-        <!--</div>-->
-        <!--<p id="cf14_controls">-->
-        <!--<span class="selected">Image</span>-->
-        <!--<span>Rate</span>-->
-        <!--</p>-->
-        <!--</td>-->
-        <!--</tr>-->
-        <!--<br>-->
-        <!--<tr>-->
-        <!--<td>-->
-        <!--<figcaption align="middle">-->
-        <!--<b>Figure 2.3.</b> <code>α=0.25</code>-->
-        <!--</figcaption>-->
-        <!--<div id="cf13" class="shadow">-->
-        <!--<img class='opaque' src="images/Part2/alph/dragon_p2_a-25.png" width="400px"/>-->
-        <!--<img src="images/Part2/alph/rates/dragon_p2_a-25_rate.png" width="400px"/>-->
-        <!--</div>-->
-        <!--<p id="cf13_controls">-->
-        <!--<span class="selected">Image</span>-->
-        <!--<span>Rate</span>-->
-        <!--</p>-->
-        <!--</td>-->
-        <!--<td>-->
-        <!--<figcaption align="middle">-->
-        <!--<b>Figure 2.4.</b> <code>α=0.5</code>-->
-        <!--</figcaption>-->
-        <!--<div id="cf12" class="shadow">-->
-        <!--<img class='opaque' src="images/Part2/alph/dragon_p2_a-5.png" width="400px"/>-->
-        <!--<img src="images/Part2/alph/rates/dragon_p2_a-5_rate.png" width="400px"/>-->
-        <!--</div>-->
-        <!--<p id="cf12_controls">-->
-        <!--<span class="selected">Image</span>-->
-        <!--<span>Rate</span>-->
-        <!--</p>-->
-        <!--</td>-->
-        <!--</tr>-->
-        <!--</table>-->
-        <!--<br>-->
-        <!--<figcaption align="middle">-->
-        <!--<b>Figure 2.</b> Screenshots of <code>CBdragon_microfacet_au.dae</code> rendered with various-->
-        <!--<code>α</code> values with <code>sample_per_pixel=128</code> and <code>lightRays=1</code>.-->
-        <!--</figcaption>-->
-        <!--</div>-->
-        <!--<br>-->
-        <li>
-            You should break this section into two parts:
-            <ol>
-                <li>
-                    <em>what you plan to deliver:</em> we are planning to implement cloth rendering simulations in
-                    <code>OpenGL</code>
-                </li>
-                <li>
-                    <em>what you hope to deliver:</em> describe what you hope to achieve if things go well and you get
-                    ahead of schedule (your aspirational plan).
-                </li>
-            </ol>
+        <div align="middle">
+            <table style="width=100%">
+                <tr>
+                    <td>
+                        <figcaption align="middle">
+                            <b>Source:</b> <a href="https://www.youtube.com/watch?v=NsjhUU8i4E8">Dayeol Lee, Taegyu Kim
+                            @POSTECH</a>
+                        </figcaption>
+                        <div id="cf15" class="shadow">
+                            <img class='opaque' src="images/proposal/gifs/overview.gif" width="400px"/>
+                            <img src="images/proposal/gifs/super-elastic_effects.gif" width="400px"/>
+                            <img src="images/proposal/gifs/collision.gif" width="400px"/>
+                            <img src="images/proposal/gifs/forces.gif" width="400px"/>
+                        </div>
+                        <p id="cf15_controls">
+                            <span>Overview</span>
+                            <span>Super-Elastic Effects</span>
+                            <span class="selected">Collision</span>
+                            <span>Forces</span>
+                        </p>
+                    </td>
+                    <td>
+                        <figcaption align="middle">
+                            <b>Source</b> <a href="https://www.shadertoy.com/view/MldXWX">archee @ ShaderToy</a>
+                        </figcaption>
+                        <img src="images/proposal/gifs/normal.gif" width="400px"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
 
+
+        <li>
+            <em>What we hope to deliver:</em> Once we have been able to achieve all the goals outlined above, we hope to
+            extend the project to <code>WebGL</code> and host the project online to achieve real-time cloth simulation
+            renderings. In addition to this, we want to add additional capabilities to our simulator such as allowing
+            users to modify elements in the environment such as lighting and component material including the cloth and
+            the dummy.
         </li>
     </ul>
 </div>
@@ -290,7 +242,8 @@
             <a href="http://ieeexplore.ieee.org/document/7121014/">Minh Vo, Srinivasa G. Narasimhan, and Yaser Sheikh,
                 Texture Illumination Separation for Single-Shot Structured Light Reconstruction</a>,
             <a href="http://www.stephenspinks.com/project.html">Stephen Spinks, Mass Spring Particle Systems</a>,
-            <a href="https://github.com/dayeol/clothsimulation">Dayeol Lee and Taegyu Kim, OpenGL-simulated Cloth</a>.
+            <a href="https://github.com/dayeol/clothsimulation">Dayeol Lee and Taegyu Kim, OpenGL-simulated Cloth</a>,
+            and <a href="https://www.shadertoy.com/view/MldXWX">archee, curtain and ball</a>.
         </li>
     </ul>
 </div>
