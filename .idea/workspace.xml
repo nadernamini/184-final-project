@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
-    <generated />
+    <generated>
+      <config projectName="FinalProject" targetName="FinalProject" />
+      <config projectName="FinalProject" targetName="nanogui" />
+      <config projectName="FinalProject" targetName="CGL" />
+      <config projectName="FinalProject" targetName="nanogui-obj" />
+      <config projectName="FinalProject" targetName="glfw_objects" />
+      <config projectName="FinalProject" targetName="glfw" />
+    </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
@@ -10,174 +17,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df717f0-37f1-43c1-bdea-ccc23e7bd1a4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/source/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/camera.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/camera.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/misc/sphere_drawing.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/misc/sphere_drawing.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/CGL.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glew/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glew/CMakeFiles/glew.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glew/CMakeFiles/glew.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glew/CMakeFiles/glew.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glew/CMakeFiles/glew.dir/cmake_clean_target.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glew/CMakeFiles/glew.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glew/CMakeFiles/glew.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glew/CMakeFiles/glew.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glew/CMakeFiles/glew.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glew/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glew/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glew/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/CMakeFiles/Export/lib/cmake/glfw/glfwTargets-debug.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/CMakeFiles/Export/lib/cmake/glfw/glfwTargets.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/CMakeFiles/uninstall.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/CMakeFiles/uninstall.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/CMakeFiles/uninstall.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/GLFW.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/cmake_uninstall.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/cmake_clean_target.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/glfw.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/src/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/src/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/src/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/src/glfw3.pc" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/src/glfw3.pc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/src/glfw3Config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/src/glfw3Config.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/src/glfw_config.h" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CGL/deps/glfw/src/glfw_config.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/cmake_clean_target.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/FinalProject.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/PathTracer.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/FinalProject.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/FinalProject.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/FinalProject.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/FinalProject.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/FinalProject.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/FinalProject.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/FinalProject.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/An Object-Oriented System for Dynamics-Based 3D Cloth Simulation.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Xcode/Cloth-Simulation/Cloth-Simulation.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Xcode/Cloth-Simulation/Cloth-Simulation.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/camera.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/camera.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/cloth.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/cloth.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/clothMesh.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/clothMesh.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/clothSimulator.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/clothSimulator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/collision/collisionObject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/collision/plane.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/collision/plane.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/collision/sphere.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/collision/sphere.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/json.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/misc/camera_info.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/misc/camera_info.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/misc/camera_ops.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/misc/collada_info.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/misc/sphere_drawing.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/misc/sphere_drawing.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/png.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/png.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/pointMass.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/shaderUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/spring.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Xcode/Cloth-Simulation/Cloth-Simulation.xcodeproj/project.xcworkspace/xcuserdata/Nader.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/src/Xcode/Cloth-Simulation/Cloth-Simulation.xcodeproj/project.xcworkspace/xcuserdata/Nader.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Xcode/Cloth-Simulation/Cloth-Simulation/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Xcode/Cloth-Simulation/Cloth-Simulation/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bbox.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bbox.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bsdf.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bsdf.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bvh.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bvh.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/camera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/camera.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/camera.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/camera.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collada/camera_info.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collada/camera_info.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collada/collada.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collada/collada.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collada/collada_info.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collada/light_info.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collada/light_info.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collada/material_info.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collada/material_info.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collada/polymesh_info.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collada/polymesh_info.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collada/sphere_info.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collada/sphere_info.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamic_scene/ambient_light.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamic_scene/area_light.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamic_scene/directional_light.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamic_scene/draw_style.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamic_scene/environment_light.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamic_scene/material.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamic_scene/mesh.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamic_scene/mesh.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamic_scene/mesh_view.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamic_scene/point_light.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamic_scene/scene.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamic_scene/scene.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamic_scene/sphere.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamic_scene/sphere.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamic_scene/spot_light.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/halfEdgeMesh.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/halfEdgeMesh.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/intersection.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/meshEdit.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/meshEdit.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/misc/sphere_drawing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/misc/sphere_drawing.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/misc/sphere_drawing.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/misc/sphere_drawing.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mutablePriorityQueue.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pathtracer.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pathtracer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/random_util.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ray.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sampler.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sampler.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static_scene/aggregate.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static_scene/environment_light.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static_scene/environment_light.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static_scene/light.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static_scene/light.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static_scene/object.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static_scene/object.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static_scene/primitive.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static_scene/scene.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static_scene/sphere.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static_scene/sphere.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static_scene/triangle.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static_scene/triangle.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/work_queue.h" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -187,41 +56,35 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="cloth.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cloth.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1725">
+              <caret line="115" column="34" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
+            <state relative-caret-position="255">
               <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sphere_drawing.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/misc/sphere_drawing.h">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2574">
+            <state relative-caret-position="2625">
               <caret line="175" column="19" selection-start-line="175" selection-start-column="19" selection-end-line="175" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CGL/deps/glfw/src/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
             </state>
           </provider>
         </entry>
@@ -248,9 +111,11 @@
         <option value="$PROJECT_DIR$/docs/js/main.js" />
         <option value="$PROJECT_DIR$/docs/css/main.css" />
         <option value="$PROJECT_DIR$/docs/index.html" />
-        <option value="$PROJECT_DIR$/src/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/source/main.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/source/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/source/cloth.cpp" />
       </list>
     </option>
   </component>
@@ -261,8 +126,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="x" value="1280" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -282,13 +148,7 @@
             <path>
               <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="184-final-project" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="184-final-project" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="misc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -299,10 +159,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="SwiftSettings" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -355,7 +216,7 @@
       <workItem from="1522729280034" duration="6119000" />
       <workItem from="1522802181567" duration="420000" />
       <workItem from="1522802975273" duration="1051000" />
-      <workItem from="1523664683446" duration="2824000" />
+      <workItem from="1523664683446" duration="5788000" />
     </task>
     <task id="LOCAL-00001" summary="added website files">
       <created>1522552442599</created>
@@ -424,16 +285,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16505000" />
+    <option name="totallyTimeSpent" value="19469000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="1280" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="CMake" order="7" visible="true" weight="0.328877" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.328877" />
+      <window_info anchor="bottom" id="CMake" order="10" visible="true" weight="0.23929961" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.328877" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -572,24 +434,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="67" column="42" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="671">
           <caret line="155" column="14" selection-start-line="155" selection-start-column="8" selection-end-line="155" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -621,12 +469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/misc/sphere_drawing.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/CGL/deps/glfw/src/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -634,10 +476,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/clothMesh.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2574">
+        <state relative-caret-position="2625">
           <caret line="175" column="19" selection-start-line="175" selection-start-column="19" selection-end-line="175" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/misc/sphere_drawing.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/clothSimulator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="168" column="15" lean-forward="true" selection-start-line="168" selection-start-column="15" selection-end-line="168" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/cloth.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/cloth.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cloth.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="115" column="34" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
