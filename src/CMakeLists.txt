@@ -1,64 +1,55 @@
 cmake_minimum_required(VERSION 2.8)
 
-# Application source
-set(APPLICATION_SOURCE
+# Cloth simulation source
+set(FinalProject_VIEWER_SOURCE
+        # Cloth simulation objects
+        cloth.cpp
+        clothMesh.cpp
 
-        # Collada Parser
-        collada/collada.cpp
-        collada/camera_info.cpp
-        collada/light_info.cpp
-        collada/sphere_info.cpp
-        collada/polymesh_info.cpp
-        collada/material_info.cpp
-
-        # Dynamic Scene
-        dynamic_scene/mesh.cpp
-        dynamic_scene/scene.cpp
-        dynamic_scene/sphere.cpp
-
-        # Static scene
-        static_scene/sphere.cpp
-        static_scene/triangle.cpp
-        static_scene/object.cpp
-        static_scene/environment_light.cpp
-        static_scene/light.cpp
-
-        # MeshEdit
-        halfEdgeMesh.cpp
-        meshEdit.cpp
-
-        # PathTracer
-        bvh.cpp
-        bbox.cpp
-        bsdf.cpp
-        camera.cpp
-        sampler.cpp
-        pathtracer.cpp
-
-        # misc
-        misc/sphere_drawing.cpp
+        # Collision objects
+        collision/sphere.cpp
+        collision/plane.cpp
 
         # Application
-        application.cpp
         main.cpp
+        clothSimulator.cpp
+
+        # Miscellaneous
+        # png.cpp
+        misc/sphere_drawing.cpp
+
+        # Camera
+        camera.cpp
         )
+
+#-------------------------------------------------------------------------------
+# Embed resources
+#-------------------------------------------------------------------------------
+
+# embed_resources(CLOTHSIM_SHADERS
+#   shaders/vert.glsl
+#   shaders/normalFrag.glsl
+#   shaders/wireframeFrag.glsl
+# )
+
+#-------------------------------------------------------------------------------
+# Set definitions
+#-------------------------------------------------------------------------------
+add_definitions(${NANOGUI_EXTRA_DEFS})
 
 #-------------------------------------------------------------------------------
 # Set include directories
 #-------------------------------------------------------------------------------
 include_directories(
-        ${GLEW_INCLUDE_DIRS}
-        ${GLFW_INCLUDE_DIRS}
         ${CGL_INCLUDE_DIRS}
         ${FREETYPE_INCLUDE_DIRS}
+        ${NANOGUI_EXTRA_INCS}
 )
 
 #-------------------------------------------------------------------------------
 # Set link directories
 #-------------------------------------------------------------------------------
 link_directories(
-        ${GLEW_LIBRARY_DIRS}
-        ${GLFW_LIBRARY_DIRS}
         ${CGL_LIBRARY_DIRS}
         ${FREETYPE_LIBRARY_DIRS}
 )
@@ -66,13 +57,11 @@ link_directories(
 #-------------------------------------------------------------------------------
 # Add executable
 #-------------------------------------------------------------------------------
-add_executable(FinalProject ${APPLICATION_SOURCE})
+add_executable(FinalProject ${FinalProject_VIEWER_SOURCE})
 
 target_link_libraries(FinalProject
         CGL ${CGL_LIBRARIES}
-        glew ${GLEW_LIBRARIES}
-        glfw ${GLFW_LIBRARIES}
-        ${OPENGL_LIBRARIES}
+        nanogui ${NANOGUI_EXTRA_LIBS}
         ${FREETYPE_LIBRARIES}
         ${CMAKE_THREADS_INIT}
         )

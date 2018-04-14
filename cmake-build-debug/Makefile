@@ -157,30 +157,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named glew
+# Target rules for targets named nanogui
 
 # Build rule for target.
-glew: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 glew
-.PHONY : glew
+nanogui: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nanogui
+.PHONY : nanogui
 
 # fast build rule for target.
-glew/fast:
-	$(MAKE) -f CGL/deps/glew/CMakeFiles/glew.dir/build.make CGL/deps/glew/CMakeFiles/glew.dir/build
-.PHONY : glew/fast
+nanogui/fast:
+	$(MAKE) -f ext/nanogui/CMakeFiles/nanogui.dir/build.make ext/nanogui/CMakeFiles/nanogui.dir/build
+.PHONY : nanogui/fast
 
 #=============================================================================
-# Target rules for targets named uninstall
+# Target rules for targets named nanogui-obj
 
 # Build rule for target.
-uninstall: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 uninstall
-.PHONY : uninstall
+nanogui-obj: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nanogui-obj
+.PHONY : nanogui-obj
 
 # fast build rule for target.
-uninstall/fast:
-	$(MAKE) -f CGL/deps/glfw/CMakeFiles/uninstall.dir/build.make CGL/deps/glfw/CMakeFiles/uninstall.dir/build
-.PHONY : uninstall/fast
+nanogui-obj/fast:
+	$(MAKE) -f ext/nanogui/CMakeFiles/nanogui-obj.dir/build.make ext/nanogui/CMakeFiles/nanogui-obj.dir/build
+.PHONY : nanogui-obj/fast
+
+#=============================================================================
+# Target rules for targets named glfw_objects
+
+# Build rule for target.
+glfw_objects: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 glfw_objects
+.PHONY : glfw_objects
+
+# fast build rule for target.
+glfw_objects/fast:
+	$(MAKE) -f ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/build.make ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/build
+.PHONY : glfw_objects/fast
 
 #=============================================================================
 # Target rules for targets named glfw
@@ -192,7 +205,7 @@ glfw: cmake_check_build_system
 
 # fast build rule for target.
 glfw/fast:
-	$(MAKE) -f CGL/deps/glfw/src/CMakeFiles/glfw.dir/build.make CGL/deps/glfw/src/CMakeFiles/glfw.dir/build
+	$(MAKE) -f ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/build.make ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
 #=============================================================================
@@ -233,8 +246,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... glew"
-	@echo "... uninstall"
+	@echo "... nanogui"
+	@echo "... nanogui-obj"
+	@echo "... glfw_objects"
 	@echo "... glfw"
 	@echo "... CGL"
 	@echo "... FinalProject"

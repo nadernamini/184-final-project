@@ -333,60 +333,6 @@ matrix4x4.cpp.s:
 	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f CGL/src/CMakeFiles/CGL.dir/build.make CGL/src/CMakeFiles/CGL.dir/matrix4x4.cpp.s
 .PHONY : matrix4x4.cpp.s
 
-osdfont.o: osdfont.c.o
-
-.PHONY : osdfont.o
-
-# target to build an object file
-osdfont.c.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f CGL/src/CMakeFiles/CGL.dir/build.make CGL/src/CMakeFiles/CGL.dir/osdfont.c.o
-.PHONY : osdfont.c.o
-
-osdfont.i: osdfont.c.i
-
-.PHONY : osdfont.i
-
-# target to preprocess a source file
-osdfont.c.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f CGL/src/CMakeFiles/CGL.dir/build.make CGL/src/CMakeFiles/CGL.dir/osdfont.c.i
-.PHONY : osdfont.c.i
-
-osdfont.s: osdfont.c.s
-
-.PHONY : osdfont.s
-
-# target to generate assembly for a file
-osdfont.c.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f CGL/src/CMakeFiles/CGL.dir/build.make CGL/src/CMakeFiles/CGL.dir/osdfont.c.s
-.PHONY : osdfont.c.s
-
-osdtext.o: osdtext.cpp.o
-
-.PHONY : osdtext.o
-
-# target to build an object file
-osdtext.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f CGL/src/CMakeFiles/CGL.dir/build.make CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o
-.PHONY : osdtext.cpp.o
-
-osdtext.i: osdtext.cpp.i
-
-.PHONY : osdtext.i
-
-# target to preprocess a source file
-osdtext.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f CGL/src/CMakeFiles/CGL.dir/build.make CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.i
-.PHONY : osdtext.cpp.i
-
-osdtext.s: osdtext.cpp.s
-
-.PHONY : osdtext.s
-
-# target to generate assembly for a file
-osdtext.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f CGL/src/CMakeFiles/CGL.dir/build.make CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.s
-.PHONY : osdtext.cpp.s
-
 quaternion.o: quaternion.cpp.o
 
 .PHONY : quaternion.o
@@ -549,33 +495,6 @@ vector4D.cpp.s:
 	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f CGL/src/CMakeFiles/CGL.dir/build.make CGL/src/CMakeFiles/CGL.dir/vector4D.cpp.s
 .PHONY : vector4D.cpp.s
 
-viewer.o: viewer.cpp.o
-
-.PHONY : viewer.o
-
-# target to build an object file
-viewer.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f CGL/src/CMakeFiles/CGL.dir/build.make CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o
-.PHONY : viewer.cpp.o
-
-viewer.i: viewer.cpp.i
-
-.PHONY : viewer.i
-
-# target to preprocess a source file
-viewer.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f CGL/src/CMakeFiles/CGL.dir/build.make CGL/src/CMakeFiles/CGL.dir/viewer.cpp.i
-.PHONY : viewer.cpp.i
-
-viewer.s: viewer.cpp.s
-
-.PHONY : viewer.s
-
-# target to generate assembly for a file
-viewer.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f CGL/src/CMakeFiles/CGL.dir/build.make CGL/src/CMakeFiles/CGL.dir/viewer.cpp.s
-.PHONY : viewer.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -607,12 +526,6 @@ help:
 	@echo "... matrix4x4.o"
 	@echo "... matrix4x4.i"
 	@echo "... matrix4x4.s"
-	@echo "... osdfont.o"
-	@echo "... osdfont.i"
-	@echo "... osdfont.s"
-	@echo "... osdtext.o"
-	@echo "... osdtext.i"
-	@echo "... osdtext.s"
 	@echo "... quaternion.o"
 	@echo "... quaternion.i"
 	@echo "... quaternion.s"
@@ -631,9 +544,6 @@ help:
 	@echo "... vector4D.o"
 	@echo "... vector4D.i"
 	@echo "... vector4D.s"
-	@echo "... viewer.o"
-	@echo "... viewer.i"
-	@echo "... viewer.s"
 .PHONY : help
 
 

@@ -171,114 +171,6 @@ FinalProject/fast:
 	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/build
 .PHONY : FinalProject/fast
 
-application.o: application.cpp.o
-
-.PHONY : application.o
-
-# target to build an object file
-application.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/application.cpp.o
-.PHONY : application.cpp.o
-
-application.i: application.cpp.i
-
-.PHONY : application.i
-
-# target to preprocess a source file
-application.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/application.cpp.i
-.PHONY : application.cpp.i
-
-application.s: application.cpp.s
-
-.PHONY : application.s
-
-# target to generate assembly for a file
-application.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/application.cpp.s
-.PHONY : application.cpp.s
-
-bbox.o: bbox.cpp.o
-
-.PHONY : bbox.o
-
-# target to build an object file
-bbox.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/bbox.cpp.o
-.PHONY : bbox.cpp.o
-
-bbox.i: bbox.cpp.i
-
-.PHONY : bbox.i
-
-# target to preprocess a source file
-bbox.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/bbox.cpp.i
-.PHONY : bbox.cpp.i
-
-bbox.s: bbox.cpp.s
-
-.PHONY : bbox.s
-
-# target to generate assembly for a file
-bbox.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/bbox.cpp.s
-.PHONY : bbox.cpp.s
-
-bsdf.o: bsdf.cpp.o
-
-.PHONY : bsdf.o
-
-# target to build an object file
-bsdf.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/bsdf.cpp.o
-.PHONY : bsdf.cpp.o
-
-bsdf.i: bsdf.cpp.i
-
-.PHONY : bsdf.i
-
-# target to preprocess a source file
-bsdf.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/bsdf.cpp.i
-.PHONY : bsdf.cpp.i
-
-bsdf.s: bsdf.cpp.s
-
-.PHONY : bsdf.s
-
-# target to generate assembly for a file
-bsdf.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/bsdf.cpp.s
-.PHONY : bsdf.cpp.s
-
-bvh.o: bvh.cpp.o
-
-.PHONY : bvh.o
-
-# target to build an object file
-bvh.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/bvh.cpp.o
-.PHONY : bvh.cpp.o
-
-bvh.i: bvh.cpp.i
-
-.PHONY : bvh.i
-
-# target to preprocess a source file
-bvh.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/bvh.cpp.i
-.PHONY : bvh.cpp.i
-
-bvh.s: bvh.cpp.s
-
-.PHONY : bvh.s
-
-# target to generate assembly for a file
-bvh.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/bvh.cpp.s
-.PHONY : bvh.cpp.s
-
 camera.o: camera.cpp.o
 
 .PHONY : camera.o
@@ -306,275 +198,140 @@ camera.cpp.s:
 	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/camera.cpp.s
 .PHONY : camera.cpp.s
 
-collada/camera_info.o: collada/camera_info.cpp.o
+cloth.o: cloth.cpp.o
 
-.PHONY : collada/camera_info.o
-
-# target to build an object file
-collada/camera_info.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/camera_info.cpp.o
-.PHONY : collada/camera_info.cpp.o
-
-collada/camera_info.i: collada/camera_info.cpp.i
-
-.PHONY : collada/camera_info.i
-
-# target to preprocess a source file
-collada/camera_info.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/camera_info.cpp.i
-.PHONY : collada/camera_info.cpp.i
-
-collada/camera_info.s: collada/camera_info.cpp.s
-
-.PHONY : collada/camera_info.s
-
-# target to generate assembly for a file
-collada/camera_info.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/camera_info.cpp.s
-.PHONY : collada/camera_info.cpp.s
-
-collada/collada.o: collada/collada.cpp.o
-
-.PHONY : collada/collada.o
+.PHONY : cloth.o
 
 # target to build an object file
-collada/collada.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/collada.cpp.o
-.PHONY : collada/collada.cpp.o
+cloth.cpp.o:
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/cloth.cpp.o
+.PHONY : cloth.cpp.o
 
-collada/collada.i: collada/collada.cpp.i
+cloth.i: cloth.cpp.i
 
-.PHONY : collada/collada.i
+.PHONY : cloth.i
 
 # target to preprocess a source file
-collada/collada.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/collada.cpp.i
-.PHONY : collada/collada.cpp.i
+cloth.cpp.i:
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/cloth.cpp.i
+.PHONY : cloth.cpp.i
 
-collada/collada.s: collada/collada.cpp.s
+cloth.s: cloth.cpp.s
 
-.PHONY : collada/collada.s
+.PHONY : cloth.s
 
 # target to generate assembly for a file
-collada/collada.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/collada.cpp.s
-.PHONY : collada/collada.cpp.s
+cloth.cpp.s:
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/cloth.cpp.s
+.PHONY : cloth.cpp.s
 
-collada/light_info.o: collada/light_info.cpp.o
+clothMesh.o: clothMesh.cpp.o
 
-.PHONY : collada/light_info.o
+.PHONY : clothMesh.o
 
 # target to build an object file
-collada/light_info.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/light_info.cpp.o
-.PHONY : collada/light_info.cpp.o
+clothMesh.cpp.o:
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/clothMesh.cpp.o
+.PHONY : clothMesh.cpp.o
 
-collada/light_info.i: collada/light_info.cpp.i
+clothMesh.i: clothMesh.cpp.i
 
-.PHONY : collada/light_info.i
+.PHONY : clothMesh.i
 
 # target to preprocess a source file
-collada/light_info.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/light_info.cpp.i
-.PHONY : collada/light_info.cpp.i
+clothMesh.cpp.i:
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/clothMesh.cpp.i
+.PHONY : clothMesh.cpp.i
 
-collada/light_info.s: collada/light_info.cpp.s
+clothMesh.s: clothMesh.cpp.s
 
-.PHONY : collada/light_info.s
+.PHONY : clothMesh.s
 
 # target to generate assembly for a file
-collada/light_info.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/light_info.cpp.s
-.PHONY : collada/light_info.cpp.s
+clothMesh.cpp.s:
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/clothMesh.cpp.s
+.PHONY : clothMesh.cpp.s
 
-collada/material_info.o: collada/material_info.cpp.o
+clothSimulator.o: clothSimulator.cpp.o
 
-.PHONY : collada/material_info.o
+.PHONY : clothSimulator.o
 
 # target to build an object file
-collada/material_info.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/material_info.cpp.o
-.PHONY : collada/material_info.cpp.o
+clothSimulator.cpp.o:
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/clothSimulator.cpp.o
+.PHONY : clothSimulator.cpp.o
 
-collada/material_info.i: collada/material_info.cpp.i
+clothSimulator.i: clothSimulator.cpp.i
 
-.PHONY : collada/material_info.i
+.PHONY : clothSimulator.i
 
 # target to preprocess a source file
-collada/material_info.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/material_info.cpp.i
-.PHONY : collada/material_info.cpp.i
+clothSimulator.cpp.i:
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/clothSimulator.cpp.i
+.PHONY : clothSimulator.cpp.i
 
-collada/material_info.s: collada/material_info.cpp.s
+clothSimulator.s: clothSimulator.cpp.s
 
-.PHONY : collada/material_info.s
+.PHONY : clothSimulator.s
 
 # target to generate assembly for a file
-collada/material_info.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/material_info.cpp.s
-.PHONY : collada/material_info.cpp.s
+clothSimulator.cpp.s:
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/clothSimulator.cpp.s
+.PHONY : clothSimulator.cpp.s
 
-collada/polymesh_info.o: collada/polymesh_info.cpp.o
+collision/plane.o: collision/plane.cpp.o
 
-.PHONY : collada/polymesh_info.o
+.PHONY : collision/plane.o
 
 # target to build an object file
-collada/polymesh_info.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.o
-.PHONY : collada/polymesh_info.cpp.o
+collision/plane.cpp.o:
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collision/plane.cpp.o
+.PHONY : collision/plane.cpp.o
 
-collada/polymesh_info.i: collada/polymesh_info.cpp.i
+collision/plane.i: collision/plane.cpp.i
 
-.PHONY : collada/polymesh_info.i
+.PHONY : collision/plane.i
 
 # target to preprocess a source file
-collada/polymesh_info.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.i
-.PHONY : collada/polymesh_info.cpp.i
+collision/plane.cpp.i:
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collision/plane.cpp.i
+.PHONY : collision/plane.cpp.i
 
-collada/polymesh_info.s: collada/polymesh_info.cpp.s
+collision/plane.s: collision/plane.cpp.s
 
-.PHONY : collada/polymesh_info.s
+.PHONY : collision/plane.s
 
 # target to generate assembly for a file
-collada/polymesh_info.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.s
-.PHONY : collada/polymesh_info.cpp.s
+collision/plane.cpp.s:
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collision/plane.cpp.s
+.PHONY : collision/plane.cpp.s
 
-collada/sphere_info.o: collada/sphere_info.cpp.o
+collision/sphere.o: collision/sphere.cpp.o
 
-.PHONY : collada/sphere_info.o
+.PHONY : collision/sphere.o
 
 # target to build an object file
-collada/sphere_info.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.o
-.PHONY : collada/sphere_info.cpp.o
+collision/sphere.cpp.o:
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collision/sphere.cpp.o
+.PHONY : collision/sphere.cpp.o
 
-collada/sphere_info.i: collada/sphere_info.cpp.i
+collision/sphere.i: collision/sphere.cpp.i
 
-.PHONY : collada/sphere_info.i
-
-# target to preprocess a source file
-collada/sphere_info.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.i
-.PHONY : collada/sphere_info.cpp.i
-
-collada/sphere_info.s: collada/sphere_info.cpp.s
-
-.PHONY : collada/sphere_info.s
-
-# target to generate assembly for a file
-collada/sphere_info.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.s
-.PHONY : collada/sphere_info.cpp.s
-
-dynamic_scene/mesh.o: dynamic_scene/mesh.cpp.o
-
-.PHONY : dynamic_scene/mesh.o
-
-# target to build an object file
-dynamic_scene/mesh.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.o
-.PHONY : dynamic_scene/mesh.cpp.o
-
-dynamic_scene/mesh.i: dynamic_scene/mesh.cpp.i
-
-.PHONY : dynamic_scene/mesh.i
+.PHONY : collision/sphere.i
 
 # target to preprocess a source file
-dynamic_scene/mesh.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.i
-.PHONY : dynamic_scene/mesh.cpp.i
+collision/sphere.cpp.i:
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collision/sphere.cpp.i
+.PHONY : collision/sphere.cpp.i
 
-dynamic_scene/mesh.s: dynamic_scene/mesh.cpp.s
+collision/sphere.s: collision/sphere.cpp.s
 
-.PHONY : dynamic_scene/mesh.s
-
-# target to generate assembly for a file
-dynamic_scene/mesh.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.s
-.PHONY : dynamic_scene/mesh.cpp.s
-
-dynamic_scene/scene.o: dynamic_scene/scene.cpp.o
-
-.PHONY : dynamic_scene/scene.o
-
-# target to build an object file
-dynamic_scene/scene.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.o
-.PHONY : dynamic_scene/scene.cpp.o
-
-dynamic_scene/scene.i: dynamic_scene/scene.cpp.i
-
-.PHONY : dynamic_scene/scene.i
-
-# target to preprocess a source file
-dynamic_scene/scene.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.i
-.PHONY : dynamic_scene/scene.cpp.i
-
-dynamic_scene/scene.s: dynamic_scene/scene.cpp.s
-
-.PHONY : dynamic_scene/scene.s
+.PHONY : collision/sphere.s
 
 # target to generate assembly for a file
-dynamic_scene/scene.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.s
-.PHONY : dynamic_scene/scene.cpp.s
-
-dynamic_scene/sphere.o: dynamic_scene/sphere.cpp.o
-
-.PHONY : dynamic_scene/sphere.o
-
-# target to build an object file
-dynamic_scene/sphere.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.o
-.PHONY : dynamic_scene/sphere.cpp.o
-
-dynamic_scene/sphere.i: dynamic_scene/sphere.cpp.i
-
-.PHONY : dynamic_scene/sphere.i
-
-# target to preprocess a source file
-dynamic_scene/sphere.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.i
-.PHONY : dynamic_scene/sphere.cpp.i
-
-dynamic_scene/sphere.s: dynamic_scene/sphere.cpp.s
-
-.PHONY : dynamic_scene/sphere.s
-
-# target to generate assembly for a file
-dynamic_scene/sphere.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.s
-.PHONY : dynamic_scene/sphere.cpp.s
-
-halfEdgeMesh.o: halfEdgeMesh.cpp.o
-
-.PHONY : halfEdgeMesh.o
-
-# target to build an object file
-halfEdgeMesh.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.o
-.PHONY : halfEdgeMesh.cpp.o
-
-halfEdgeMesh.i: halfEdgeMesh.cpp.i
-
-.PHONY : halfEdgeMesh.i
-
-# target to preprocess a source file
-halfEdgeMesh.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.i
-.PHONY : halfEdgeMesh.cpp.i
-
-halfEdgeMesh.s: halfEdgeMesh.cpp.s
-
-.PHONY : halfEdgeMesh.s
-
-# target to generate assembly for a file
-halfEdgeMesh.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.s
-.PHONY : halfEdgeMesh.cpp.s
+collision/sphere.cpp.s:
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collision/sphere.cpp.s
+.PHONY : collision/sphere.cpp.s
 
 main.o: main.cpp.o
 
@@ -603,33 +360,6 @@ main.cpp.s:
 	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-meshEdit.o: meshEdit.cpp.o
-
-.PHONY : meshEdit.o
-
-# target to build an object file
-meshEdit.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/meshEdit.cpp.o
-.PHONY : meshEdit.cpp.o
-
-meshEdit.i: meshEdit.cpp.i
-
-.PHONY : meshEdit.i
-
-# target to preprocess a source file
-meshEdit.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/meshEdit.cpp.i
-.PHONY : meshEdit.cpp.i
-
-meshEdit.s: meshEdit.cpp.s
-
-.PHONY : meshEdit.s
-
-# target to generate assembly for a file
-meshEdit.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/meshEdit.cpp.s
-.PHONY : meshEdit.cpp.s
-
 misc/sphere_drawing.o: misc/sphere_drawing.cpp.o
 
 .PHONY : misc/sphere_drawing.o
@@ -657,195 +387,6 @@ misc/sphere_drawing.cpp.s:
 	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.s
 .PHONY : misc/sphere_drawing.cpp.s
 
-pathtracer.o: pathtracer.cpp.o
-
-.PHONY : pathtracer.o
-
-# target to build an object file
-pathtracer.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/pathtracer.cpp.o
-.PHONY : pathtracer.cpp.o
-
-pathtracer.i: pathtracer.cpp.i
-
-.PHONY : pathtracer.i
-
-# target to preprocess a source file
-pathtracer.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/pathtracer.cpp.i
-.PHONY : pathtracer.cpp.i
-
-pathtracer.s: pathtracer.cpp.s
-
-.PHONY : pathtracer.s
-
-# target to generate assembly for a file
-pathtracer.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/pathtracer.cpp.s
-.PHONY : pathtracer.cpp.s
-
-sampler.o: sampler.cpp.o
-
-.PHONY : sampler.o
-
-# target to build an object file
-sampler.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/sampler.cpp.o
-.PHONY : sampler.cpp.o
-
-sampler.i: sampler.cpp.i
-
-.PHONY : sampler.i
-
-# target to preprocess a source file
-sampler.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/sampler.cpp.i
-.PHONY : sampler.cpp.i
-
-sampler.s: sampler.cpp.s
-
-.PHONY : sampler.s
-
-# target to generate assembly for a file
-sampler.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/sampler.cpp.s
-.PHONY : sampler.cpp.s
-
-static_scene/environment_light.o: static_scene/environment_light.cpp.o
-
-.PHONY : static_scene/environment_light.o
-
-# target to build an object file
-static_scene/environment_light.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.o
-.PHONY : static_scene/environment_light.cpp.o
-
-static_scene/environment_light.i: static_scene/environment_light.cpp.i
-
-.PHONY : static_scene/environment_light.i
-
-# target to preprocess a source file
-static_scene/environment_light.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.i
-.PHONY : static_scene/environment_light.cpp.i
-
-static_scene/environment_light.s: static_scene/environment_light.cpp.s
-
-.PHONY : static_scene/environment_light.s
-
-# target to generate assembly for a file
-static_scene/environment_light.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.s
-.PHONY : static_scene/environment_light.cpp.s
-
-static_scene/light.o: static_scene/light.cpp.o
-
-.PHONY : static_scene/light.o
-
-# target to build an object file
-static_scene/light.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/light.cpp.o
-.PHONY : static_scene/light.cpp.o
-
-static_scene/light.i: static_scene/light.cpp.i
-
-.PHONY : static_scene/light.i
-
-# target to preprocess a source file
-static_scene/light.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/light.cpp.i
-.PHONY : static_scene/light.cpp.i
-
-static_scene/light.s: static_scene/light.cpp.s
-
-.PHONY : static_scene/light.s
-
-# target to generate assembly for a file
-static_scene/light.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/light.cpp.s
-.PHONY : static_scene/light.cpp.s
-
-static_scene/object.o: static_scene/object.cpp.o
-
-.PHONY : static_scene/object.o
-
-# target to build an object file
-static_scene/object.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/object.cpp.o
-.PHONY : static_scene/object.cpp.o
-
-static_scene/object.i: static_scene/object.cpp.i
-
-.PHONY : static_scene/object.i
-
-# target to preprocess a source file
-static_scene/object.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/object.cpp.i
-.PHONY : static_scene/object.cpp.i
-
-static_scene/object.s: static_scene/object.cpp.s
-
-.PHONY : static_scene/object.s
-
-# target to generate assembly for a file
-static_scene/object.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/object.cpp.s
-.PHONY : static_scene/object.cpp.s
-
-static_scene/sphere.o: static_scene/sphere.cpp.o
-
-.PHONY : static_scene/sphere.o
-
-# target to build an object file
-static_scene/sphere.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.o
-.PHONY : static_scene/sphere.cpp.o
-
-static_scene/sphere.i: static_scene/sphere.cpp.i
-
-.PHONY : static_scene/sphere.i
-
-# target to preprocess a source file
-static_scene/sphere.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.i
-.PHONY : static_scene/sphere.cpp.i
-
-static_scene/sphere.s: static_scene/sphere.cpp.s
-
-.PHONY : static_scene/sphere.s
-
-# target to generate assembly for a file
-static_scene/sphere.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.s
-.PHONY : static_scene/sphere.cpp.s
-
-static_scene/triangle.o: static_scene/triangle.cpp.o
-
-.PHONY : static_scene/triangle.o
-
-# target to build an object file
-static_scene/triangle.cpp.o:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.o
-.PHONY : static_scene/triangle.cpp.o
-
-static_scene/triangle.i: static_scene/triangle.cpp.i
-
-.PHONY : static_scene/triangle.i
-
-# target to preprocess a source file
-static_scene/triangle.cpp.i:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.i
-.PHONY : static_scene/triangle.cpp.i
-
-static_scene/triangle.s: static_scene/triangle.cpp.s
-
-.PHONY : static_scene/triangle.s
-
-# target to generate assembly for a file
-static_scene/triangle.cpp.s:
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug && $(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.s
-.PHONY : static_scene/triangle.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -859,81 +400,30 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... FinalProject"
-	@echo "... application.o"
-	@echo "... application.i"
-	@echo "... application.s"
-	@echo "... bbox.o"
-	@echo "... bbox.i"
-	@echo "... bbox.s"
-	@echo "... bsdf.o"
-	@echo "... bsdf.i"
-	@echo "... bsdf.s"
-	@echo "... bvh.o"
-	@echo "... bvh.i"
-	@echo "... bvh.s"
 	@echo "... camera.o"
 	@echo "... camera.i"
 	@echo "... camera.s"
-	@echo "... collada/camera_info.o"
-	@echo "... collada/camera_info.i"
-	@echo "... collada/camera_info.s"
-	@echo "... collada/collada.o"
-	@echo "... collada/collada.i"
-	@echo "... collada/collada.s"
-	@echo "... collada/light_info.o"
-	@echo "... collada/light_info.i"
-	@echo "... collada/light_info.s"
-	@echo "... collada/material_info.o"
-	@echo "... collada/material_info.i"
-	@echo "... collada/material_info.s"
-	@echo "... collada/polymesh_info.o"
-	@echo "... collada/polymesh_info.i"
-	@echo "... collada/polymesh_info.s"
-	@echo "... collada/sphere_info.o"
-	@echo "... collada/sphere_info.i"
-	@echo "... collada/sphere_info.s"
-	@echo "... dynamic_scene/mesh.o"
-	@echo "... dynamic_scene/mesh.i"
-	@echo "... dynamic_scene/mesh.s"
-	@echo "... dynamic_scene/scene.o"
-	@echo "... dynamic_scene/scene.i"
-	@echo "... dynamic_scene/scene.s"
-	@echo "... dynamic_scene/sphere.o"
-	@echo "... dynamic_scene/sphere.i"
-	@echo "... dynamic_scene/sphere.s"
-	@echo "... halfEdgeMesh.o"
-	@echo "... halfEdgeMesh.i"
-	@echo "... halfEdgeMesh.s"
+	@echo "... cloth.o"
+	@echo "... cloth.i"
+	@echo "... cloth.s"
+	@echo "... clothMesh.o"
+	@echo "... clothMesh.i"
+	@echo "... clothMesh.s"
+	@echo "... clothSimulator.o"
+	@echo "... clothSimulator.i"
+	@echo "... clothSimulator.s"
+	@echo "... collision/plane.o"
+	@echo "... collision/plane.i"
+	@echo "... collision/plane.s"
+	@echo "... collision/sphere.o"
+	@echo "... collision/sphere.i"
+	@echo "... collision/sphere.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... meshEdit.o"
-	@echo "... meshEdit.i"
-	@echo "... meshEdit.s"
 	@echo "... misc/sphere_drawing.o"
 	@echo "... misc/sphere_drawing.i"
 	@echo "... misc/sphere_drawing.s"
-	@echo "... pathtracer.o"
-	@echo "... pathtracer.i"
-	@echo "... pathtracer.s"
-	@echo "... sampler.o"
-	@echo "... sampler.i"
-	@echo "... sampler.s"
-	@echo "... static_scene/environment_light.o"
-	@echo "... static_scene/environment_light.i"
-	@echo "... static_scene/environment_light.s"
-	@echo "... static_scene/light.o"
-	@echo "... static_scene/light.i"
-	@echo "... static_scene/light.s"
-	@echo "... static_scene/object.o"
-	@echo "... static_scene/object.i"
-	@echo "... static_scene/object.s"
-	@echo "... static_scene/sphere.o"
-	@echo "... static_scene/sphere.i"
-	@echo "... static_scene/sphere.s"
-	@echo "... static_scene/triangle.o"
-	@echo "... static_scene/triangle.i"
-	@echo "... static_scene/triangle.s"
 .PHONY : help
 
 

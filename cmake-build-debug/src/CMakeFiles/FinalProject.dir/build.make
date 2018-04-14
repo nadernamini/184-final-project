@@ -57,585 +57,105 @@ include src/CMakeFiles/FinalProject.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/FinalProject.dir/flags.make
 
-src/CMakeFiles/FinalProject.dir/collada/collada.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/collada/collada.cpp.o: ../src/collada/collada.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/FinalProject.dir/collada/collada.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/collada/collada.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collada/collada.cpp
+src/CMakeFiles/FinalProject.dir/cloth.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
+src/CMakeFiles/FinalProject.dir/cloth.cpp.o: ../src/cloth.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/FinalProject.dir/cloth.cpp.o"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/cloth.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/cloth.cpp
 
-src/CMakeFiles/FinalProject.dir/collada/collada.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/collada/collada.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collada/collada.cpp > CMakeFiles/FinalProject.dir/collada/collada.cpp.i
+src/CMakeFiles/FinalProject.dir/cloth.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/cloth.cpp.i"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/cloth.cpp > CMakeFiles/FinalProject.dir/cloth.cpp.i
 
-src/CMakeFiles/FinalProject.dir/collada/collada.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/collada/collada.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collada/collada.cpp -o CMakeFiles/FinalProject.dir/collada/collada.cpp.s
+src/CMakeFiles/FinalProject.dir/cloth.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/cloth.cpp.s"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/cloth.cpp -o CMakeFiles/FinalProject.dir/cloth.cpp.s
 
-src/CMakeFiles/FinalProject.dir/collada/collada.cpp.o.requires:
+src/CMakeFiles/FinalProject.dir/cloth.cpp.o.requires:
 
-.PHONY : src/CMakeFiles/FinalProject.dir/collada/collada.cpp.o.requires
+.PHONY : src/CMakeFiles/FinalProject.dir/cloth.cpp.o.requires
 
-src/CMakeFiles/FinalProject.dir/collada/collada.cpp.o.provides: src/CMakeFiles/FinalProject.dir/collada/collada.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/collada.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/collada/collada.cpp.o.provides
+src/CMakeFiles/FinalProject.dir/cloth.cpp.o.provides: src/CMakeFiles/FinalProject.dir/cloth.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/cloth.cpp.o.provides.build
+.PHONY : src/CMakeFiles/FinalProject.dir/cloth.cpp.o.provides
 
-src/CMakeFiles/FinalProject.dir/collada/collada.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/collada/collada.cpp.o
+src/CMakeFiles/FinalProject.dir/cloth.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/cloth.cpp.o
 
 
-src/CMakeFiles/FinalProject.dir/collada/camera_info.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/collada/camera_info.cpp.o: ../src/collada/camera_info.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/FinalProject.dir/collada/camera_info.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/collada/camera_info.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collada/camera_info.cpp
+src/CMakeFiles/FinalProject.dir/clothMesh.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
+src/CMakeFiles/FinalProject.dir/clothMesh.cpp.o: ../src/clothMesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/FinalProject.dir/clothMesh.cpp.o"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/clothMesh.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/clothMesh.cpp
 
-src/CMakeFiles/FinalProject.dir/collada/camera_info.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/collada/camera_info.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collada/camera_info.cpp > CMakeFiles/FinalProject.dir/collada/camera_info.cpp.i
+src/CMakeFiles/FinalProject.dir/clothMesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/clothMesh.cpp.i"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/clothMesh.cpp > CMakeFiles/FinalProject.dir/clothMesh.cpp.i
 
-src/CMakeFiles/FinalProject.dir/collada/camera_info.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/collada/camera_info.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collada/camera_info.cpp -o CMakeFiles/FinalProject.dir/collada/camera_info.cpp.s
+src/CMakeFiles/FinalProject.dir/clothMesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/clothMesh.cpp.s"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/clothMesh.cpp -o CMakeFiles/FinalProject.dir/clothMesh.cpp.s
 
-src/CMakeFiles/FinalProject.dir/collada/camera_info.cpp.o.requires:
+src/CMakeFiles/FinalProject.dir/clothMesh.cpp.o.requires:
 
-.PHONY : src/CMakeFiles/FinalProject.dir/collada/camera_info.cpp.o.requires
+.PHONY : src/CMakeFiles/FinalProject.dir/clothMesh.cpp.o.requires
 
-src/CMakeFiles/FinalProject.dir/collada/camera_info.cpp.o.provides: src/CMakeFiles/FinalProject.dir/collada/camera_info.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/camera_info.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/collada/camera_info.cpp.o.provides
+src/CMakeFiles/FinalProject.dir/clothMesh.cpp.o.provides: src/CMakeFiles/FinalProject.dir/clothMesh.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/clothMesh.cpp.o.provides.build
+.PHONY : src/CMakeFiles/FinalProject.dir/clothMesh.cpp.o.provides
 
-src/CMakeFiles/FinalProject.dir/collada/camera_info.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/collada/camera_info.cpp.o
+src/CMakeFiles/FinalProject.dir/clothMesh.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/clothMesh.cpp.o
 
 
-src/CMakeFiles/FinalProject.dir/collada/light_info.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/collada/light_info.cpp.o: ../src/collada/light_info.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/FinalProject.dir/collada/light_info.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/collada/light_info.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collada/light_info.cpp
+src/CMakeFiles/FinalProject.dir/collision/sphere.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
+src/CMakeFiles/FinalProject.dir/collision/sphere.cpp.o: ../src/collision/sphere.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/FinalProject.dir/collision/sphere.cpp.o"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/collision/sphere.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collision/sphere.cpp
 
-src/CMakeFiles/FinalProject.dir/collada/light_info.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/collada/light_info.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collada/light_info.cpp > CMakeFiles/FinalProject.dir/collada/light_info.cpp.i
+src/CMakeFiles/FinalProject.dir/collision/sphere.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/collision/sphere.cpp.i"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collision/sphere.cpp > CMakeFiles/FinalProject.dir/collision/sphere.cpp.i
 
-src/CMakeFiles/FinalProject.dir/collada/light_info.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/collada/light_info.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collada/light_info.cpp -o CMakeFiles/FinalProject.dir/collada/light_info.cpp.s
+src/CMakeFiles/FinalProject.dir/collision/sphere.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/collision/sphere.cpp.s"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collision/sphere.cpp -o CMakeFiles/FinalProject.dir/collision/sphere.cpp.s
 
-src/CMakeFiles/FinalProject.dir/collada/light_info.cpp.o.requires:
+src/CMakeFiles/FinalProject.dir/collision/sphere.cpp.o.requires:
 
-.PHONY : src/CMakeFiles/FinalProject.dir/collada/light_info.cpp.o.requires
+.PHONY : src/CMakeFiles/FinalProject.dir/collision/sphere.cpp.o.requires
 
-src/CMakeFiles/FinalProject.dir/collada/light_info.cpp.o.provides: src/CMakeFiles/FinalProject.dir/collada/light_info.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/light_info.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/collada/light_info.cpp.o.provides
+src/CMakeFiles/FinalProject.dir/collision/sphere.cpp.o.provides: src/CMakeFiles/FinalProject.dir/collision/sphere.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collision/sphere.cpp.o.provides.build
+.PHONY : src/CMakeFiles/FinalProject.dir/collision/sphere.cpp.o.provides
 
-src/CMakeFiles/FinalProject.dir/collada/light_info.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/collada/light_info.cpp.o
+src/CMakeFiles/FinalProject.dir/collision/sphere.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/collision/sphere.cpp.o
 
 
-src/CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.o: ../src/collada/sphere_info.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collada/sphere_info.cpp
+src/CMakeFiles/FinalProject.dir/collision/plane.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
+src/CMakeFiles/FinalProject.dir/collision/plane.cpp.o: ../src/collision/plane.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/FinalProject.dir/collision/plane.cpp.o"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/collision/plane.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collision/plane.cpp
 
-src/CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collada/sphere_info.cpp > CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.i
+src/CMakeFiles/FinalProject.dir/collision/plane.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/collision/plane.cpp.i"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collision/plane.cpp > CMakeFiles/FinalProject.dir/collision/plane.cpp.i
 
-src/CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collada/sphere_info.cpp -o CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.s
+src/CMakeFiles/FinalProject.dir/collision/plane.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/collision/plane.cpp.s"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collision/plane.cpp -o CMakeFiles/FinalProject.dir/collision/plane.cpp.s
 
-src/CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.o.requires:
+src/CMakeFiles/FinalProject.dir/collision/plane.cpp.o.requires:
 
-.PHONY : src/CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.o.requires
+.PHONY : src/CMakeFiles/FinalProject.dir/collision/plane.cpp.o.requires
 
-src/CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.o.provides: src/CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.o.provides
+src/CMakeFiles/FinalProject.dir/collision/plane.cpp.o.provides: src/CMakeFiles/FinalProject.dir/collision/plane.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collision/plane.cpp.o.provides.build
+.PHONY : src/CMakeFiles/FinalProject.dir/collision/plane.cpp.o.provides
 
-src/CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.o: ../src/collada/polymesh_info.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collada/polymesh_info.cpp
-
-src/CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collada/polymesh_info.cpp > CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.i
-
-src/CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collada/polymesh_info.cpp -o CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.s
-
-src/CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.o.provides: src/CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/collada/material_info.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/collada/material_info.cpp.o: ../src/collada/material_info.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/FinalProject.dir/collada/material_info.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/collada/material_info.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collada/material_info.cpp
-
-src/CMakeFiles/FinalProject.dir/collada/material_info.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/collada/material_info.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collada/material_info.cpp > CMakeFiles/FinalProject.dir/collada/material_info.cpp.i
-
-src/CMakeFiles/FinalProject.dir/collada/material_info.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/collada/material_info.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/collada/material_info.cpp -o CMakeFiles/FinalProject.dir/collada/material_info.cpp.s
-
-src/CMakeFiles/FinalProject.dir/collada/material_info.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/collada/material_info.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/collada/material_info.cpp.o.provides: src/CMakeFiles/FinalProject.dir/collada/material_info.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/collada/material_info.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/collada/material_info.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/collada/material_info.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/collada/material_info.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.o: ../src/dynamic_scene/mesh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/dynamic_scene/mesh.cpp
-
-src/CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/dynamic_scene/mesh.cpp > CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.i
-
-src/CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/dynamic_scene/mesh.cpp -o CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.s
-
-src/CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.o.provides: src/CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.o: ../src/dynamic_scene/scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/dynamic_scene/scene.cpp
-
-src/CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/dynamic_scene/scene.cpp > CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.i
-
-src/CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/dynamic_scene/scene.cpp -o CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.s
-
-src/CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.o.provides: src/CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.o: ../src/dynamic_scene/sphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/dynamic_scene/sphere.cpp
-
-src/CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/dynamic_scene/sphere.cpp > CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.i
-
-src/CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/dynamic_scene/sphere.cpp -o CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.s
-
-src/CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.o.provides: src/CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.o: ../src/static_scene/sphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/static_scene/sphere.cpp
-
-src/CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/static_scene/sphere.cpp > CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.i
-
-src/CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/static_scene/sphere.cpp -o CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.s
-
-src/CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.o.provides: src/CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.o: ../src/static_scene/triangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/static_scene/triangle.cpp
-
-src/CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/static_scene/triangle.cpp > CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.i
-
-src/CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/static_scene/triangle.cpp -o CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.s
-
-src/CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.o.provides: src/CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/static_scene/object.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/static_scene/object.cpp.o: ../src/static_scene/object.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/FinalProject.dir/static_scene/object.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/static_scene/object.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/static_scene/object.cpp
-
-src/CMakeFiles/FinalProject.dir/static_scene/object.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/static_scene/object.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/static_scene/object.cpp > CMakeFiles/FinalProject.dir/static_scene/object.cpp.i
-
-src/CMakeFiles/FinalProject.dir/static_scene/object.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/static_scene/object.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/static_scene/object.cpp -o CMakeFiles/FinalProject.dir/static_scene/object.cpp.s
-
-src/CMakeFiles/FinalProject.dir/static_scene/object.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/static_scene/object.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/static_scene/object.cpp.o.provides: src/CMakeFiles/FinalProject.dir/static_scene/object.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/object.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/static_scene/object.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/static_scene/object.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/static_scene/object.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.o: ../src/static_scene/environment_light.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/static_scene/environment_light.cpp
-
-src/CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/static_scene/environment_light.cpp > CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.i
-
-src/CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/static_scene/environment_light.cpp -o CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.s
-
-src/CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.o.provides: src/CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/static_scene/light.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/static_scene/light.cpp.o: ../src/static_scene/light.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/FinalProject.dir/static_scene/light.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/static_scene/light.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/static_scene/light.cpp
-
-src/CMakeFiles/FinalProject.dir/static_scene/light.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/static_scene/light.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/static_scene/light.cpp > CMakeFiles/FinalProject.dir/static_scene/light.cpp.i
-
-src/CMakeFiles/FinalProject.dir/static_scene/light.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/static_scene/light.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/static_scene/light.cpp -o CMakeFiles/FinalProject.dir/static_scene/light.cpp.s
-
-src/CMakeFiles/FinalProject.dir/static_scene/light.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/static_scene/light.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/static_scene/light.cpp.o.provides: src/CMakeFiles/FinalProject.dir/static_scene/light.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/static_scene/light.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/static_scene/light.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/static_scene/light.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/static_scene/light.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.o: ../src/halfEdgeMesh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/halfEdgeMesh.cpp
-
-src/CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/halfEdgeMesh.cpp > CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.i
-
-src/CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/halfEdgeMesh.cpp -o CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.s
-
-src/CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.o.provides: src/CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/meshEdit.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/meshEdit.cpp.o: ../src/meshEdit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/FinalProject.dir/meshEdit.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/meshEdit.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/meshEdit.cpp
-
-src/CMakeFiles/FinalProject.dir/meshEdit.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/meshEdit.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/meshEdit.cpp > CMakeFiles/FinalProject.dir/meshEdit.cpp.i
-
-src/CMakeFiles/FinalProject.dir/meshEdit.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/meshEdit.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/meshEdit.cpp -o CMakeFiles/FinalProject.dir/meshEdit.cpp.s
-
-src/CMakeFiles/FinalProject.dir/meshEdit.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/meshEdit.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/meshEdit.cpp.o.provides: src/CMakeFiles/FinalProject.dir/meshEdit.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/meshEdit.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/meshEdit.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/meshEdit.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/meshEdit.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/bvh.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/bvh.cpp.o: ../src/bvh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/FinalProject.dir/bvh.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/bvh.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/bvh.cpp
-
-src/CMakeFiles/FinalProject.dir/bvh.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/bvh.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/bvh.cpp > CMakeFiles/FinalProject.dir/bvh.cpp.i
-
-src/CMakeFiles/FinalProject.dir/bvh.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/bvh.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/bvh.cpp -o CMakeFiles/FinalProject.dir/bvh.cpp.s
-
-src/CMakeFiles/FinalProject.dir/bvh.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/bvh.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/bvh.cpp.o.provides: src/CMakeFiles/FinalProject.dir/bvh.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/bvh.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/bvh.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/bvh.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/bvh.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/bbox.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/bbox.cpp.o: ../src/bbox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/FinalProject.dir/bbox.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/bbox.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/bbox.cpp
-
-src/CMakeFiles/FinalProject.dir/bbox.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/bbox.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/bbox.cpp > CMakeFiles/FinalProject.dir/bbox.cpp.i
-
-src/CMakeFiles/FinalProject.dir/bbox.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/bbox.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/bbox.cpp -o CMakeFiles/FinalProject.dir/bbox.cpp.s
-
-src/CMakeFiles/FinalProject.dir/bbox.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/bbox.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/bbox.cpp.o.provides: src/CMakeFiles/FinalProject.dir/bbox.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/bbox.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/bbox.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/bbox.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/bbox.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/bsdf.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/bsdf.cpp.o: ../src/bsdf.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/FinalProject.dir/bsdf.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/bsdf.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/bsdf.cpp
-
-src/CMakeFiles/FinalProject.dir/bsdf.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/bsdf.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/bsdf.cpp > CMakeFiles/FinalProject.dir/bsdf.cpp.i
-
-src/CMakeFiles/FinalProject.dir/bsdf.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/bsdf.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/bsdf.cpp -o CMakeFiles/FinalProject.dir/bsdf.cpp.s
-
-src/CMakeFiles/FinalProject.dir/bsdf.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/bsdf.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/bsdf.cpp.o.provides: src/CMakeFiles/FinalProject.dir/bsdf.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/bsdf.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/bsdf.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/bsdf.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/bsdf.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/camera.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/camera.cpp.o: ../src/camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/FinalProject.dir/camera.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/camera.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/camera.cpp
-
-src/CMakeFiles/FinalProject.dir/camera.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/camera.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/camera.cpp > CMakeFiles/FinalProject.dir/camera.cpp.i
-
-src/CMakeFiles/FinalProject.dir/camera.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/camera.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/camera.cpp -o CMakeFiles/FinalProject.dir/camera.cpp.s
-
-src/CMakeFiles/FinalProject.dir/camera.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/camera.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/camera.cpp.o.provides: src/CMakeFiles/FinalProject.dir/camera.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/camera.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/camera.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/camera.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/camera.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/sampler.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/sampler.cpp.o: ../src/sampler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/FinalProject.dir/sampler.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/sampler.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/sampler.cpp
-
-src/CMakeFiles/FinalProject.dir/sampler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/sampler.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/sampler.cpp > CMakeFiles/FinalProject.dir/sampler.cpp.i
-
-src/CMakeFiles/FinalProject.dir/sampler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/sampler.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/sampler.cpp -o CMakeFiles/FinalProject.dir/sampler.cpp.s
-
-src/CMakeFiles/FinalProject.dir/sampler.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/sampler.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/sampler.cpp.o.provides: src/CMakeFiles/FinalProject.dir/sampler.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/sampler.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/sampler.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/sampler.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/sampler.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/pathtracer.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/pathtracer.cpp.o: ../src/pathtracer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/FinalProject.dir/pathtracer.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/pathtracer.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/pathtracer.cpp
-
-src/CMakeFiles/FinalProject.dir/pathtracer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/pathtracer.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/pathtracer.cpp > CMakeFiles/FinalProject.dir/pathtracer.cpp.i
-
-src/CMakeFiles/FinalProject.dir/pathtracer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/pathtracer.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/pathtracer.cpp -o CMakeFiles/FinalProject.dir/pathtracer.cpp.s
-
-src/CMakeFiles/FinalProject.dir/pathtracer.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/pathtracer.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/pathtracer.cpp.o.provides: src/CMakeFiles/FinalProject.dir/pathtracer.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/pathtracer.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/pathtracer.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/pathtracer.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/pathtracer.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o: ../src/misc/sphere_drawing.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/misc/sphere_drawing.cpp
-
-src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/misc/sphere_drawing.cpp > CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.i
-
-src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/misc/sphere_drawing.cpp -o CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.s
-
-src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o.provides: src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o
-
-
-src/CMakeFiles/FinalProject.dir/application.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
-src/CMakeFiles/FinalProject.dir/application.cpp.o: ../src/application.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/FinalProject.dir/application.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/application.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/application.cpp
-
-src/CMakeFiles/FinalProject.dir/application.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/application.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/application.cpp > CMakeFiles/FinalProject.dir/application.cpp.i
-
-src/CMakeFiles/FinalProject.dir/application.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/application.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/application.cpp -o CMakeFiles/FinalProject.dir/application.cpp.s
-
-src/CMakeFiles/FinalProject.dir/application.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/FinalProject.dir/application.cpp.o.requires
-
-src/CMakeFiles/FinalProject.dir/application.cpp.o.provides: src/CMakeFiles/FinalProject.dir/application.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/application.cpp.o.provides.build
-.PHONY : src/CMakeFiles/FinalProject.dir/application.cpp.o.provides
-
-src/CMakeFiles/FinalProject.dir/application.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/application.cpp.o
+src/CMakeFiles/FinalProject.dir/collision/plane.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/collision/plane.cpp.o
 
 
 src/CMakeFiles/FinalProject.dir/main.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
 src/CMakeFiles/FinalProject.dir/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/FinalProject.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/FinalProject.dir/main.cpp.o"
 	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/main.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/main.cpp
 
 src/CMakeFiles/FinalProject.dir/main.cpp.i: cmake_force
@@ -657,70 +177,106 @@ src/CMakeFiles/FinalProject.dir/main.cpp.o.provides: src/CMakeFiles/FinalProject
 src/CMakeFiles/FinalProject.dir/main.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/main.cpp.o
 
 
+src/CMakeFiles/FinalProject.dir/clothSimulator.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
+src/CMakeFiles/FinalProject.dir/clothSimulator.cpp.o: ../src/clothSimulator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/FinalProject.dir/clothSimulator.cpp.o"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/clothSimulator.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/clothSimulator.cpp
+
+src/CMakeFiles/FinalProject.dir/clothSimulator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/clothSimulator.cpp.i"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/clothSimulator.cpp > CMakeFiles/FinalProject.dir/clothSimulator.cpp.i
+
+src/CMakeFiles/FinalProject.dir/clothSimulator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/clothSimulator.cpp.s"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/clothSimulator.cpp -o CMakeFiles/FinalProject.dir/clothSimulator.cpp.s
+
+src/CMakeFiles/FinalProject.dir/clothSimulator.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/FinalProject.dir/clothSimulator.cpp.o.requires
+
+src/CMakeFiles/FinalProject.dir/clothSimulator.cpp.o.provides: src/CMakeFiles/FinalProject.dir/clothSimulator.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/clothSimulator.cpp.o.provides.build
+.PHONY : src/CMakeFiles/FinalProject.dir/clothSimulator.cpp.o.provides
+
+src/CMakeFiles/FinalProject.dir/clothSimulator.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/clothSimulator.cpp.o
+
+
+src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
+src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o: ../src/misc/sphere_drawing.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/misc/sphere_drawing.cpp
+
+src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.i"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/misc/sphere_drawing.cpp > CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.i
+
+src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.s"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/misc/sphere_drawing.cpp -o CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.s
+
+src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o.requires
+
+src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o.provides: src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o.provides.build
+.PHONY : src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o.provides
+
+src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o
+
+
+src/CMakeFiles/FinalProject.dir/camera.cpp.o: src/CMakeFiles/FinalProject.dir/flags.make
+src/CMakeFiles/FinalProject.dir/camera.cpp.o: ../src/camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/FinalProject.dir/camera.cpp.o"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProject.dir/camera.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/camera.cpp
+
+src/CMakeFiles/FinalProject.dir/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProject.dir/camera.cpp.i"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/camera.cpp > CMakeFiles/FinalProject.dir/camera.cpp.i
+
+src/CMakeFiles/FinalProject.dir/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProject.dir/camera.cpp.s"
+	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/src/camera.cpp -o CMakeFiles/FinalProject.dir/camera.cpp.s
+
+src/CMakeFiles/FinalProject.dir/camera.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/FinalProject.dir/camera.cpp.o.requires
+
+src/CMakeFiles/FinalProject.dir/camera.cpp.o.provides: src/CMakeFiles/FinalProject.dir/camera.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/camera.cpp.o.provides.build
+.PHONY : src/CMakeFiles/FinalProject.dir/camera.cpp.o.provides
+
+src/CMakeFiles/FinalProject.dir/camera.cpp.o.provides.build: src/CMakeFiles/FinalProject.dir/camera.cpp.o
+
+
 # Object files for target FinalProject
 FinalProject_OBJECTS = \
-"CMakeFiles/FinalProject.dir/collada/collada.cpp.o" \
-"CMakeFiles/FinalProject.dir/collada/camera_info.cpp.o" \
-"CMakeFiles/FinalProject.dir/collada/light_info.cpp.o" \
-"CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.o" \
-"CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.o" \
-"CMakeFiles/FinalProject.dir/collada/material_info.cpp.o" \
-"CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.o" \
-"CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.o" \
-"CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.o" \
-"CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.o" \
-"CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.o" \
-"CMakeFiles/FinalProject.dir/static_scene/object.cpp.o" \
-"CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.o" \
-"CMakeFiles/FinalProject.dir/static_scene/light.cpp.o" \
-"CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.o" \
-"CMakeFiles/FinalProject.dir/meshEdit.cpp.o" \
-"CMakeFiles/FinalProject.dir/bvh.cpp.o" \
-"CMakeFiles/FinalProject.dir/bbox.cpp.o" \
-"CMakeFiles/FinalProject.dir/bsdf.cpp.o" \
-"CMakeFiles/FinalProject.dir/camera.cpp.o" \
-"CMakeFiles/FinalProject.dir/sampler.cpp.o" \
-"CMakeFiles/FinalProject.dir/pathtracer.cpp.o" \
+"CMakeFiles/FinalProject.dir/cloth.cpp.o" \
+"CMakeFiles/FinalProject.dir/clothMesh.cpp.o" \
+"CMakeFiles/FinalProject.dir/collision/sphere.cpp.o" \
+"CMakeFiles/FinalProject.dir/collision/plane.cpp.o" \
+"CMakeFiles/FinalProject.dir/main.cpp.o" \
+"CMakeFiles/FinalProject.dir/clothSimulator.cpp.o" \
 "CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o" \
-"CMakeFiles/FinalProject.dir/application.cpp.o" \
-"CMakeFiles/FinalProject.dir/main.cpp.o"
+"CMakeFiles/FinalProject.dir/camera.cpp.o"
 
 # External object files for target FinalProject
 FinalProject_EXTERNAL_OBJECTS =
 
-FinalProject: src/CMakeFiles/FinalProject.dir/collada/collada.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/collada/camera_info.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/collada/light_info.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/collada/material_info.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/static_scene/object.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/static_scene/light.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/meshEdit.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/bvh.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/bbox.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/bsdf.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/camera.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/sampler.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/pathtracer.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o
-FinalProject: src/CMakeFiles/FinalProject.dir/application.cpp.o
+FinalProject: src/CMakeFiles/FinalProject.dir/cloth.cpp.o
+FinalProject: src/CMakeFiles/FinalProject.dir/clothMesh.cpp.o
+FinalProject: src/CMakeFiles/FinalProject.dir/collision/sphere.cpp.o
+FinalProject: src/CMakeFiles/FinalProject.dir/collision/plane.cpp.o
 FinalProject: src/CMakeFiles/FinalProject.dir/main.cpp.o
+FinalProject: src/CMakeFiles/FinalProject.dir/clothSimulator.cpp.o
+FinalProject: src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o
+FinalProject: src/CMakeFiles/FinalProject.dir/camera.cpp.o
 FinalProject: src/CMakeFiles/FinalProject.dir/build.make
 FinalProject: CGL/src/libCGL.a
-FinalProject: CGL/deps/glew/libglew.a
-FinalProject: CGL/deps/glfw/src/libglfw3.a
-FinalProject: /usr/X11R6/lib/libfreetype.dylib
+FinalProject: ext/nanogui/libnanogui.dylib
 FinalProject: /usr/X11R6/lib/libfreetype.dylib
 FinalProject: src/CMakeFiles/FinalProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable ../FinalProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ../FinalProject"
 	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FinalProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -728,31 +284,14 @@ src/CMakeFiles/FinalProject.dir/build: FinalProject
 
 .PHONY : src/CMakeFiles/FinalProject.dir/build
 
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/collada/collada.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/collada/camera_info.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/collada/light_info.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/collada/sphere_info.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/collada/polymesh_info.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/collada/material_info.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/dynamic_scene/mesh.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/dynamic_scene/scene.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/dynamic_scene/sphere.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/static_scene/sphere.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/static_scene/triangle.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/static_scene/object.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/static_scene/environment_light.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/static_scene/light.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/halfEdgeMesh.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/meshEdit.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/bvh.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/bbox.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/bsdf.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/camera.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/sampler.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/pathtracer.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o.requires
-src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/application.cpp.o.requires
+src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/cloth.cpp.o.requires
+src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/clothMesh.cpp.o.requires
+src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/collision/sphere.cpp.o.requires
+src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/collision/plane.cpp.o.requires
 src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/main.cpp.o.requires
+src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/clothSimulator.cpp.o.requires
+src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/misc/sphere_drawing.cpp.o.requires
+src/CMakeFiles/FinalProject.dir/requires: src/CMakeFiles/FinalProject.dir/camera.cpp.o.requires
 
 .PHONY : src/CMakeFiles/FinalProject.dir/requires
 

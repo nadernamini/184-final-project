@@ -273,81 +273,9 @@ CGL/src/CMakeFiles/CGL.dir/spectrum.cpp.o.provides: CGL/src/CMakeFiles/CGL.dir/s
 CGL/src/CMakeFiles/CGL.dir/spectrum.cpp.o.provides.build: CGL/src/CMakeFiles/CGL.dir/spectrum.cpp.o
 
 
-CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o: CGL/src/CMakeFiles/CGL.dir/flags.make
-CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o: ../CGL/src/osdtext.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CGL/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/osdtext.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/CGL/src/osdtext.cpp
-
-CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGL.dir/osdtext.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CGL/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/CGL/src/osdtext.cpp > CMakeFiles/CGL.dir/osdtext.cpp.i
-
-CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGL.dir/osdtext.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CGL/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/CGL/src/osdtext.cpp -o CMakeFiles/CGL.dir/osdtext.cpp.s
-
-CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o.requires:
-
-.PHONY : CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o.requires
-
-CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o.provides: CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o.requires
-	$(MAKE) -f CGL/src/CMakeFiles/CGL.dir/build.make CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o.provides.build
-.PHONY : CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o.provides
-
-CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o.provides.build: CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o
-
-
-CGL/src/CMakeFiles/CGL.dir/osdfont.c.o: CGL/src/CMakeFiles/CGL.dir/flags.make
-CGL/src/CMakeFiles/CGL.dir/osdfont.c.o: ../CGL/src/osdfont.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CGL/src/CMakeFiles/CGL.dir/osdfont.c.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CGL/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CGL.dir/osdfont.c.o   -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/CGL/src/osdfont.c
-
-CGL/src/CMakeFiles/CGL.dir/osdfont.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CGL.dir/osdfont.c.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CGL/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/CGL/src/osdfont.c > CMakeFiles/CGL.dir/osdfont.c.i
-
-CGL/src/CMakeFiles/CGL.dir/osdfont.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CGL.dir/osdfont.c.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CGL/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/CGL/src/osdfont.c -o CMakeFiles/CGL.dir/osdfont.c.s
-
-CGL/src/CMakeFiles/CGL.dir/osdfont.c.o.requires:
-
-.PHONY : CGL/src/CMakeFiles/CGL.dir/osdfont.c.o.requires
-
-CGL/src/CMakeFiles/CGL.dir/osdfont.c.o.provides: CGL/src/CMakeFiles/CGL.dir/osdfont.c.o.requires
-	$(MAKE) -f CGL/src/CMakeFiles/CGL.dir/build.make CGL/src/CMakeFiles/CGL.dir/osdfont.c.o.provides.build
-.PHONY : CGL/src/CMakeFiles/CGL.dir/osdfont.c.o.provides
-
-CGL/src/CMakeFiles/CGL.dir/osdfont.c.o.provides.build: CGL/src/CMakeFiles/CGL.dir/osdfont.c.o
-
-
-CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o: CGL/src/CMakeFiles/CGL.dir/flags.make
-CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o: ../CGL/src/viewer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CGL/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/viewer.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/CGL/src/viewer.cpp
-
-CGL/src/CMakeFiles/CGL.dir/viewer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGL.dir/viewer.cpp.i"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CGL/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/CGL/src/viewer.cpp > CMakeFiles/CGL.dir/viewer.cpp.i
-
-CGL/src/CMakeFiles/CGL.dir/viewer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGL.dir/viewer.cpp.s"
-	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CGL/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/CGL/src/viewer.cpp -o CMakeFiles/CGL.dir/viewer.cpp.s
-
-CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o.requires:
-
-.PHONY : CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o.requires
-
-CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o.provides: CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o.requires
-	$(MAKE) -f CGL/src/CMakeFiles/CGL.dir/build.make CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o.provides.build
-.PHONY : CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o.provides
-
-CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o.provides.build: CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o
-
-
 CGL/src/CMakeFiles/CGL.dir/base64.cpp.o: CGL/src/CMakeFiles/CGL.dir/flags.make
 CGL/src/CMakeFiles/CGL.dir/base64.cpp.o: ../CGL/src/base64.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CGL/src/CMakeFiles/CGL.dir/base64.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CGL/src/CMakeFiles/CGL.dir/base64.cpp.o"
 	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CGL/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/base64.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/CGL/src/base64.cpp
 
 CGL/src/CMakeFiles/CGL.dir/base64.cpp.i: cmake_force
@@ -371,7 +299,7 @@ CGL/src/CMakeFiles/CGL.dir/base64.cpp.o.provides.build: CGL/src/CMakeFiles/CGL.d
 
 CGL/src/CMakeFiles/CGL.dir/lodepng.cpp.o: CGL/src/CMakeFiles/CGL.dir/flags.make
 CGL/src/CMakeFiles/CGL.dir/lodepng.cpp.o: ../CGL/src/lodepng.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CGL/src/CMakeFiles/CGL.dir/lodepng.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CGL/src/CMakeFiles/CGL.dir/lodepng.cpp.o"
 	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CGL/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/lodepng.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/CGL/src/lodepng.cpp
 
 CGL/src/CMakeFiles/CGL.dir/lodepng.cpp.i: cmake_force
@@ -395,7 +323,7 @@ CGL/src/CMakeFiles/CGL.dir/lodepng.cpp.o.provides.build: CGL/src/CMakeFiles/CGL.
 
 CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.o: CGL/src/CMakeFiles/CGL.dir/flags.make
 CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.o: ../CGL/src/tinyxml2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.o"
 	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CGL/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGL.dir/tinyxml2.cpp.o -c /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/CGL/src/tinyxml2.cpp
 
 CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.i: cmake_force
@@ -428,9 +356,6 @@ CGL_OBJECTS = \
 "CMakeFiles/CGL.dir/complex.cpp.o" \
 "CMakeFiles/CGL.dir/color.cpp.o" \
 "CMakeFiles/CGL.dir/spectrum.cpp.o" \
-"CMakeFiles/CGL.dir/osdtext.cpp.o" \
-"CMakeFiles/CGL.dir/osdfont.c.o" \
-"CMakeFiles/CGL.dir/viewer.cpp.o" \
 "CMakeFiles/CGL.dir/base64.cpp.o" \
 "CMakeFiles/CGL.dir/lodepng.cpp.o" \
 "CMakeFiles/CGL.dir/tinyxml2.cpp.o"
@@ -447,15 +372,12 @@ CGL/src/libCGL.a: CGL/src/CMakeFiles/CGL.dir/quaternion.cpp.o
 CGL/src/libCGL.a: CGL/src/CMakeFiles/CGL.dir/complex.cpp.o
 CGL/src/libCGL.a: CGL/src/CMakeFiles/CGL.dir/color.cpp.o
 CGL/src/libCGL.a: CGL/src/CMakeFiles/CGL.dir/spectrum.cpp.o
-CGL/src/libCGL.a: CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o
-CGL/src/libCGL.a: CGL/src/CMakeFiles/CGL.dir/osdfont.c.o
-CGL/src/libCGL.a: CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o
 CGL/src/libCGL.a: CGL/src/CMakeFiles/CGL.dir/base64.cpp.o
 CGL/src/libCGL.a: CGL/src/CMakeFiles/CGL.dir/lodepng.cpp.o
 CGL/src/libCGL.a: CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.o
 CGL/src/libCGL.a: CGL/src/CMakeFiles/CGL.dir/build.make
 CGL/src/libCGL.a: CGL/src/CMakeFiles/CGL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX static library libCGL.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libCGL.a"
 	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CGL/src && $(CMAKE_COMMAND) -P CMakeFiles/CGL.dir/cmake_clean_target.cmake
 	cd /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CGL/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CGL.dir/link.txt --verbose=$(VERBOSE)
 
@@ -473,9 +395,6 @@ CGL/src/CMakeFiles/CGL.dir/requires: CGL/src/CMakeFiles/CGL.dir/quaternion.cpp.o
 CGL/src/CMakeFiles/CGL.dir/requires: CGL/src/CMakeFiles/CGL.dir/complex.cpp.o.requires
 CGL/src/CMakeFiles/CGL.dir/requires: CGL/src/CMakeFiles/CGL.dir/color.cpp.o.requires
 CGL/src/CMakeFiles/CGL.dir/requires: CGL/src/CMakeFiles/CGL.dir/spectrum.cpp.o.requires
-CGL/src/CMakeFiles/CGL.dir/requires: CGL/src/CMakeFiles/CGL.dir/osdtext.cpp.o.requires
-CGL/src/CMakeFiles/CGL.dir/requires: CGL/src/CMakeFiles/CGL.dir/osdfont.c.o.requires
-CGL/src/CMakeFiles/CGL.dir/requires: CGL/src/CMakeFiles/CGL.dir/viewer.cpp.o.requires
 CGL/src/CMakeFiles/CGL.dir/requires: CGL/src/CMakeFiles/CGL.dir/base64.cpp.o.requires
 CGL/src/CMakeFiles/CGL.dir/requires: CGL/src/CMakeFiles/CGL.dir/lodepng.cpp.o.requires
 CGL/src/CMakeFiles/CGL.dir/requires: CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.o.requires

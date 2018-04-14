@@ -55,7 +55,7 @@
 #define _GLFW_NSGL
 
 // Define this to 1 if building as a shared library / dynamic library / DLL
-/* #undef _GLFW_BUILD_DLL */
+#define _GLFW_BUILD_DLL
 
 // Define this to 1 if glfwSwapInterval should ignore DWM compositing status
 /* #undef _GLFW_USE_DWM_SWAP_INTERVAL */
@@ -76,7 +76,7 @@
 /* #undef _GLFW_HAS_DLOPEN */
 
 // Define this to 1 if glfwInit should change the current directory
-#define _GLFW_USE_CHDIR
+/* #undef _GLFW_USE_CHDIR */
 // Define this to 1 if glfwCreateWindow should populate the menu bar
 #define _GLFW_USE_MENUBAR
 // Define this to 1 if windows should use full resolution on Retina displays
