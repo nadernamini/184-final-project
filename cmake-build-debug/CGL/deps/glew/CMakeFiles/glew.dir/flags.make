@@ -6,5 +6,5 @@ C_FLAGS = -g   -w
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/CGL/deps/glew/include 
+C_INCLUDES = -I/Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/CGL/deps/glew/include 
 

@@ -66,9 +66,9 @@ link_directories(
 #-------------------------------------------------------------------------------
 # Add executable
 #-------------------------------------------------------------------------------
-add_executable(pathtracer ${APPLICATION_SOURCE})
+add_executable(FinalProject ${APPLICATION_SOURCE})
 
-target_link_libraries(pathtracer
+target_link_libraries(FinalProject
         CGL ${CGL_LIBRARIES}
         glew ${GLEW_LIBRARIES}
         glfw ${GLFW_LIBRARIES}
@@ -81,7 +81,7 @@ target_link_libraries(pathtracer
 # Platform-specific configurations for target
 #-------------------------------------------------------------------------------
 if (APPLE)
-    set_property(TARGET pathtracer APPEND_STRING PROPERTY COMPILE_FLAGS
+    set_property(TARGET FinalProject APPEND_STRING PROPERTY COMPILE_FLAGS
             "-Wno-deprecated-declarations -Wno-c++11-extensions")
 endif (APPLE)
 
@@ -89,4 +89,4 @@ endif (APPLE)
 set(EXECUTABLE_OUTPUT_PATH ..)
 
 # Install to project root
-install(TARGETS pathtracer DESTINATION ${PathTracer_SOURCE_DIR})
+install(TARGETS FinalProject DESTINATION ${FinalProject_SOURCE_DIR})

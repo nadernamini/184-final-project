@@ -81,5 +81,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CGL/deps/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CGL/deps/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   "CGL/src/CMakeFiles/CGL.dir/DependInfo.cmake"
-  "src/CMakeFiles/pathtracer.dir/DependInfo.cmake"
+  "src/CMakeFiles/FinalProject.dir/DependInfo.cmake"
   )

@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project
+CMAKE_SOURCE_DIR = /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/cmake-build-debug/CMakeFiles /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FinalP/184-final-project/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nader/Google_Drive/Berkeley/Academics/2017-18_Junior_Year/Spring_Semester/Classes/CS184/FP/184-final-project/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -209,17 +209,17 @@ CGL/fast:
 .PHONY : CGL/fast
 
 #=============================================================================
-# Target rules for targets named pathtracer
+# Target rules for targets named FinalProject
 
 # Build rule for target.
-pathtracer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pathtracer
-.PHONY : pathtracer
+FinalProject: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FinalProject
+.PHONY : FinalProject
 
 # fast build rule for target.
-pathtracer/fast:
-	$(MAKE) -f src/CMakeFiles/pathtracer.dir/build.make src/CMakeFiles/pathtracer.dir/build
-.PHONY : pathtracer/fast
+FinalProject/fast:
+	$(MAKE) -f src/CMakeFiles/FinalProject.dir/build.make src/CMakeFiles/FinalProject.dir/build
+.PHONY : FinalProject/fast
 
 # Help Target
 help:
@@ -237,7 +237,7 @@ help:
 	@echo "... uninstall"
 	@echo "... glfw"
 	@echo "... CGL"
-	@echo "... pathtracer"
+	@echo "... FinalProject"
 .PHONY : help
 
 
