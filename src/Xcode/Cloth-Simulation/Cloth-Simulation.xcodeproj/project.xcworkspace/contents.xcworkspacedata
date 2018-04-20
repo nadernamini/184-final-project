@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Cloth-Simulation.xcodeproj">
+      location = "group:../../../../../../../glfw-3.2.1/include">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

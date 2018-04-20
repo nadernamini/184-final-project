@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC64DD9E20818C8C00B865C3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC64DD9D20818C8C00B865C3 /* main.cpp */; };
+		CC64DDAD2086E8C800B865C3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC64DDAC2086E8C800B865C3 /* OpenGL.framework */; };
+		CC64DDB02086E94800B865C3 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CC64DDAE2086E92F00B865C3 /* libglfw.3.2.dylib */; };
+		CC64DDB220897A2400B865C3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC64DDB120897A2300B865C3 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +26,10 @@
 
 /* Begin PBXFileReference section */
 		CC64DD9A20818C8C00B865C3 /* Cloth-Simulation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Cloth-Simulation"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC64DD9D20818C8C00B865C3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CC64DDAC2086E8C800B865C3 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		CC64DDAE2086E92F00B865C3 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
+		CC64DDB120897A2300B865C3 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = "<group>"; };
+		CC64DDB52089825700B865C3 /* Cloth-Simulation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Cloth-Simulation"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC64DDB02086E94800B865C3 /* libglfw.3.2.dylib in Frameworks */,
+				CC64DDAD2086E8C800B865C3 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +50,7 @@
 			children = (
 				CC64DD9C20818C8C00B865C3 /* Cloth-Simulation */,
 				CC64DD9B20818C8C00B865C3 /* Products */,
+				CC64DDAB2086E8C800B865C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +65,19 @@
 		CC64DD9C20818C8C00B865C3 /* Cloth-Simulation */ = {
 			isa = PBXGroup;
 			children = (
-				CC64DD9D20818C8C00B865C3 /* main.cpp */,
+				CC64DDB52089825700B865C3 /* Cloth-Simulation */,
+				CC64DDB120897A2300B865C3 /* main.cpp */,
 			);
 			path = "Cloth-Simulation";
+			sourceTree = "<group>";
+		};
+		CC64DDAB2086E8C800B865C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC64DDAE2086E92F00B865C3 /* libglfw.3.2.dylib */,
+				CC64DDAC2086E8C800B865C3 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC64DD9E20818C8C00B865C3 /* main.cpp in Sources */,
+				CC64DDB220897A2400B865C3 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +196,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				"SYSTEM_HEADER_SEARCH_PATHS[arch=*]" = "$SRCROOT/Cloth-Simulation/include";
 			};
 			name = Debug;
 		};
@@ -226,6 +245,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				"SYSTEM_HEADER_SEARCH_PATHS[arch=*]" = "$SRCROOT/Cloth-Simulation/include";
 			};
 			name = Release;
 		};
@@ -233,6 +253,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/lib/,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -241,6 +267,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/lib/,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
