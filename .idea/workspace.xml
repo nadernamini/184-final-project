@@ -17,15 +17,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df717f0-37f1-43c1-bdea-ccc23e7bd1a4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/midpoint.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/proposal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/FinalProject.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/FinalProject.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -54,28 +46,17 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="274" column="29" selection-start-line="274" selection-start-column="29" selection-end-line="274" selection-end-column="29" />
+            <state relative-caret-position="615">
+              <caret line="310" column="424" selection-start-line="310" selection-start-column="424" selection-end-line="310" selection-end-column="424" />
               <folding>
                 <element signature="e#3428#3456#0" expanded="true" />
                 <element signature="e#4828#4846#0" expanded="true" />
                 <element signature="e#7190#7218#0" expanded="true" />
                 <element signature="e#11825#11853#0" expanded="true" />
+                <element signature="e#14997#15025#0" expanded="true" />
+                <element signature="e#15238#15266#0" expanded="true" />
+                <element signature="e#15561#15589#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="proposal.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/proposal.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="midpoint.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/midpoint.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="66" lean-forward="true" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -145,6 +126,12 @@
               <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="184-final-project" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="184-final-project" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
@@ -222,7 +209,7 @@
       <workItem from="1523664683446" duration="6285000" />
       <workItem from="1524187441217" duration="6000" />
       <workItem from="1524188576937" duration="20000" />
-      <workItem from="1524452821563" duration="779000" />
+      <workItem from="1524452821563" duration="1624000" />
     </task>
     <task id="LOCAL-00001" summary="added website files">
       <created>1522552442599</created>
@@ -287,11 +274,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523668090626</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added milestone accordion">
+      <created>1524453773102</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1524453773102</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20771000" />
+    <option name="totallyTimeSpent" value="21616000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -361,7 +355,8 @@
     <MESSAGE value="Updated CMakeLists.txt to reflect &quot;FinalProject&quot;" />
     <MESSAGE value="added table responsive to the proposal" />
     <MESSAGE value="updated cmake" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated cmake" />
+    <MESSAGE value="added milestone accordion" />
+    <option name="LAST_COMMIT_MESSAGE" value="added milestone accordion" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/cloth.cpp">
@@ -383,6 +378,9 @@
             <element signature="e#4828#4846#0" expanded="true" />
             <element signature="e#7190#7218#0" expanded="true" />
             <element signature="e#11825#11853#0" expanded="true" />
+            <element signature="e#14997#15025#0" expanded="true" />
+            <element signature="e#15238#15266#0" expanded="true" />
+            <element signature="e#15561#15589#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -556,13 +554,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="274" column="29" selection-start-line="274" selection-start-column="29" selection-end-line="274" selection-end-column="29" />
+        <state relative-caret-position="615">
+          <caret line="310" column="424" selection-start-line="310" selection-start-column="424" selection-end-line="310" selection-end-column="424" />
           <folding>
             <element signature="e#3428#3456#0" expanded="true" />
             <element signature="e#4828#4846#0" expanded="true" />
             <element signature="e#7190#7218#0" expanded="true" />
             <element signature="e#11825#11853#0" expanded="true" />
+            <element signature="e#14997#15025#0" expanded="true" />
+            <element signature="e#15238#15266#0" expanded="true" />
+            <element signature="e#15561#15589#0" expanded="true" />
           </folding>
         </state>
       </provider>
