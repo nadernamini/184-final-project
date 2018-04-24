@@ -17,6 +17,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df717f0-37f1-43c1-bdea-ccc23e7bd1a4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Nader.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Nader.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
     </list>
@@ -34,7 +35,7 @@
       <file leaf-file-name="cloth.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cloth.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
+            <state relative-caret-position="525">
               <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -46,15 +47,9 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="310" column="424" selection-start-line="310" selection-start-column="424" selection-end-line="310" selection-end-column="424" />
+            <state relative-caret-position="411">
+              <caret line="297" column="82" lean-forward="true" selection-start-line="297" selection-start-column="82" selection-end-line="297" selection-end-column="82" />
               <folding>
-                <element signature="e#3428#3456#0" expanded="true" />
-                <element signature="e#4828#4846#0" expanded="true" />
-                <element signature="e#7190#7218#0" expanded="true" />
-                <element signature="e#11825#11853#0" expanded="true" />
-                <element signature="e#14997#15025#0" expanded="true" />
-                <element signature="e#15238#15266#0" expanded="true" />
                 <element signature="e#15561#15589#0" expanded="true" />
               </folding>
             </state>
@@ -109,7 +104,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,18 +125,13 @@
               <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="184-final-project" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="184-final-project" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,7 +198,8 @@
       <workItem from="1523664683446" duration="6285000" />
       <workItem from="1524187441217" duration="6000" />
       <workItem from="1524188576937" duration="20000" />
-      <workItem from="1524452821563" duration="1624000" />
+      <workItem from="1524452821563" duration="1718000" />
+      <workItem from="1524540200715" duration="3515000" />
     </task>
     <task id="LOCAL-00001" summary="added website files">
       <created>1522552442599</created>
@@ -281,11 +271,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524453773102</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added description of what to do for the milestone">
+      <created>1524454571735</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1524454571735</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21616000" />
+    <option name="totallyTimeSpent" value="25225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -356,9 +353,30 @@
     <MESSAGE value="added table responsive to the proposal" />
     <MESSAGE value="updated cmake" />
     <MESSAGE value="added milestone accordion" />
-    <option name="LAST_COMMIT_MESSAGE" value="added milestone accordion" />
+    <MESSAGE value="added description of what to do for the milestone" />
+    <option name="LAST_COMMIT_MESSAGE" value="added description of what to do for the milestone" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/cloth.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4590">
+          <caret line="306" column="78" selection-start-line="306" selection-start-column="78" selection-end-line="306" selection-end-column="78" />
+          <folding>
+            <element signature="e#15561#15589#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cloth.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -374,12 +392,6 @@
         <state relative-caret-position="255">
           <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
           <folding>
-            <element signature="e#3428#3456#0" expanded="true" />
-            <element signature="e#4828#4846#0" expanded="true" />
-            <element signature="e#7190#7218#0" expanded="true" />
-            <element signature="e#11825#11853#0" expanded="true" />
-            <element signature="e#14997#15025#0" expanded="true" />
-            <element signature="e#15238#15266#0" expanded="true" />
             <element signature="e#15561#15589#0" expanded="true" />
           </folding>
         </state>
@@ -534,7 +546,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cloth.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="525">
           <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -542,27 +554,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/proposal.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/midpoint.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="66" lean-forward="true" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/midpoint.html" />
     <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="310" column="424" selection-start-line="310" selection-start-column="424" selection-end-line="310" selection-end-column="424" />
+        <state relative-caret-position="411">
+          <caret line="297" column="82" lean-forward="true" selection-start-line="297" selection-start-column="82" selection-end-line="297" selection-end-column="82" />
           <folding>
-            <element signature="e#3428#3456#0" expanded="true" />
-            <element signature="e#4828#4846#0" expanded="true" />
-            <element signature="e#7190#7218#0" expanded="true" />
-            <element signature="e#11825#11853#0" expanded="true" />
-            <element signature="e#14997#15025#0" expanded="true" />
-            <element signature="e#15238#15266#0" expanded="true" />
             <element signature="e#15561#15589#0" expanded="true" />
           </folding>
         </state>

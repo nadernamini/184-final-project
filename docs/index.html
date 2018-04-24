@@ -281,8 +281,34 @@
     <div class="panel">
         <ul style="list-style-type:disc">
             <li>
-                Summarize what you have accomplished, preliminary results.
+                In the first week, we focused on learning the basics of <code>OpenGL</code> and compute shaders using
+                examples and tutorials. By the end of the second week, our team refactored code from previous projects
+                to support<code>OpenGL</code>, allowing us to achieve higher quality and precise renderings. Using
+                compute shaders, we parallelized mass-spring model updates, Verlet Integration, and external forces
+                (wind / gravity). We successfully rendered a scene of a pinned cloth blown by the wind.
             </li>
+            <div class="table-responsive" align="middle">
+                <table class="table">
+                    <tr>
+                        <td>
+                            <video loop controls class="embed-responsive-item">
+                                <source src="assets/milestone/basic.mp4" type=video/mp4>
+                            </video>
+                            <figcaption align="middle">
+                                Cloth Simulation with gravity as an external force
+                            </figcaption>
+                        </td>
+                        <td>
+                            <video loop controls class="embed-responsive-item">
+                                <source src="assets/milestone/wind.mp4" type=video/mp4>
+                            </video>
+                            <figcaption align="middle">
+                                Cloth Simulation with wind (into the screen) and gravity added as external forces
+                            </figcaption>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </ul>
     </div>
 
@@ -291,7 +317,14 @@
     <div class="panel">
         <ul style="list-style-type:disc">
             <li>
-                Reflect on progress relative to your plan, and update your work plan as appropriate.
+                In the next coming weeks, we are aiming to produce more complex simulations by adding more environment
+                settings for users to interact with. We hope to extend our basic scene with modifiable parameters for
+                the cloth, external forces, and the viewing camera. Additionally, we have yet to develop shaders for
+                self-collision and friction.
+            </li>
+            <li>
+                Once we have been able to achieve the goals above, we want to potentially add a cloth tearing
+                simulation as well as support for <code>WebGL</code>
             </li>
         </ul>
     </div>
@@ -300,30 +333,10 @@
 
     <div class="panel">
         <ul style="list-style-type:disc">
-            <li>
-                A short 1-minute video summarizing your progress. The style of this milestone video is quite free. One
-                idea is to make several slides with narration, showing the general idea and current progress. You can
-                include some screenshots of code and images. You can also run your current program and record the screen
-                to show us what is happening. Keep in mind that your video submission should clearly explain and
-                demonstrate to us what you have achieved so far. Link this video on your webpage.
-            </li>
-            <li>
-                How to make a video. The simplest way is to make several slides, run, record and export them as a video.
-                Screen recording is strongly welcomed as one slide to show your current progress. But don't use it as
-                your entire video. Also, just record the region/window where your demo runs. You can also use
-                professional video tools to make one from scratch. Just make sure you export with high quality
-                compression.
-            </li>
-            <li>
-                Keep your narration clear and structured. You can talk like this. Our project is about ... (general
-                idea), and we would like to produce something like ... (goal). The main difficulty is ... (technical
-                challenge) and we're solving it by ... (key solution or key reference). Here's what we've achieved so
-                far (results) and our plan for next weeks are ... (a glance of schedule).
-            </li>
+            <video loop controls class="embed-responsive-item" align="center">
+                <source src="assets/milestone/full.mp4" type=video/mp4>
+            </video>
         </ul>
-        <video loop controls class="embed-responsive-item" align="center">
-            <source src="assets/milestone/" type=video/mp4>
-        </video>
     </div>
 </div>
 
