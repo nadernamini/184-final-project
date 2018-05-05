@@ -342,116 +342,233 @@
 
 <button class="accordion">Final Deliverables</button>
 
-<div class="panel">
+<div class="panel show">
     <button class="accordion">Summary</button>
-    <div class="panel">
-        After completing project 4 (cloth simulation), we saw an opportunity to parallelize the simulation algorithms and systems in play. We aimed to extend that project by producing high quality cloth simulations using OpenGL shaders that take advantage of the parallelization power of GPUs. With the introduction of computeShaders in OpenGL 4.3, we are able to program and parallelize cloth simulation algorithm such as position updates, mass-spring systems, and collisions. With this added advantage, we were able to render high quality simulations at higher frame rates. On top of this, we implemented UI tools to allow our (Windows/Linux) users to interact with and manipulate the simulation. 
+    <div class="panel show">
+        After completing project 4 (cloth simulation), we saw an opportunity to parallelize the simulation algorithms
+        and systems in play. We aimed to extend that project by producing high quality cloth simulations using OpenGL
+        shaders that take advantage of the parallelization power of GPUs. With the introduction of computeShaders in
+        OpenGL 4.3, we are able to program and parallelize cloth simulation algorithm such as position updates,
+        mass-spring systems, and collisions. With this added advantage, we were able to render high quality simulations
+        at higher frame rates. On top of this, we implemented UI tools to allow our (Windows/Linux) users to interact
+        with and manipulate the simulation.
     </div>
 
     <button class="accordion">Technical Summary</button>
-    <div class="panel">
+    <div class="panel show">
         <ul style="list-style-type:disc">
             <li>
-                In order to start parallelizing programs with OpenGL, we must first initialize buffers and allocate space for any simulation variables that may be used in parallel computation. In this project, we heavily used two data types for our bindings: <code>uniform</code>, <code>GL_*_BUFFER</code>. When working with constants and simple data types, we instantiate these data bindings with OpenGL’s uniform type in our shader program. For collection-like variables, like positions, normals and hash positions, we must first initialize our buffer and bind it using <code>glBindBufferBase</code>. Once we attach these buffers to our shader programs, we can dispatch parallel workgroups to run our programs. \(\pi)
+                In order to start parallelizing programs with OpenGL, we must first initialize buffers and allocate
+                space for any simulation variables that may be used in parallel computation. In this project, we heavily
+                used two data types for our bindings: <code>uniform</code>, <code>GL_*_BUFFER</code>. When working with
+                constants and simple data types, we instantiate these data bindings with OpenGL’s uniform type in our
+                shader program. For collection-like variables, like positions, normals and hash positions, we must first
+                initialize our buffer and bind it using <code>glBindBufferBase</code>. Once we attach these buffers to
+                our shader programs, we can dispatch parallel workgroups to run our programs. \(\pi\)
 
             </li>
 
             <!-- CLOTH -->
 
+            <li>
+                First, we build our cloth mesh by generating a grid of point masses and their respective springs.
+                Similar to project 4, we implemented the cloth using a grid of point masses which we converted to
+                triangle strips and used OpenGL’s <code>glDrawElements</code> to render it. However, to use
+            </li>
+
             <!-- Sphere -->
 
             <li>
-                We generate the sphere using 2 angles, one going from \((-\pi/2 : \pi/2)\), and the other from 0:2\(\pi\). Then, using a certain spacing based on the number of points and the size of the sphere, we calculate a derivative, and then use this to calculate the positions of the points on the sphere. Each point corresponds to an intersection of a longitude and latitude line.
-Next, we construct a quad-mesh by using two triangles per quad, with each quad defined as the intersection of two longitude lines and two latitude lines. Then, each triangle is assigned a corresponding index based on its position in the mesh, and rendered using OpenGL’s <code>glDrawElements</code>.
+                We generate the sphere using 2 angles, one going from \((-\pi/2 : \pi/2)\), and the other from
+                0:2\(\pi\). Then, using a certain spacing based on the number of points and the size of the sphere, we
+                calculate a derivative, and then use this to calculate the positions of the points on the sphere. Each
+                point corresponds to an intersection of a longitude and latitude line.
+                Next, we construct a quad-mesh by using two triangles per quad, with each quad defined as the
+                intersection of two longitude lines and two latitude lines. Then, each triangle is assigned a
+                corresponding index based on its position in the mesh, and rendered using OpenGL’s
+                <code>glDrawElements</code>.
             </li>
 
             <!-- Wind -->
             <li>
-                To calculate wind on the cloth, at each timestep we update and pass in a time variable to the compute shader that handles the forces. Next, we calculate the force in the direction of the wind vector as a projection of the cloth’s velocity vector onto the wind vector, multiply it by the unit vector in the direction of the wind, and subtract this from the wind vector. Next, we add a lift force to the cloth, based on the normals of the cloth (calculated by taking neighboring points on the cloth and taking the normal). Finally, we multiply it by a strength/power function to obtain the force, and add it to the current force vector.
-The wind force is made to vary in time and space by taking the sin of the time added with the ID of the particle, and additional variance is added by multiplying it with a random value within a particular range (say, 0.7 to 1.3). This is done for each x, y, and z (with a slightly different multiplicative factor to each).
+                To calculate wind on the cloth, at each timestep we update and pass in a time variable to the compute
+                shader that handles the forces. Next, we calculate the force in the direction of the wind vector as a
+                projection of the cloth’s velocity vector onto the wind vector, multiply it by the unit vector in the
+                direction of the wind, and subtract this from the wind vector. Next, we add a lift force to the cloth,
+                based on the normals of the cloth (calculated by taking neighboring points on the cloth and taking the
+                normal). Finally, we multiply it by a strength/power function to obtain the force, and add it to the
+                current force vector.
+                The wind force is made to vary in time and space by taking the sin of the time added with the ID of the
+                particle, and additional variance is added by multiplying it with a random value within a particular
+                range (say, 0.7 to 1.3). This is done for each x, y, and z (with a slightly different multiplicative
+                factor to each).
 
             </li>
 
             <!-- Position Update -->
 
-            <li>Within the compute shader, we implemented Verlet Integration like in project 4. For each particle, we computed the forces on the particle from the various spring constraints (Structural, Bending, and Shearing). After updating the positions based on these corrective forces, we applied the 110% rule as described in the SIGGRAPH paper, in order to ensure that the simulation remained stable.</li>
+            <li>
+                Within the compute shader, we implemented Verlet Integration like in project 4. For each particle, we
+                computed the forces on the particle from the various spring constraints (Structural, Bending, and
+                Shearing). After updating the positions based on these corrective forces, we applied the 110% rule as
+                described in the SIGGRAPH paper, in order to ensure that the simulation remained stable.
+            </li>
 
             <!-- Object/Plane Collision -->
-            <li>To do the plane collision, we checked if a particle crossed the plane from the last position to the current position. We rendered the plane using <code>glDrawElements</code> and four triangles.
-</li>
+            <li>
+                To do the plane collision, we checked if a particle crossed the plane from the last position to the
+                current position. We rendered the plane using <code>glDrawElements</code> and four triangles.
+            </li>
 
-            <!-- Selfcollision -->
+            <!-- Self-collision -->
 
             <li>
-            Our implementation of self-collision uses spatial mapping. After applying all external forces to each of our point masses, we hash all the positions and build the spatial map every <code>simulation_steps</code> frames. With the spatial map computed, we iterate each point mass’s hash with our parallel work groups. 
+                Our implementation of self-collision uses spatial mapping. After applying all external forces to each of
+                our point masses, we hash all the positions and build the spatial map every
+                <code>simulation_steps</code> frames. With the spatial map computed, we iterate each point mass’s hash
+                with our parallel work groups.
 
-Unfortunately, our results for self-collisions were not particularly good. Due to the nature of the implementation in project 4, we could not parallelizable it, and so a direct port of the implementation would not be fast enough. 
-Instead, we developed our own algorithm. For each particle, we simply used the positions that we obtained after constraining the spring length and updated them separately, instead of using successive self-collision updates to adjust each particle in turn (since this serial implementation does not seem to have a natural parallelization). 
-We also were not able to implement the hashmap from project 4 because of memory race conditions. Instead, we ported the hash function and used it to calculate index ‘i’ of a flattened 2D array (with format <code>array[i][j]</code>). Next, we calculated the particles within a particular box using a heuristic value, M, equal to a constant times the number of particles, divided by the number of boxes. M was used as the ‘size’ of the inner arrays (‘j’ index), and we took a random number from an RNG modulo this value to determine its position within this array. As a result, some values would naturally be overwritten when we stored it in the 2D array, however, we assumed that this would not noticeably affect the calculations of the self-collisions for a sufficiently large M (the expected number of collisions was not that high). 
-Unfortunately, even with this implementation, we were not able to render satisfying results. When we tried using the original CPU implementation, without the successively updated positions, our results were also not particularly good. As a result, we decided to turn off the feature in favor of improving the FPS or our render.
+                Unfortunately, our results for self-collisions were not particularly good. Due to the nature of the
+                implementation in project 4, we could not parallelizable it, and so a direct port of the implementation
+                would not be fast enough.
+                Instead, we developed our own algorithm. For each particle, we simply used the positions that we
+                obtained after constraining the spring length and updated them separately, instead of using successive
+                self-collision updates to adjust each particle in turn (since this serial implementation does not seem
+                to have a natural parallelization).
+                We also were not able to implement the hashmap from project 4 because of memory race conditions.
+                Instead, we ported the hash function and used it to calculate index ‘i’ of a flattened 2D array (with
+                format <code>array[i][j]</code>). Next, we calculated the particles within a particular box using a
+                heuristic value, M, equal to a constant times the number of particles, divided by the number of boxes. M
+                was used as the ‘size’ of the inner arrays (‘j’ index), and we took a random number from an RNG modulo
+                this value to determine its position within this array. As a result, some values would naturally be
+                overwritten when we stored it in the 2D array, however, we assumed that this would not noticeably affect
+                the calculations of the self-collisions for a sufficiently large M (the expected number of collisions
+                was not that high).
+                Unfortunately, even with this implementation, we were not able to render satisfying results. When we
+                tried using the original CPU implementation, without the successively updated positions, our results
+                were also not particularly good. As a result, we decided to turn off the feature in favor of improving
+                the FPS or our render.
 
             </li>
 
             <!-- GUI -->
 
             <li>
-                In order to experiment and test our parallel implementations, we integrated Nanogui with OpenGL in order to simultaneously update scene variables to all distributed workgroups. Using sliding toggle bars, users can vary gravitational, wind and light direction in order to simulate different environments. Users can also update the position of the ball along all axes in real-time. Dragging or scrolling the mouse changes the camera’s viewing position and direction, allowing you to get a closer look at the details in the scene.
+                In order to experiment and test our parallel implementations, we integrated Nanogui with OpenGL in order
+                to simultaneously update scene variables to all distributed workgroups. Using sliding toggle bars, users
+                can vary gravitational, wind and light direction in order to simulate different environments. Users can
+                also update the position of the ball along all axes in real-time. Dragging or scrolling the mouse
+                changes the camera’s viewing position and direction, allowing you to get a closer look at the details in
+                the scene.
             </li>
-            
+
         </ul>
+    </div>
+
+    <button class="accordion">Results</button>
+
+    <div class="panel show">
+        <div class="table-responsive" align="left">
+            <table class="table">
+                <tr>
+                    <td>
+                        <video loop controls class="embed-responsive-item">
+                            <source src="assets/final/cloth-final.mp4" type=video/mp4>
+                        </video>
+                        <figcaption align="middle">
+                            Cloth Simulation with gravity and wind
+                        </figcaption>
+                    </td>
+                    <td>
+                        <video loop controls class="embed-responsive-item">
+                            <source src="assets/final/cloth-ball-final.mp4" type=video/mp4>
+                        </video>
+                        <figcaption align="middle">
+                            Cloth Simulation with sphere
+                        </figcaption>
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>
+                        <video loop controls class="embed-responsive-item">
+                            <source src="assets/final/cloth-plane.mp4" type=video/mp4>
+                        </video>
+                        <figcaption align="middle">
+                            Cloth Simulation with plane (1)
+                        </figcaption>
+                    </td>
+                    <td>
+                        <video loop controls class="embed-responsive-item">
+                            <source src="assets/final/cloth_plane.mp4" type=video/mp4>
+                        </video>
+                        <figcaption align="middle">
+                            Cloth Simulation with plane (2)
+                        </figcaption>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 
     <button class="accordion">Contributions</button>
 
-    <div class="panel">
-
-    <table class="table">
-        <tr>
-            <td>
-                <p>Nader Namini</p>
-                <ul style="list-style-type:disc">
-                <li>Fully implemented cloth constraint compute shader</li>
-                <li>Upgraded Explicit Euler Integration to Verlet Integration</li>
-                <li>Parallelize spring-mass system in cloth compute shader</li>
-                <li>Implemented self-collisions (GPU and CPU version)</li>
-                <li>Worked on CMake files and repo/package management</li>
-                <li>Worked on camera position updates and movements</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Tinh Nguyen</p>
-                <ul style="list-style-type:disc">
-                    <li>Integrated Nanogui with OpenGL compute Shaders</li>
-                    <li>Worked on camera position updates and movements</li>
-                    <li>Worked on self-collisions</li>
-                    <li>Implemented user interactions (keyevents, mouseEvents)</li>
-                    <li>Ported code from Project 4</li>
-                    <li>Set up OpenGL on Windows/Linux</li>
-                    <li>Worked on texture mapping</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Marc WuDunn</p>
-                <ul style="list-style-type:disc">
-                    <li>Implemented the initial window and render loop.</li>
-                    <li>Implemented the cloth, rendered it, and calculated the original position updates using Explicit Euler Integration (in a compute shader). Some parts were overwritten when we did Verlet Integration.</li>
-                    <li>Developed two approaches for the wind force to the cloth and implemented them.</li>
-                    <li>Created and rendered the sphere (using a vertex shader rather than a compute shader).</li>
-                    <li>Implemented collisions for the sphere.</li>
-                    <li>Implemented phong shading for the cloth and the sphere.</li>
-                    <li>Developed our algorithm for self-collisions</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
+    <div class="panel show">
+        <div class="table-responsive" align="middle">
+            <table class="table">
+                <tr>
+                    <td align="left">
+                        <p><b>Nader Namini Asl</b></p>
+                        <ul style="list-style-type:disc">
+                            <li>Fully implemented cloth constraint compute shader</li>
+                            <li>Upgraded Explicit Euler Integration to Verlet Integration</li>
+                            <li>Parallelized spring-mass system in cloth compute shader</li>
+                            <li>Implemented self-collisions (GPU and CPU version)</li>
+                            <li>Created and rendered the plane and implemented plane-collision</li>
+                            <li>Worked on CMake files and repo/package management</li>
+                            <li>Worked on camera position updates and movements</li>
+                            <li>Worked on Nanogui features and their integration with shaders</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <p><b>Tinh Nguyen</b></p>
+                        <ul style="list-style-type:disc">
+                            <li>Integrated Nanogui with OpenGL compute Shaders</li>
+                            <li>Worked on camera position updates and movements</li>
+                            <li>Worked on self-collisions</li>
+                            <li>Implemented user interactions (keyevents, mouseEvents)</li>
+                            <li>Ported code from Project 4</li>
+                            <li>Set up OpenGL on Windows/Linux</li>
+                            <li>Worked on texture mapping</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <p><b>Marc WuDunn</b></p>
+                        <ul style="list-style-type:disc">
+                            <li>Implemented the initial window and render loop.</li>
+                            <li>Implemented the cloth, rendered it, and calculated the original position updates using
+                                Explicit Euler Integration (in a compute shader). Some parts were overwritten when we
+                                did Verlet Integration.
+                            </li>
+                            <li>Developed two approaches for the wind force to the cloth and implemented them.</li>
+                            <li>Created and rendered the sphere (using a vertex shader rather than a compute shader).
+                            </li>
+                            <li>Implemented collisions for the sphere.</li>
+                            <li>Implemented phong shading for the cloth and the sphere.</li>
+                            <li>Developed our algorithm for self-collisions</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
     <button class="accordion">Final Video</button>
 
-    <div class="panel">
+    <div class="panel show">
         <div class="videoWrapper">
             <iframe src="https://www.youtube.com/embed/t1yyAvkT6DA" frameborder="0"
                     allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -459,10 +576,10 @@ Unfortunately, even with this implementation, we were not able to render satisfy
     </div>
 
 
-<script>
-    $(document).ready(function () {
-        $('[data-toggle="popover"]').popover();
-    });
-</script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
 </body>
 </html>
