@@ -362,7 +362,7 @@
 
             <li>
                 We generate the sphere using 2 angles, one going from \((-\pi/2 : \pi/2)\), and the other from 0:2\(\pi\). Then, using a certain spacing based on the number of points and the size of the sphere, we calculate a derivative, and then use this to calculate the positions of the points on the sphere. Each point corresponds to an intersection of a longitude and latitude line.
-Next, we construct a quad-mesh by using two triangles per quad, with each quad defined as the intersection of two longitude lines and two latitude lines. Then, each triangle is assigned a corresponding index based on its position in the mesh, and rendered using OpenGL’s glDrawElements.
+Next, we construct a quad-mesh by using two triangles per quad, with each quad defined as the intersection of two longitude lines and two latitude lines. Then, each triangle is assigned a corresponding index based on its position in the mesh, and rendered using OpenGL’s <code>glDrawElements</code>.
             </li>
 
             <!-- Wind -->
@@ -373,6 +373,12 @@ The wind force is made to vary in time and space by taking the sin of the time a
             </li>
 
             <!-- Position Update -->
+
+            <li>Within the compute shader, we implemented Verlet Integration like in project 4. For each particle, we computed the forces on the particle from the various spring constraints (Structural, Bending, and Shearing). After updating the positions based on these corrective forces, we applied the 110% rule as described in the SIGGRAPH paper, in order to ensure that the simulation remained stable.</li>
+
+            <!-- Object/Plane Collision -->
+            <li>To do the plane collision, we checked if a particle crossed the plane from the last position to the current position. We rendered the plane using <code>glDrawElements</code> and four triangles.
+</li>
 
             <!-- Selfcollision -->
 
@@ -394,6 +400,57 @@ Unfortunately, even with this implementation, we were not able to render satisfy
             
         </ul>
     </div>
+
+    <button class="accordion">Contributions</button>
+
+    <div class="panel">
+
+    <table class="table">
+        <tr>
+            <td>
+            <p>Nader Namini</p>
+                <ul>
+                <li>Fully implemented cloth constraint compute shader</li>
+                <li>Upgraded Explicit Euler Integration to Verlet Integration</li>
+                <li>Parallelize spring-mass system in cloth compute shader</li>
+                <li>Implemented self-collisions (GPU and CPU version)</li>
+                <li>Worked on CMake files and repo/package management</li>
+                <li>Worked on camera position updates and movements</li>
+                </ul>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <p>Tinh Nguyen</p>
+                <ul>
+                <li>Integrated Nanogui with OpenGL compute Shaders</li>
+                <li>Worked on camera position updates and movements</li>
+                <li>Worked on self-collisions</li>
+                <li>Implemented user interactions (keyevents, mouseEvents)</li>
+                <li>Ported code from Project 4</li>
+                <li>Set up OpenGL on Windows/Linux</li>
+                <li>Worked on texture mapping</li>
+                </ul>
+            </td>
+
+         </tr>
+        <tr>
+            <td>
+                <p>Marc WuDunn</p>
+                <ul>
+                <li>Implemented the initial window and render loop.</li>
+                <li>Implemented the cloth, rendered it, and calculated the original position updates using Explicit Euler Integration (in a compute shader). Some parts were overwritten when we did Verlet Integration.</li>
+                <li>Developed two approaches for the wind force to the cloth and implemented them.</li>
+                <li>Created and rendered the sphere (using a vertex shader rather than a compute shader).</li>
+                <li>Implemented collisions for the sphere.</li>
+                <li>Implemented phong shading for the cloth and the sphere.</li>
+                <li>Developed our algorithm for self-collisions</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
 
     <button class="accordion">Final Video</button>
 
