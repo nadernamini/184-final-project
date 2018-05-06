@@ -46,14 +46,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="455" column="38" lean-forward="true" selection-start-line="455" selection-start-column="38" selection-end-line="455" selection-end-column="38" />
-              <folding>
-                <element signature="e#18858#18886#0" expanded="true" />
-                <element signature="e#25146#25174#0" expanded="true" />
-                <element signature="e#25749#25777#0" expanded="true" />
-                <element signature="e#26354#26382#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="222">
+              <caret line="579" column="30" lean-forward="true" selection-start-line="579" selection-start-column="30" selection-end-line="579" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -103,7 +97,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
@@ -115,6 +109,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,6 +131,19 @@
               <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="184-final-project" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="184-final-project" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="final" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="184-final-project" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -148,7 +156,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,7 +225,8 @@
       <workItem from="1524452821563" duration="1718000" />
       <workItem from="1524540200715" duration="4395000" />
       <workItem from="1524694242257" duration="23000" />
-      <workItem from="1525409643621" duration="1344000" />
+      <workItem from="1525409643621" duration="2671000" />
+      <workItem from="1525568837357" duration="496000" />
     </task>
     <task id="LOCAL-00001" summary="added website files">
       <created>1522552442599</created>
@@ -318,14 +326,28 @@
       <option name="project" value="LOCAL" />
       <updated>1525488992766</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fixed youtube link">
+      <created>1525506183299</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1525506183299</updated>
+    </task>
+    <task id="LOCAL-00016" summary="updated styles">
+      <created>1525507932582</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1525507932582</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27472000" />
+    <option name="totallyTimeSpent" value="29295000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="40" y="22" width="1240" height="778" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -397,7 +419,9 @@
     <MESSAGE value="updated milestone write-up" />
     <MESSAGE value="updated video link and added iframe wrapper" />
     <MESSAGE value="updated html" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated html" />
+    <MESSAGE value="fixed youtube link" />
+    <MESSAGE value="updated styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated styles" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/cloth.cpp">
@@ -419,14 +443,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8550">
+          <caret line="570" column="26" selection-start-line="570" selection-start-column="26" selection-end-line="570" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cloth.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5070">
           <caret line="338" column="10" lean-forward="true" selection-start-line="338" selection-start-column="10" selection-end-line="338" selection-end-column="10" />
-          <folding>
-            <element signature="e#18858#18886#0" expanded="true" />
-            <element signature="e#25146#25174#0" expanded="true" />
-            <element signature="e#25749#25777#0" expanded="true" />
-            <element signature="e#26354#26382#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -648,14 +690,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="455" column="38" lean-forward="true" selection-start-line="455" selection-start-column="38" selection-end-line="455" selection-end-column="38" />
-          <folding>
-            <element signature="e#18858#18886#0" expanded="true" />
-            <element signature="e#25146#25174#0" expanded="true" />
-            <element signature="e#25749#25777#0" expanded="true" />
-            <element signature="e#26354#26382#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="222">
+          <caret line="579" column="30" lean-forward="true" selection-start-line="579" selection-start-column="30" selection-end-line="579" selection-end-column="61" />
         </state>
       </provider>
     </entry>
