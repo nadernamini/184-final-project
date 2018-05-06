@@ -16,10 +16,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4df717f0-37f1-43c1-bdea-ccc23e7bd1a4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="4df717f0-37f1-43c1-bdea-ccc23e7bd1a4" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,8 +43,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="579" column="30" lean-forward="true" selection-start-line="579" selection-start-column="30" selection-end-line="579" selection-end-column="61" />
+            <state relative-caret-position="342">
+              <caret line="609" column="17" selection-start-line="609" selection-start-column="17" selection-end-line="609" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -97,9 +94,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="40" />
+    <option name="y" value="22" />
+    <option name="width" value="1240" />
+    <option name="height" value="778" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -226,7 +225,7 @@
       <workItem from="1524540200715" duration="4395000" />
       <workItem from="1524694242257" duration="23000" />
       <workItem from="1525409643621" duration="2671000" />
-      <workItem from="1525568837357" duration="496000" />
+      <workItem from="1525568837357" duration="747000" />
     </task>
     <task id="LOCAL-00001" summary="added website files">
       <created>1522552442599</created>
@@ -340,11 +339,18 @@
       <option name="project" value="LOCAL" />
       <updated>1525507932582</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="updated references">
+      <created>1525569655360</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1525569655360</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29295000" />
+    <option name="totallyTimeSpent" value="29546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="22" width="1240" height="778" extended-state="6" />
@@ -421,7 +427,8 @@
     <MESSAGE value="updated html" />
     <MESSAGE value="fixed youtube link" />
     <MESSAGE value="updated styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated styles" />
+    <MESSAGE value="updated references" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated references" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/cloth.cpp">
@@ -690,8 +697,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="579" column="30" lean-forward="true" selection-start-line="579" selection-start-column="30" selection-end-line="579" selection-end-column="61" />
+        <state relative-caret-position="342">
+          <caret line="609" column="17" selection-start-line="609" selection-start-column="17" selection-end-line="609" selection-end-column="17" />
         </state>
       </provider>
     </entry>

@@ -364,7 +364,7 @@
                 constants and simple data types, we instantiate these data bindings with OpenGL’s uniform type in our
                 shader program. For collection-like variables, like positions, normals and hash positions, we must first
                 initialize our buffer and bind it using <code>glBindBufferBase</code>. Once we attach these buffers to
-                our shader programs, we can dispatch parallel workgroups to run our programs. \(\pi\)
+                our shader programs, we can dispatch parallel workgroups to run our programs.
 
             </li>
 
@@ -380,7 +380,7 @@
 
             <li>
                 We generate the sphere using 2 angles, one going from \((-\pi/2 : \pi/2)\), and the other from
-                0:2\(\pi\). Then, using a certain spacing based on the number of points and the size of the sphere, we
+                \((0:2\pi)\). Then, using a certain spacing based on the number of points and the size of the sphere, we
                 calculate a derivative, and then use this to calculate the positions of the points on the sphere. Each
                 point corresponds to an intersection of a longitude and latitude line.
                 Next, we construct a quad-mesh by using two triangles per quad, with each quad defined as the
