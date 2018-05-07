@@ -1,3 +1,63 @@
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+libraries/SOIL/libSOIL.a
+libraries/glfw-3.2.1/tests/icon
+libraries/glfw-3.2.1/tests/timeout
+libraries/glm/glm/glm_dummy
+
+.idea/
+cmake-build-debug/
+
+build/
+lib/
+
+Cloth
+src/Cloth
+
+# Cruft
 .DS_Store
-build
-exr
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+
+*.cbp
+*.so
